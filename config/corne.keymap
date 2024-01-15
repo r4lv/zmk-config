@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB     &kp DE_CARET  &trans        &trans        &trans        &trans          &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET          &trans     &kp RALT
             >;
         };
 
@@ -84,10 +84,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp DE_CARET  &kp N1     &kp N2  &kp N3    &kp N4   &kp N5    &kp N6  &kp N7     &kp N8    &kp N9     &kp N0     &kp DE_ACUTE
+&kp LCTRL     &trans     &trans  &trans    &trans   &trans    &trans  &trans     &kp UP    &trans     &kp DE_SZ  &kp RALT
+&kp LCMD      &kp DE_LT  &trans  &trans    &trans   &trans    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans     &kp RSHIFT
+                                 &kp LGUI  &kp RET  &trans    &trans  &kp SPACE  &kp LALT
+            >;
+        };
+
+        layer_tri {
+            bindings = <
+&trans      &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
