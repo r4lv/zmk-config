@@ -54,10 +54,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&ht200 ESCAPE TAB  &kp Q     &kp W  &kp E     &kp R       &kp T    &kp DE_Z  &kp U      &kp I         &kp O       &kp P         &kp BSPC
-&kp LCTRL          &kp A     &kp S  &kp D     &kp F       &kp G    &kp H     &kp J      &kp K         &kp L       &kp DE_PLUS   &kp DE_HASH
-&kp LEFT_COMMAND   &kp DE_Y  &kp X  &kp C     &kp V       &kp B    &kp N     &kp M      &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp RIGHT_SHIFT
-                                    &kp LGUI  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp RALT
+&ht200 ESCAPE TAB  &kp DE_Q  &kp DE_W  &kp E     &kp R       &kp T    &kp DE_Z  &kp U      &kp I         &kp O       &kp P         &kp BSPC
+&kp LCTRL          &kp A     &kp S     &kp D     &kp F       &kp G    &kp H     &kp J      &kp K         &kp L       &kp DE_PLUS   &kp DE_HASH
+&kp LEFT_COMMAND   &kp DE_Y  &kp X     &kp C     &kp V       &kp B    &kp N     &kp M      &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp RIGHT_SHIFT
+                                       &kp LGUI  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp RALT
             >;
         };
 
@@ -72,7 +72,7 @@
 &kp TAB     &kp DE_CARET        &trans                &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
 &bt BT_CLR  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
 &kp LSHFT   &kp DE_EQUAL        &kp DE_LEFT_BRACE     &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
-                                                      &kp LGUI            &trans          &kp SPACE           &kp RET          &trans     &kp RALT
+                                                      &kp LGUI            &trans          &trans              &trans           &trans     &kp RALT
             >;
         };
 
