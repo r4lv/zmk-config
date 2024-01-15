@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp DE_CARET  &trans        &trans        &trans        &trans          &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET          &trans     &kp RALT
+&kp TAB     &kp DE_CARET        &trans                &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
+&bt BT_CLR  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
+&kp LSHFT   &kp DE_EQUAL        &kp DE_LEFT_BRACE     &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
+                                                      &kp LGUI            &trans          &kp SPACE           &kp RET          &trans     &kp RALT
             >;
         };
 
