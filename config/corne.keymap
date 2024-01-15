@@ -47,47 +47,29 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
-&ht200 ESCAPE TAB  &kp DE_Q  &kp DE_W  &kp E     &kp R       &kp T    &kp DE_Z  &kp U      &kp I         &kp O       &kp P         &kp BSPC
-&kp LCTRL          &kp A     &kp S     &kp D     &kp F       &kp G    &kp H     &kp J      &kp K         &kp L       &kp DE_PLUS   &kp DE_HASH
-&kp LEFT_COMMAND   &kp DE_Y  &kp X     &kp C     &kp V       &kp B    &kp N     &kp M      &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp RIGHT_SHIFT
-                                       &kp LGUI  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp RALT
+&ht200 ESCAPE TAB  &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R    &kp DE_T &kp DE_Z  &kp DE_U   &kp DE_I      &kp DE_O    &kp DE_P      &kp BSPC
+&kp LCTRL          &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G &kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &kp DE_PLUS   &kp DE_HASH
+&kp LCMD           &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp RSHIFT
+                                       &kp LGUI  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp LALT
             >;
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
-&kp TAB     &kp DE_CARET        &trans                &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
-&bt BT_CLR  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
-&kp LSHFT   &kp DE_EQUAL        &kp DE_LEFT_BRACE     &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
-                                                      &kp LGUI            &trans          &trans              &trans           &trans     &kp RALT
+&ht200 ESCAPE TAB  &kp DE_CARET        &trans       &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
+&kp LCTRL          &kp DE_EXCLAMATION  &kp DE_DQT   &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
+&kp LCMD           &kp DE_EQUAL        &kp DE_LBRC  &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
+                                                    &kp LGUI            &trans          &trans              &trans           &trans     &kp LALT
             >;
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
-&kp DE_CARET  &kp N1     &kp N2  &kp N3    &kp N4   &kp N5    &kp N6  &kp N7     &kp N8    &kp N9     &kp N0     &kp DE_ACUTE
-&kp LCTRL     &trans     &trans  &trans    &trans   &trans    &trans  &trans     &kp UP    &trans     &kp DE_SZ  &kp RALT
-&kp LCMD      &kp DE_LT  &trans  &trans    &trans   &trans    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans     &kp RSHIFT
-                                 &kp LGUI  &kp RET  &trans    &trans  &kp SPACE  &kp LALT
+&kp DE_CARET  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4   &kp DE_N5  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp DE_ACUTE
+&kp LCTRL     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &kp UP     &trans     &kp DE_SZ  &kp RALT
+&kp LCMD      &kp DE_LT  &trans     &trans     &trans      &trans     &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHIFT
+                                    &kp LGUI   &kp RETURN  &trans     &trans     &kp SPACE  &kp LALT
             >;
         };
 
