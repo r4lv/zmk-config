@@ -1,32 +1,26 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
-#include "keys_de.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include "keys_de.h"
 
 / {
     combos {
         compatible = "zmk,combos";
 
         we {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp DE_LEFT_BRACKET>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
         sd {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <14 15>;
             layers = <0>;
         };
 
         xc {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp DE_LEFT_BRACE>;
             key-positions = <26 27>;
             layers = <0>;
         };
@@ -35,30 +29,30 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_base {
             bindings = <
 &mt ESCAPE TAB  &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R    &kp DE_T &kp DE_Z  &kp DE_U   &kp DE_I      &kp DE_O    &kp DE_P      &kp BSPC
 &kp LCTRL       &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G &kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &kp DE_PLUS   &kp DE_HASH
 &kp LCMD        &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp RSHIFT
-                                       &kp LGUI  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp LALT
+                                    &kp LCMD  &kp RETURN  &mo 1    &mo 2     &kp SPACE  &kp LALT
             >;
         };
 
-        lower_layer {
+        layer_lower {
             bindings = <
-&mt ESCAPE TAB  &kp DE_CARET        &trans       &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
-&kp LCTRL       &kp DE_EXCLAMATION  &kp DE_DQT   &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &trans
-&kp LCMD        &kp DE_EQUAL        &kp DE_LBRC  &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &trans
-                                                    &kp LGUI            &trans          &trans              &trans           &trans     &kp LALT
+&mt ESCAPE TAB  &kp DE_CARET        &kp DE_ACUTE  &trans              &trans          &trans              &trans           &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp N0        &kp DE_SZ
+&kp LCTRL       &kp DE_EXCLAMATION  &kp DE_DQT    &kp DE_DOLLAR       &kp DE_PERCENT  &kp DE_AMPERSAND    &kp DE_SLASH     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp RALT
+&kp LCMD        &kp DE_EQUAL        &kp DE_LBRC   &kp DE_RIGHT_BRACE  &trans          &trans              &kp DE_ASTERISK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHIFT
+                                                    &kp LCMD            &trans          &none              &mo 2           &trans     &kp LALT
             >;
         };
 
-        raise_layer {
+        layer_raise {
             bindings = <
 &kp DE_CARET  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4   &kp DE_N5  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp DE_ACUTE
 &kp LCTRL     &trans     &trans     &trans     &trans      &trans     &trans     &trans     &kp UP     &trans     &kp DE_SZ  &kp RALT
 &kp LCMD      &kp DE_LT  &trans     &trans     &trans      &trans     &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHIFT
-                                    &kp LGUI   &kp RETURN  &trans     &trans     &kp SPACE  &kp LALT
+                                    &kp LCMD   &kp RETURN  &mo 1     &trans     &kp SPACE  &kp LALT
             >;
         };
 
@@ -69,6 +63,15 @@
 &trans      &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };

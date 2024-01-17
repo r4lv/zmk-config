@@ -1,0 +1,378 @@
+
+tasten:
+  "^/°":
+    zmk_key: NON_US_BACKSLASH
+    karabiner: non_us_backslash
+    tap:
+      pretty: "^"
+      combining: True
+      alias: [CARET]  # official
+    shifted:
+      pretty: "°"
+      alias : [DEGREE, DEG, U00B0, UNI_DEGREE_SIGN]
+    alt:
+      pretty: "„"
+      alias: [ANF_AUF, ANF_99, U201E, UNI_DOUBLE_LOW_9_QUOTATION_MARK]
+    alt_shifted:
+      pretty: "“"
+      alias: [ANF_ZU, ANF_66, U201C, UNI_LEFT_DOUBLE_QUOTATION_MARK]
+  "1/!":
+    zmk_key: N1
+    tap:
+      pretty: "1"
+      alias: [NUMBER_1, N1]  # official
+    shifted:
+      pretty: "!"
+      alias: [EXCLAMATION, EXCL]  # official
+    alt:
+      pretty: "¡"
+      alias: [INVERTED_EXCLAMATION, IEXCL, U00A1, UNI_INVERTED_EXCLAMATION_MARK]
+    alt_shifted:
+      pretty: "¬"
+      alias: [NOT, NOT_SIGN, U00AC, UNI_NOT_SIGN]
+  "2/\"":
+    zmk_key: N2
+    tap:
+      pretty: "2"
+      alias: [NUMBER_2, N2]
+    shifted:
+      pretty: '"'
+      alias: [DOUBLE_QUOTES, DQT]  # official
+    alt:
+      # same als alt+shift+caret
+      pretty: "“"
+      alias: [UNI_LEFT_DOUBLE_QUOTATION_MARK__AGAIN]
+      # TODO
+    alt_shifted:
+      pretty: "”"
+      alias: [U201D, UNI_RIGHT_DOUBLE_QUOTATION_MARK]
+      # TODO:
+  "3/§":
+    zmk_key: N3
+    tap:
+      pretty: "3"
+      alias: [NUMBER_3, N3]
+    shifted:
+      pretty: "§"
+      alias: [SECTION, SECT]
+    alt:
+      pretty: "¶"
+      alias: [PARAGRAPH, U00B6, UNI_PILCROW_SIGN]
+    #alt_shifted:
+    #  pretty: "#"
+    # same as # key. why?
+  "4/$":
+    zmk_key: N4
+    tap:
+      pretty: "4"
+      alias: [NUMBER_4, N4]
+    shifted:
+      pretty: "$"
+      alias: [DOLLAR, DLLR]
+    alt:
+      pretty: "¢"
+      alias: [CENT, U00A2, UNI_CENT_SIGN]
+    alt_shifted:
+      pretty: "£"
+      alias: [U00A3, UNI_POUND_SIGN]
+      # NOTE: NOT 'POUND', as that is already used for '#'
+  "5/%":
+    zmk_key: N5
+    tap:
+      pretty: "5"
+      alias: [NUMBER_5, N5]
+    shifted:
+      pretty: "%"
+      alias: [PERCENT, PRCNT]  # official
+    alt:
+      pretty: "["
+      alias: [LEFT_BRACKET, LBKT]  # official
+    alt_shifted:
+      pretty: "ﬁ"
+      alias: [LIG_FI, UNI_LATIN_SMALL_LIGATURE_FI]
+  "6/&":
+    zmk_key: N6
+    tap:
+      pretty: "6"
+      alias: [NUMBER_6, N6]
+    shifted:
+      pretty: "&"
+      alias: [AMPERSAND, AMPS]  # official
+    alt:
+      pretty: "]"
+      alias: [RIGHT_BRACKET, RBKT]  # official
+    # alt_shifted:
+    #   combining: True
+    #   pretty: "^"
+    #   # TODO: same as the 'circumflex' key
+  "7//":
+    zmk_key: N7
+    tap:
+      pretty: "7"
+      alias: [NUMBER_7, N7]
+    shifted:
+      pretty: "/"
+      alias: [SLASH, FSLH]  # official
+    alt:
+      pretty: "|"
+      alias: [PIPE]  # official
+    alt_shifted:
+      pretty: "\\"
+      alias: [BACKSLASH, BSLH]  # official
+  "8/(":
+    zmk_key: N8
+    tap:
+      pretty: "8"
+      alias: [NUMBER_8, N8]
+    shifted:
+      pretty: "("
+      alias: [LEFT_PARENTHESIS, LPAR]  # official
+    alt:
+      pretty: "{"
+      alias: [LEFT_BRACE, LBRC]  # official
+      # aka UNI_LEFT_CURLY_BRACKET
+    alt_shifted:
+      pretty: "˜"
+      alias: [SMALL_TILDE_MODIFIER, UNI_SMALL_TILDE]
+  "9/)":
+    zmk_key: N9
+    tap:
+      pretty: "9"
+      alias: [NUMBER_9, N9]
+    shifted:
+      pretty: ")"
+      alias: [RIGHT_PARENTHESIS, RPAR]  # official
+    alt:
+      pretty: "}"
+      alias: [RIGHT_BRACE, RBRC, UNI_RIGHT_CURLY_BRACKET]
+    alt_shifted:
+      pretty: "·"
+      alias: [U00B7, UNI_MIDDLE_DOT]
+  "0/=":
+    zmk_key: N0
+    tap:
+      pretty: "0"
+      alias: [NUMBER_0, N0]
+    shifted:
+      pretty: "="
+      alias: [EQUAL]
+    alt:
+      pretty: "≠"
+      alias: [NOT_EQUAL, NEQ]  # no official name??
+    alt_shifted:
+      pretty: "¯"
+      alias: [MACRON]  # no official name?
+  "ß/?":
+    zmk_key: MINUS
+    tap:
+      pretty: "ß"
+      alias: [SHARP_S, ESZETT, SZ]
+    shifted:
+      pretty: "?"
+      alias: [QUESTION, QMARK]
+    alt:
+      pretty: "¿"
+      alias: [INVERTED_QUESTION, IQMARK]
+  "´/`":
+    zmk_key: EQUAL
+    karabiner: equal_sign
+    tap:
+      combining: True
+      pretty: "´"
+      alias: [ACUTE_ACCENT, ACUTE]
+    shifted:
+      combining: True
+      pretty: "`"
+      alias: [GRAVE_ACCENT, GRAVE]
+    # alt:
+    #   pretty: "'"
+    #   alias: [SINGLE_QUOTE, SQT, APOSTROPHE, APOS]
+    #   duplicate
+    alt_shifted:
+      pretty: "˚"
+      alias: [RING_ABOVE, U02DA, UNI_RING_ABOVE]
+  "q":
+    zmk_key: Q
+    alt:
+      pretty: "«"
+      alias: [LEFT_ANGLE_QUOTE, LEFT_ANGLE_QUOTATION_MARK, UNI_LEFT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK]
+  "w":
+    zmk_key: W
+    alt:
+      pretty: "∑"
+      alias: [SUM, UNI_N_ARY_SUMMATION]
+  "e":
+    zmk_key: E
+    alt:
+      pretty: "€"
+      alias: [EURO, UNI_EURO_SIGN]
+  "r":
+    zmk_key: R
+    alt:
+      pretty: "®"
+      alias: [UNI_REGISTERED_SIGN]
+  "t":
+    zmk_key: T
+    alt:
+      pretty: "†"
+      alias: [DAGGER, UNI_DAGGER]
+  "z":
+    zmk_key: "Y"
+    tap:
+      pretty: "Z"
+      alias: ["Z"]
+    alt:
+      pretty: "Ω"
+      alias: [OMEGA, UNI_GREEK_CAPITAL_LETTER_OMEGA]
+  "u":
+    zmk_key: U
+    alt:
+      pretty: "¨"
+      alias: [UNI_DIAERESIS]
+  "i":
+    zmk_key: I
+    alt:
+      pretty: "⁄"
+      alias: [FRAC, UNI_FRACTION_SLASH]
+  "o":
+    zmk_key: O
+    alt:
+      pretty: "ø"
+      alias: [UNI_LATIN_SMALL_LETTER_O_WITH_STROKE]
+  "p":
+    zmk_key: P
+    alt:
+      pretty: "π"
+      alias: [PI, UNI_GREEK_SMALL_LETTER_PI]
+  "ü":
+    zmk_key: LEFT_BRACKET
+    tap:
+      pretty: "Ü"
+      alias: [U_UMLAUT, U_UML]
+    alt:
+      pretty: "•"
+      alias: [BULLET, UNI_BULLET]
+  "+/*":
+    zmk_key: RIGHT_BRACKET
+    karabiner: close_bracket
+    tap:
+      pretty: "+"
+      alias: [PLUS]
+    shifted:
+      pretty: "*"
+      alias: [ASTERISK, ASTRK, STAR]
+    #alt:
+    # TODO: 1Password shortcut
+    # alt_shifted:
+    #   pretty: ""
+    #   alias: [APPLE]
+
+  
+  "a":
+    zmk_key: A
+  "s":
+    zmk_key: S
+  "d":
+    zmk_key: D
+  "f":
+    zmk_key: F
+  "g":
+    zmk_key: G
+  "h":
+    zmk_key: H
+  "j":
+    zmk_key: J
+  "k":
+    zmk_key: K
+  "l":
+    zmk_key: L
+    alt:
+      pretty: "@"
+      alias: [AT_SIGN, AT]  # official
+    alt_shifted:
+      pretty: "ﬂ"
+      alias: ["FL", "FL_LIGATURE", "UNI_LATIN_SMALL_LIGATURE_FL"]
+  "ö":
+    zmk_key: SEMICOLON
+    tap:
+      pretty: "Ö"
+      alias: [O_UMLAUT, O_UML]
+  "ä":
+    zmk_key: APOSTROPHE
+    tap:
+      pretty: "Ä"
+      alias: [A_UMLAUT, A_UML]
+  "#/'":
+    zmk_key: HASH
+    tap:
+      pretty: "#"
+      alias: [HASH, POUND]  # official
+    shifted:
+      pretty: "'"
+      alias: [SINGLE_QUOTE, SQT, APOSTROPHE, APOS]  # official
+    alt_shifted:
+      pretty: "’"
+      alias: [U2019, UNI_RIGHT_SINGLE_QUOTATION_MARK]
+      # ’	U+2019    	RIGHT SINGLE QUOTATION MARK / General Punctuation
+  "</>":
+    zmk_key: GRAVE
+    tap:
+      pretty: "<"
+      alias: [LESS_THAN, LT]  # official
+    shifted:
+      pretty: ">"  
+      alias: [GREATER_THAN, GT]  # official
+    alt:
+      pretty: "≤"
+      alias: [U2264, LTE, UNI_LESS_THAN_OR_EQUAL_TO]
+    alt_shifted:
+      pretty: "≥"
+      alias: [U2265, GTE, UNI_GREATER_THAN_OR_EQUAL_TO]
+  "y":
+    zmk_key: "Z"  # !!!
+    tap:
+      pretty: "Y"
+      alias: ["Y"]
+  "x":
+    zmk_key: "X"
+  "c":
+    zmk_key: "C"
+  "v":
+    zmk_key: "V"
+  "b":
+    zmk_key: "B"
+  "n":
+    zmk_key: "N"
+  "m":
+    zmk_key: "M"
+  ",/;":
+    zmk_key: COMMA
+    tap:
+      pretty: ","
+      alias: [COMMA]  # official
+    shifted:
+      pretty: ";"
+      alias: [SEMICOLON, SEMI]  # official
+  "./:":
+    zmk_key: PERIOD
+    tap:
+      pretty: "."
+      alias: [PERIOD, DOT]  # official
+    shifted:
+      pretty: ":"
+      alias: [COLON]  # official
+  "-/_":
+    zmk_key: SLASH
+    tap:
+      pretty: "-"
+      alias: [MINUS]  # official
+    shifted:
+      pretty: "_"
+      alias: [UNDERSCORE, UNDER]  # official
+    alt:
+      pretty: "–"
+      alias: [ENDASH, U2013, UNI_EN_DASH]
+    alt_shifted:
+      pretty: "—"
+      alias: [EMDASH, U2014, UNI_EM_DASH]
+    

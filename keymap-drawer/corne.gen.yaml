@@ -1,0 +1,184 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  base:
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-esc$$'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Z
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace-outline$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: +, s: '*'}
+  - {t: '#', s: ''''}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - Y
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '-', s: _}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - $$mdi:keyboard-return$$
+  - lower
+  - raise
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  lower:
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-esc$$'}
+  - {t: ^, s: °}
+  - {t: ´, s: '`'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '7', s: /}
+  - {t: '8', s: (}
+  - {t: '9', s: )}
+  - '0'
+  - {t: ß, s: '?'}
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - '!'
+  - '"'
+  - $
+  - '%'
+  - '&'
+  - /
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: '&'}
+  - {t: +, s: '*'}
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - '='
+  - '{'
+  - '}'
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - '*'
+  - {t: '1', s: '!'}
+  - {t: '2', s: '"'}
+  - {t: '3', s: §}
+  - {t: '-', s: _}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {type: held}
+  - raise
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  raise:
+  - {t: ^, s: °}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '"'}
+  - {t: '3', s: §}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: '&'}
+  - {t: '7', s: /}
+  - {t: '8', s: (}
+  - {t: '9', s: )}
+  - {t: '0', s: '='}
+  - {t: ´, s: '`'}
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:chevron-up$$
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: ß, s: '?'}
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - {t: <, s: '>'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:chevron-left$$
+  - $$mdi:chevron-down$$
+  - $$mdi:chevron-right$$
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - $$mdi:keyboard-return$$
+  - lower
+  - {type: held}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  tri:
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - BT CLR
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+combos:
+- p: [2, 3]
+  k: '['
+  l: [base]
+- p: [14, 15]
+  k: (
+  l: [base]
+- p: [26, 27]
+  k: '{'
+  l: [base]
