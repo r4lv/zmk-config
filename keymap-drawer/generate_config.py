@@ -15,7 +15,7 @@ HERE = Path(__file__).parent
 with open(HERE / "config.template.yaml") as f:
     keymap = yaml.load(f)
 
-with open(HERE / "style.css") as f:
+with open(HERE / "style.gen.css") as f:
     keymap["draw_config"]["svg_style"] = LS(f.read() + "\n" + keymap["draw_config"].get("svg_style", ""))
 with open(HERE / "raw_binding_map.gen.yaml")  as f:
     raw_binding_data = yaml.load(f)

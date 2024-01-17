@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   base:
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-esc$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: ESC}
   - Q
   - W
   - E
@@ -14,16 +14,16 @@ layers:
   - P
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - J
-  - K
-  - L
-  - {t: +, s: '*'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: +, h: '$$mdi:apple-keyboard-control$$', s: '*'}
   - {t: '#', s: ''''}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - Y
@@ -44,7 +44,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   lower:
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-esc$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: ESC}
   - {t: ^, s: °}
   - {t: ´, s: '`'}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -173,12 +173,33 @@ layers:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
 combos:
-- p: [2, 3]
-  k: '['
+- p: [1, 2]
+  k: '{'
   l: [base]
-- p: [14, 15]
+- p: [2, 3]
   k: (
+  l: [base]
+- p: [3, 4]
+  k: '['
   l: [base]
 - p: [26, 27]
   k: '{'
+  l: [base]
+- p: [27, 28]
+  k: \
+  l: [base]
+- p: [7, 8]
+  k: ']'
+  l: [base]
+- p: [8, 9]
+  k: )
+  l: [base]
+- p: [9, 10]
+  k: '}'
+  l: [base]
+- p: [31, 32]
+  k: /
+  l: [base]
+- p: [32, 33]
+  k: '}'
   l: [base]

@@ -74,12 +74,22 @@ text.combo.hold, text.combo.shifted {
     font-size: 8px;
 }
 
-/* lighter symbol for transparent keys */
-text.trans {
-    fill: #7b7e81;
-}
-.key.trans{
-    opacity: 0.7;
+
+g.trans{
+  // <g class="key trans keypos-3">
+  //   <rect class="key trans" x="-26" y="-26" width="52" height="52" />
+  //   <use class="key trans tap glyph mdi:triangle-down-outline" href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" />
+  //   <text class="key trans tap" x="0" y="0" >▽</text>
+  // </g>
+  opacity: 0.7;
+
+  text, .glyph{
+      opacity: .1
+  }
+
+  // text.trans {
+  //     fill: #7b7e81;
+  // }
 }
 
 /* styling for combo dendrons */
