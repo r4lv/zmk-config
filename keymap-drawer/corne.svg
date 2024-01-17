@@ -50,13 +50,13 @@ svg.keymap {
   font-size: 14px;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  fill: #24292e;
+  fill: #292524;
 }
 
 /* default key styling */
 rect.key {
-  fill: #f6f8fa;
-  stroke: #c9cccf;
+  fill: #fafaf9;
+  stroke: #d6d3d1;
   stroke-width: 1;
 }
 
@@ -115,18 +115,18 @@ text.combo.hold, text.combo.shifted {
   font-size: 8px;
 }
 
+/* styling for combo dendrons */
+path.combo {
+  stroke-width: 1;
+  stroke: #78716c;
+  fill: none;
+}
+
 g.trans {
   opacity: 0.7;
 }
 g.trans text, g.trans .glyph {
   opacity: 0.1;
-}
-
-/* styling for combo dendrons */
-path.combo {
-  stroke-width: 1;
-  stroke: gray;
-  fill: none;
 }
 
 /* Start Tabler Icons Cleanup */
@@ -182,25 +182,21 @@ rect.held, rect.combo.held {
 
 rect.combo, rect.combo-separate {
   fill: #d4d4d4;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .key.shifted, .key.hold {
   opacity: 0.6;
 }
 
-.layer-one .keypos-7,
-.layer-one .keypos-8,
-.layer-one .keypos-9,
-.layer-one .keypos-18,
-.layer-one .keypos-19,
-.layer-one .keypos-20,
-.layer-one .keypos-21,
-.layer-one .keypos-30,
-.layer-one .keypos-31,
-.layer-one .keypos-32,
-.layer-one .keypos-33 {
-  xxx_fill: #d97706;
+text.label {
+  transform: translate(0, 20px);
+  transform: translate(0, 20);
+}
+
+text.key.shifted {
+  transform: translate(0, 2px);
+  transform: translate(0, 2);
 }
 
 .keypos-38 rect, .keypos-39 rect {
@@ -210,15 +206,13 @@ rect.combo, rect.combo-separate {
 .keypos-38 text, .keypos-38 .glyph, .keypos-39 text, .keypos-39 .glyph {
   fill: #65a30d;
 }
-
-rect.held {
+.keypos-38 rect.held, .keypos-39 rect.held {
   stroke: #65a30d;
   fill: #65a30d;
 }
 
-text.label {
-  transform: translate(0, 20px);
-  transform: translate(0, 20);
+.layer-base g.key.keypos-13 .key.hold, .layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
+  fill: #be123c;
 }
 
 </style>

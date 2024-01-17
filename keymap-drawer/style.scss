@@ -1,3 +1,15 @@
+$tw-rose-700: #be123c;
+$tw-lime-600: #65a30d;
+$tw-fuchsia-800: #86198f;
+$tw-lime-50: #f7fee7;
+$tw-neutral-300: #d4d4d4;
+$tw-stone-50: #fafaf9;
+$tw-stone-300: #d6d3d1;
+$tw-stone-500: #78716c;
+$tw-stone-800: #292524;
+// https://tailwindcss.com/docs/customizing-colors
+
+
 // inherit to force styles through use tags
 svg path {
     fill: inherit;
@@ -5,17 +17,17 @@ svg path {
 
 /* font and background color specifications */
 svg.keymap {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: #24292e;
+    fill: $tw-stone-800;
 }
 
 /* default key styling */
 rect.key {
-    fill: #f6f8fa;
-    stroke: #c9cccf;
+    fill: $tw-stone-50;
+    stroke: $tw-stone-300;
     stroke-width: 1;
 }
 
@@ -75,28 +87,19 @@ text.combo.hold, text.combo.shifted {
 }
 
 
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: $tw-stone-500;
+    fill: none;
+}
+
 g.trans{
-  // <g class="key trans keypos-3">
-  //   <rect class="key trans" x="-26" y="-26" width="52" height="52" />
-  //   <use class="key trans tap glyph mdi:triangle-down-outline" href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" />
-  //   <text class="key trans tap" x="0" y="0" >▽</text>
-  // </g>
   opacity: 0.7;
 
   text, .glyph{
       opacity: .1
   }
-
-  // text.trans {
-  //     fill: #7b7e81;
-  // }
-}
-
-/* styling for combo dendrons */
-path.combo {
-    stroke-width: 1;
-    stroke: gray;
-    fill: none;
 }
 
 
@@ -119,27 +122,27 @@ path.combo {
 
 .rsym {
   rect{
-    stroke: #86198f /*fuchsia-800*/;
+    stroke: $tw-fuchsia-800;
   }
   .glyph, text{
-    fill: #86198f /*fuchsia-800*/;
+    fill: $tw-fuchsia-800;
   }
-  
 }
+
 .rlayer {
   rect{
-    stroke: #65a30d /*lime-600*/;
-    fill: #f7fee7 /*lime-50*/;
+    stroke: $tw-lime-600 /*lime-600*/;
+    fill: $tw-lime-50;
   }
   .glyph, text{
-    fill: #65a30d /*lime-600*/;
+    fill: $tw-lime-600 /*lime-600*/;
   }
   .glyph, &-held .glyph {
     transform: scale(1.5);
   }
   &-held rect{
-    stroke: #65a30d /*lime-600*/;
-    fill: #65a30d;
+    stroke: $tw-lime-600 /*lime-600*/;
+    fill: $tw-lime-600;
   }
   &-held .glyph, &-held text{
     fill: white;
@@ -149,66 +152,68 @@ path.combo {
 
 .rmod {
   rect{
-    stroke: #be123c /*rose-700*/;
+    stroke: $tw-rose-700;
   }
   .glyph, text {
-    fill: #be123c /*rose-700*/;
+    fill: $tw-rose-700;
   }
 }
 
 rect.held, rect.combo.held {
-  stroke: #65a30d /*lime-600*/;
-  fill: #65a30d;
+  stroke: $tw-lime-600;
+  fill: $tw-lime-600;
 }
 rect.combo, rect.combo-separate{
-  fill: #d4d4d4 /* neutral-300 */;
-  opacity: 0.9;
+  fill: $tw-neutral-300;
+  opacity: 0.7;
 }
-
-
 
 .key.shifted, .key.hold {
   opacity: .6
 }
 
-.layer-one .keypos-7, 
-.layer-one .keypos-8, 
-.layer-one .keypos-9,
-.layer-one .keypos-18,
-.layer-one .keypos-19,
-.layer-one .keypos-20,
-.layer-one .keypos-21,
-.layer-one .keypos-30,
-.layer-one .keypos-31,
-.layer-one .keypos-32,
-.layer-one .keypos-33
-{
-  xxx_fill: #d97706 /* amber-600 */;
-}
-
-.keypos-38, .keypos-39{
-  rect{
-      stroke: #65a30d /*lime-600*/;
-      fill: #f7fee7 /*lime-50*/;
-  }
-  text, .glyph{
-      fill: #65a30d /*lime-600*/;
-  }
-
-}
-
-
-rect.held{
-  // overwrite
-  stroke: #65a30d /*lime-600*/;
-  fill: #65a30d;
-}
 
 
 text.label{
   // shift layer label down just above the keys
   transform: translate(0, 20px); // chrome
   transform: translate(0, 20); // resvg
+}
+
+text.key.shifted{
+  // more space between shifted label and top of key
+  transform: translate(0, 2px); // chrome
+  transform: translate(0, 2); // resvg
+}
+
+
+
+//==============================================================================
+// per-key styling
+
+.keypos-38, .keypos-39{
+  rect{
+      stroke: $tw-lime-600;
+      fill: $tw-lime-50;
+  }
+  text, .glyph{
+      fill: $tw-lime-600;
+  }
+  rect.held{
+    // overwrite
+    stroke: $tw-lime-600;
+    fill: $tw-lime-600;
+  }
+}
+
+
+
+.layer-base g.key.keypos-{
+  &13, &14, &15, &16, &19, &20, &21, &22{
+    .key.hold{
+      fill: $tw-rose-700;
+    }
+  }
 }
 
 
