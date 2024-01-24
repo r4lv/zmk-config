@@ -1,4 +1,3 @@
-
 tasten:
   "^/°":
     zmk_key: NON_US_BACKSLASH

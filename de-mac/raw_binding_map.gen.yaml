@@ -1,0 +1,272 @@
+# german macOS keyboard definitions for ZMK
+# generated with generate_de_key_mapping.py from de-mac.yaml
+'&kp DE_CARET':
+  tap: ^
+  shifted: °
+'&kp DE_DEGREE': °
+'&kp DE_DEG': °
+'&kp DE_U00B0': °
+'&kp DE_UNI_DEGREE_SIGN': °
+'&kp DE_ANF_AUF': „
+'&kp DE_ANF_99': „
+'&kp DE_U201E': „
+'&kp DE_UNI_DOUBLE_LOW_9_QUOTATION_MARK': „
+'&kp DE_ANF_ZU': “
+'&kp DE_ANF_66': “
+'&kp DE_U201C': “
+'&kp DE_UNI_LEFT_DOUBLE_QUOTATION_MARK': “
+'&kp DE_NUMBER_1':
+  tap: '1'
+  shifted: '!'
+'&kp DE_N1':
+  tap: '1'
+  shifted: '!'
+'&kp DE_EXCLAMATION': '!'
+'&kp DE_EXCL': '!'
+'&kp DE_INVERTED_EXCLAMATION': ¡
+'&kp DE_IEXCL': ¡
+'&kp DE_U00A1': ¡
+'&kp DE_UNI_INVERTED_EXCLAMATION_MARK': ¡
+'&kp DE_NOT': ¬
+'&kp DE_NOT_SIGN': ¬
+'&kp DE_U00AC': ¬
+'&kp DE_UNI_NOT_SIGN': ¬
+'&kp DE_NUMBER_2':
+  tap: '2'
+  shifted: '"'
+'&kp DE_N2':
+  tap: '2'
+  shifted: '"'
+'&kp DE_DOUBLE_QUOTES': '"'
+'&kp DE_DQT': '"'
+'&kp DE_UNI_LEFT_DOUBLE_QUOTATION_MARK__AGAIN': “
+'&kp DE_U201D': ”
+'&kp DE_UNI_RIGHT_DOUBLE_QUOTATION_MARK': ”
+'&kp DE_NUMBER_3':
+  tap: '3'
+  shifted: §
+'&kp DE_N3':
+  tap: '3'
+  shifted: §
+'&kp DE_SECTION': §
+'&kp DE_SECT': §
+'&kp DE_PARAGRAPH': ¶
+'&kp DE_U00B6': ¶
+'&kp DE_UNI_PILCROW_SIGN': ¶
+'&kp DE_NUMBER_4':
+  tap: '4'
+  shifted: $
+'&kp DE_N4':
+  tap: '4'
+  shifted: $
+'&kp DE_DOLLAR': $
+'&kp DE_DLLR': $
+'&kp DE_CENT': ¢
+'&kp DE_U00A2': ¢
+'&kp DE_UNI_CENT_SIGN': ¢
+'&kp DE_U00A3': £
+'&kp DE_UNI_POUND_SIGN': £
+'&kp DE_NUMBER_5':
+  tap: '5'
+  shifted: '%'
+'&kp DE_N5':
+  tap: '5'
+  shifted: '%'
+'&kp DE_PERCENT': '%'
+'&kp DE_PRCNT': '%'
+'&kp DE_LEFT_BRACKET': '['
+'&kp DE_LBKT': '['
+'&kp DE_LIG_FI': ﬁ
+'&kp DE_UNI_LATIN_SMALL_LIGATURE_FI': ﬁ
+'&kp DE_NUMBER_6':
+  tap: '6'
+  shifted: '&'
+'&kp DE_N6':
+  tap: '6'
+  shifted: '&'
+'&kp DE_AMPERSAND': '&'
+'&kp DE_AMPS': '&'
+'&kp DE_RIGHT_BRACKET': ']'
+'&kp DE_RBKT': ']'
+'&kp DE_NUMBER_7':
+  tap: '7'
+  shifted: /
+'&kp DE_N7':
+  tap: '7'
+  shifted: /
+'&kp DE_SLASH': /
+'&kp DE_FSLH': /
+'&kp DE_PIPE': '|'
+'&kp DE_BACKSLASH': \
+'&kp DE_BSLH': \
+'&kp DE_NUMBER_8':
+  tap: '8'
+  shifted: (
+'&kp DE_N8':
+  tap: '8'
+  shifted: (
+'&kp DE_LEFT_PARENTHESIS': (
+'&kp DE_LPAR': (
+'&kp DE_LEFT_BRACE': '{'
+'&kp DE_LBRC': '{'
+'&kp DE_SMALL_TILDE_MODIFIER': ˜
+'&kp DE_UNI_SMALL_TILDE': ˜
+'&kp DE_NUMBER_9':
+  tap: '9'
+  shifted: )
+'&kp DE_N9':
+  tap: '9'
+  shifted: )
+'&kp DE_RIGHT_PARENTHESIS': )
+'&kp DE_RPAR': )
+'&kp DE_RIGHT_BRACE': '}'
+'&kp DE_RBRC': '}'
+'&kp DE_UNI_RIGHT_CURLY_BRACKET': '}'
+'&kp DE_U00B7': ·
+'&kp DE_UNI_MIDDLE_DOT': ·
+'&kp DE_NUMBER_0':
+  tap: '0'
+  shifted: '='
+'&kp DE_N0':
+  tap: '0'
+  shifted: '='
+'&kp DE_EQUAL': '='
+'&kp DE_NOT_EQUAL': ≠
+'&kp DE_NEQ': ≠
+'&kp DE_MACRON': ¯
+'&kp DE_SHARP_S':
+  tap: ß
+  shifted: '?'
+'&kp DE_ESZETT':
+  tap: ß
+  shifted: '?'
+'&kp DE_SZ':
+  tap: ß
+  shifted: '?'
+'&kp DE_QUESTION': '?'
+'&kp DE_QMARK': '?'
+'&kp DE_INVERTED_QUESTION': ¿
+'&kp DE_IQMARK': ¿
+'&kp DE_ACUTE_ACCENT':
+  tap: ´
+  shifted: '`'
+'&kp DE_ACUTE':
+  tap: ´
+  shifted: '`'
+'&kp DE_GRAVE_ACCENT': '`'
+'&kp DE_GRAVE': '`'
+'&kp DE_RING_ABOVE': ˚
+'&kp DE_U02DA': ˚
+'&kp DE_UNI_RING_ABOVE': ˚
+'&kp DE_Q': Q
+'&kp DE_LEFT_ANGLE_QUOTE': «
+'&kp DE_LEFT_ANGLE_QUOTATION_MARK': «
+'&kp DE_UNI_LEFT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK': «
+'&kp DE_W': W
+'&kp DE_SUM': ∑
+'&kp DE_UNI_N_ARY_SUMMATION': ∑
+'&kp DE_E': E
+'&kp DE_EURO': €
+'&kp DE_UNI_EURO_SIGN': €
+'&kp DE_R': R
+'&kp DE_UNI_REGISTERED_SIGN': ®
+'&kp DE_T': T
+'&kp DE_DAGGER': †
+'&kp DE_UNI_DAGGER': †
+'&kp DE_Z': Z
+'&kp DE_OMEGA': Ω
+'&kp DE_UNI_GREEK_CAPITAL_LETTER_OMEGA': Ω
+'&kp DE_U': U
+'&kp DE_UNI_DIAERESIS': ¨
+'&kp DE_I': I
+'&kp DE_FRAC': ⁄
+'&kp DE_UNI_FRACTION_SLASH': ⁄
+'&kp DE_O': O
+'&kp DE_UNI_LATIN_SMALL_LETTER_O_WITH_STROKE': ø
+'&kp DE_P': P
+'&kp DE_PI': π
+'&kp DE_UNI_GREEK_SMALL_LETTER_PI': π
+'&kp DE_U_UMLAUT': Ü
+'&kp DE_U_UML': Ü
+'&kp DE_BULLET': •
+'&kp DE_UNI_BULLET': •
+'&kp DE_PLUS':
+  tap: +
+  shifted: '*'
+'&kp DE_ASTERISK': '*'
+'&kp DE_ASTRK': '*'
+'&kp DE_STAR': '*'
+'&kp DE_A': A
+'&kp DE_S': S
+'&kp DE_D': D
+'&kp DE_F': F
+'&kp DE_G': G
+'&kp DE_H': H
+'&kp DE_J': J
+'&kp DE_K': K
+'&kp DE_L': L
+'&kp DE_AT_SIGN': '@'
+'&kp DE_AT': '@'
+'&kp DE_FL': ﬂ
+'&kp DE_FL_LIGATURE': ﬂ
+'&kp DE_UNI_LATIN_SMALL_LIGATURE_FL': ﬂ
+'&kp DE_O_UMLAUT': Ö
+'&kp DE_O_UML': Ö
+'&kp DE_A_UMLAUT': Ä
+'&kp DE_A_UML': Ä
+'&kp DE_HASH':
+  tap: '#'
+  shifted: "'"
+'&kp DE_POUND':
+  tap: '#'
+  shifted: "'"
+'&kp DE_SINGLE_QUOTE': "'"
+'&kp DE_SQT': "'"
+'&kp DE_APOSTROPHE': "'"
+'&kp DE_APOS': "'"
+'&kp DE_U2019': ’
+'&kp DE_UNI_RIGHT_SINGLE_QUOTATION_MARK': ’
+'&kp DE_LESS_THAN':
+  tap: <
+  shifted: '>'
+'&kp DE_LT':
+  tap: <
+  shifted: '>'
+'&kp DE_GREATER_THAN': '>'
+'&kp DE_GT': '>'
+'&kp DE_U2264': ≤
+'&kp DE_LTE': ≤
+'&kp DE_UNI_LESS_THAN_OR_EQUAL_TO': ≤
+'&kp DE_U2265': ≥
+'&kp DE_GTE': ≥
+'&kp DE_UNI_GREATER_THAN_OR_EQUAL_TO': ≥
+'&kp DE_Y': Y
+'&kp DE_X': X
+'&kp DE_C': C
+'&kp DE_V': V
+'&kp DE_B': B
+'&kp DE_N': N
+'&kp DE_M': M
+'&kp DE_COMMA':
+  tap: ','
+  shifted: ;
+'&kp DE_SEMICOLON': ;
+'&kp DE_SEMI': ;
+'&kp DE_PERIOD':
+  tap: .
+  shifted: ':'
+'&kp DE_DOT':
+  tap: .
+  shifted: ':'
+'&kp DE_COLON': ':'
+'&kp DE_MINUS':
+  tap: '-'
+  shifted: _
+'&kp DE_UNDERSCORE': _
+'&kp DE_UNDER': _
+'&kp DE_ENDASH': –
+'&kp DE_U2013': –
+'&kp DE_UNI_EN_DASH': –
+'&kp DE_EMDASH': —
+'&kp DE_U2014': —
+'&kp DE_UNI_EM_DASH': —

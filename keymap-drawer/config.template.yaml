@@ -51,7 +51,7 @@ parse_config:
     "&bootloader":
         tap: "boot"
     
-    # (german keys automatically added)
+    # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:

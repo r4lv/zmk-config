@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include "keys_de.h"
+#include "../de-mac/keys_de.h"
 
 &mt {
     // default is "hold-preferred"
