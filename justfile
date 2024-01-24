@@ -3,7 +3,8 @@ _default:
 
 build:
 	just generate-mapping
-	./build-mac.sh
+	if [ ! -d ../zmk ]; then echo "ERROR: you need to provide zmk firmware in ../zmk"; exit 1; fi
+	./build.sh
 
 generate-mapping:
 	python de-mac/generate_de_key_mapping.py  # generates de-mac/keys_de.h
