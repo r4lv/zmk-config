@@ -5,35 +5,25 @@
 #include "keys_de.h"
 #include "keypos_qwertz.h"
 
-// overwrite settings
-&mt {
-    flavor = "tap-preferred"; // default is "hold-preferred"
-};
 
+#define R_SHIFTED(NAME, REGULAR, SHIFTED) \
+    NAME: NAME { \
+        compatible = "zmk,behavior-mod-morph"; \
+        #binding-cells = <0>; \
+        bindings = REGULAR, SHIFTED; \
+        mods = <(MOD_LSFT|MOD_RSFT)>; \
+    };
 
-// ==>> unicode <<==
-// use ctrl+space to switch to "Unicode Hex-Eingabe" input method, type alt-code, switch back to normal input method
 #define R_UNI_START <&macro_tap &kp LC(SPACE)>, <&macro_press &kp LALT>
 #define R_UNI_END <&macro_release &kp LALT>, <&macro_tap &kp LC(SPACE)>
+#define R_UNICODE(NAME, U1, U2, U3, U4) ZMK_MACRO(NAME, wait-ms = <40>; tap-ms = <40>; \
+    bindings = R_UNI_START, <&macro_tap &kp U1 &kp U2 &kp U3 &kp U4>, R_UNI_END;)
 
-#define R_UNICODE(NAME, U1, U2, U3, U4) \
-/ { \
-    macros { \
-        NAME: NAME { \
-            compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>; \
-            wait-ms = <40>; \
-            tap-ms = <40>; \
-            bindings = R_UNI_START, <&macro_tap &kp U1 &kp U2 &kp U3 &kp U4>, R_UNI_END; \
-        }; \
-    }; \
+
+&mt {
+    // overwrite settings
+    flavor = "tap-preferred"; // default is "hold-preferred"
 };
-
-R_UNICODE(uni_times,  N0, N0, D,  N7) // ×  U+00D7  MULTIPLICATION SIGN
-R_UNICODE(uni_fwast,  F,  F,  N0, A)  // ＊  U+FF0A  FULLWIDTH ASTERISK
-R_UNICODE(uni_square, N0, N0, B,  N2) // ²  U+00B2   SUPERSCRIPT TWO
-R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
-
 
 / {
     keymap {
@@ -60,7 +50,7 @@ R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH D
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
     &kp LCTRL    &kp DE_EXCL   &kp DE_DQT    &kp DE_DOLLAR  &kp DE_PRCNT  &kp DE_AMPS      &kp DE_SLASH  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp RALT
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
-    &kp LCMD     &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &trans        &uni_hun_o       &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHIFT
+    &kp LCMD     &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &mm_arr       &uni_hun_o       &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHIFT
 /* ╰────────────┴─────────────┴─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┴─────────────┴────────────╯ */
                                              &kp LCMD       &trans        &none            &mo 2         &trans     &kp LALT
 /*                                          ╰──────────────┴─────────────┴────────────╯   ╰─────────────┴──────────┴──────────╯                                       */
@@ -126,34 +116,21 @@ R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH D
     macros {
         ZMK_MACRO(r_bt0_clr, bindings = <&bt BT_SEL 0 &bt BT_CLR>; wait-ms = <0>;)
         ZMK_MACRO(r_bt1_clr, bindings = <&bt BT_SEL 1 &bt BT_CLR>; wait-ms = <0>;)
+
+        R_UNICODE(uni_times,  N0, N0, D,  N7) // ×  U+00D7  MULTIPLICATION SIGN
+        R_UNICODE(uni_fwast,  F,  F,  N0, A)  // ＊  U+FF0A  FULLWIDTH ASTERISK
+        R_UNICODE(uni_square, N0, N0, B,  N2) // ²  U+00B2   SUPERSCRIPT TWO
+        R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
+        R_UNICODE(uni_rarr,   N2, N1, N9, N2) // →  U+2192  RIGHTWARDS ARROW
+        R_UNICODE(uni_larr,   N2, N1, N9, N0) // ←  U+2190  LEFTWARDS ARROW
     };
 
     behaviors {
-        mm_btsel0: mm_btsel0 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&r_bt0_clr>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mm_btsel1: mm_btsel1 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&r_bt1_clr>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mm_out: mm_out {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE>, <&out OUT_USB>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mm_bri: mm_bri {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_BRI_UP>, <&kp C_BRI_DN>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        R_SHIFTED(mm_btsel0, <&bt BT_SEL 0>, <&r_bt0_clr>)
+        R_SHIFTED(mm_btsel1, <&bt BT_SEL 1>, <&r_bt1_clr>)
+        R_SHIFTED(mm_out, <&out OUT_BLE>, <&out OUT_USB>)
+
+        R_SHIFTED(mm_bri, <&kp C_BRI_UP>, <&kp C_BRI_DN>)
+        R_SHIFTED(mm_arr, <&uni_rarr>, <&uni_larr>)
     };
 };
-
-

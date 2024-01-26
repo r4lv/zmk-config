@@ -66,14 +66,23 @@ parse_config:
       tap: "×"
       hold: "U+00D7"
     "&uni_fwast":
-      tap: "＊"
+      tap: $$tabler:asterisk-simple$$  # "＊"
       hold: "U+FF0A"
     "&uni_square":
-      tap: "☐²"
+      tap: "□²"
+      # ☐  U+2610      BALLOT BOX / Miscellaneous Symbols
+      # □  U+25A1      WHITE SQUARE / Geometric Shapes <<== this one
+      # ▫  U+25AB      WHITE SMALL SQUARE / Geometric Shapes
       hold: "U+00B2"
     "&uni_hun_o":
       tap: "ő"
       hold: "U+0151"
+    "&uni_larr":
+      tap: "←"
+      hold: "U+2190"
+    "&uni_rarr":
+      tap: "→"
+      hold: "U+2192"
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
