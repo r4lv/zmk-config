@@ -48,9 +48,20 @@ parse_config:
     "&sys_reset":
       type: bootloader
       tap: $$mdi:backup-restore$$
+      hold: "reset"  # annotation only
     "&bootloader":
-        tap: "boot"
-    
+      tap: $$mdi:restore-alert$$
+      hold: "boot"  # annotation only
+
+    "&bt BT_SEL 0":
+      tap: "BT  0"  # double space to disable linebreak
+    "&bt BT_SEL 1":
+      tap: "BT  1"
+    "&r_bt0_clr":
+      tap: "BT0+CLR"
+    "&r_bt1_clr":
+      tap: "BT1+CLR"
+
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle
