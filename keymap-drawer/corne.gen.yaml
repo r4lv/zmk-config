@@ -48,14 +48,14 @@ layers:
   - {t: ^, s: °}
   - {t: ´, s: '`'}
   - {t: ×, h: U+00D7}
-  - {t: ＊, h: U+FF0A}
-  - {t: ☐², h: U+00B2}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$tabler:asterisk-simple$$', h: U+FF0A}
+  - {t: □², h: U+00B2}
+  - {t: ß, s: '?'}
   - {t: '7', s: /}
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - {t: ß, s: '?'}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - '!'
   - '"'
@@ -72,7 +72,7 @@ layers:
   - '='
   - '{'
   - '}'
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: →, h: U+2192, s: ←}
   - {t: ő, h: U+0151}
   - '*'
   - {t: '1', s: '!'}
@@ -105,10 +105,10 @@ layers:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - PG UP
+  - HOME
   - $$mdi:chevron-up$$
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - END
   - {t: ß, s: '?'}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
@@ -117,7 +117,7 @@ layers:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - PG DN
   - $$mdi:chevron-left$$
   - $$mdi:chevron-down$$
   - $$mdi:chevron-right$$

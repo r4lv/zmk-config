@@ -204,11 +204,11 @@ draw_config:
       fill: #be123c;
     }
 
-    .layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
+    .layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-28 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
       fill: #0369a1;
     }
 
-    .layer-tri .key.tap.glyph.tabler__volume, .layer-tri .key.tap.glyph.tabler__volume-2, .layer-tri .key.tap.glyph.tabler__volume-3, .layer-tri .key.tap.glyph.tabler__player-track-next, .layer-tri .key.tap.glyph.tabler__player-track-prev, .layer-tri .key.tap.glyph.tabler__player-play, .layer-tri .key.tap.glyph.tabler__sun-high, .layer-tri .key.tap.glyph.tabler__sun-low {
+    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low {
       transform: scale(1.2);
     }
 
@@ -258,14 +258,23 @@ parse_config:
       tap: ×
       hold: U+00D7
     '&uni_fwast':
-      tap: ＊
+      tap: $$tabler:asterisk-simple$$  # "＊"
       hold: U+FF0A
     '&uni_square':
-      tap: ☐²
+      tap: □²
+      # ☐  U+2610      BALLOT BOX / Miscellaneous Symbols
+      # □  U+25A1      WHITE SQUARE / Geometric Shapes <<== this one
+      # ▫  U+25AB      WHITE SMALL SQUARE / Geometric Shapes
       hold: U+00B2
     '&uni_hun_o':
       tap: ő
       hold: U+0151
+    '&uni_larr':
+      tap: ←
+      hold: U+2190
+    '&uni_rarr':
+      tap: →
+      hold: U+2192
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
     '&kp DE_CARET':
@@ -585,6 +594,15 @@ parse_config:
     RETURN: $$mdi:keyboard-return$$
     SPACE: $$mdi:keyboard-space$$
     BSPC: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+
+    # PG_UP: ⇞  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
+    # PG_DN: ⇟  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
+    # HOME: ↖ # $$mdi:arrow-top-left$$
+    # HOME: $$mdi:arrow-top-left$$
+    # HOME: $$tabler:arrow-up-left$$
+    # END: $$mdi:arrow-bottom-right$$
+    # END: ↘  # resvg: Fallback from Liberation Mono to SF Pro.
 
     C_BRI_DN: $$tabler:sun-low$$          # see style.scss
     C_BRI_UP: $$tabler:sun-high$$         # see style.scss

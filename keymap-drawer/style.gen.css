@@ -173,11 +173,11 @@ text.key.shifted {
   fill: #be123c;
 }
 
-.layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
+.layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-28 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
   fill: #0369a1;
 }
 
-.layer-tri .key.tap.glyph.tabler__volume, .layer-tri .key.tap.glyph.tabler__volume-2, .layer-tri .key.tap.glyph.tabler__volume-3, .layer-tri .key.tap.glyph.tabler__player-track-next, .layer-tri .key.tap.glyph.tabler__player-track-prev, .layer-tri .key.tap.glyph.tabler__player-play, .layer-tri .key.tap.glyph.tabler__sun-high, .layer-tri .key.tap.glyph.tabler__sun-low {
+.key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low {
   transform: scale(1.2);
 }
 
