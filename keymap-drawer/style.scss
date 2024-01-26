@@ -216,4 +216,20 @@ text.key.shifted{
   }
 }
 
+// make media tabler icons slightly larger
+$larger_tabler_icons: "&volume, &volume-2, &volume-3, \
+&player-track-next, &player-track-prev, &player-play, \
+&sun-high, &sun-low";
 
+.layer-tri .key.tap.glyph.tabler__{
+  #{$larger_tabler_icons}{
+    transform: scale(1.2);
+  }
+}
+.icon-tabler-{
+  #{$larger_tabler_icons}{
+    > path{
+      stroke-width: 1.5;
+    }
+  }
+}

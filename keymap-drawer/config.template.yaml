@@ -110,7 +110,16 @@ parse_config:
     RETURN: $$mdi:keyboard-return$$
     SPACE: $$mdi:keyboard-space$$
     BSPC: $$mdi:backspace-outline$$
-    
+
+    C_BRI_DN: $$tabler:sun-low$$          # see style.scss
+    C_BRI_UP: $$tabler:sun-high$$         # see style.scss
+    C_PREV: $$tabler:player-track-prev$$  # see style.scss
+    C_PP: $$tabler:player-play$$          # see style.scss
+    C_NEXT: $$tabler:player-track-next$$  # see style.scss
+    C_MUTE: $$tabler:volume-3$$           # see style.scss
+    C_VOL_DN: $$tabler:volume-2$$         # see style.scss
+    C_VOL_UP: $$tabler:volume$$           # see style.scss
+
     UP: $$mdi:chevron-up$$
     DOWN: $$mdi:chevron-down$$
     LEFT: $$mdi:chevron-left$$
