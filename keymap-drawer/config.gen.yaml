@@ -204,6 +204,18 @@ draw_config:
       fill: #be123c;
     }
 
+    .layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
+      fill: #0369a1;
+    }
+
+    .layer-tri .key.tap.glyph.tabler__volume, .layer-tri .key.tap.glyph.tabler__volume-2, .layer-tri .key.tap.glyph.tabler__volume-3, .layer-tri .key.tap.glyph.tabler__player-track-next, .layer-tri .key.tap.glyph.tabler__player-track-prev, .layer-tri .key.tap.glyph.tabler__player-play, .layer-tri .key.tap.glyph.tabler__sun-high, .layer-tri .key.tap.glyph.tabler__sun-low {
+      transform: scale(1.2);
+    }
+
+    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path {
+      stroke-width: 1.5;
+    }
+
    # <- automatically updated from style.sass
   svg_extra_style: ''
   shrink_wide_legends: 7
@@ -212,7 +224,7 @@ draw_config:
   glyph_shifted_size: 10
   glyphs: {}
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: 
       https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: 
@@ -228,8 +240,32 @@ parse_config:
     '&sys_reset':
       type: bootloader
       tap: $$mdi:backup-restore$$
+      hold: reset    # annotation only
     '&bootloader':
-      tap: boot
+      tap: $$mdi:restore-alert$$
+      hold: boot    # annotation only
+
+    '&bt BT_SEL 0':
+      tap: BT  0    # double space to disable linebreak
+    '&bt BT_SEL 1':
+      tap: BT  1
+    '&r_bt0_clr':
+      tap: BT0+CLR
+    '&r_bt1_clr':
+      tap: BT1+CLR
+
+    '&uni_times':
+      tap: ×
+      hold: U+00D7
+    '&uni_fwast':
+      tap: ＊
+      hold: U+FF0A
+    '&uni_square':
+      tap: ☐²
+      hold: U+00B2
+    '&uni_hun_o':
+      tap: ő
+      hold: U+0151
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
     '&kp DE_CARET':
@@ -549,6 +585,15 @@ parse_config:
     RETURN: $$mdi:keyboard-return$$
     SPACE: $$mdi:keyboard-space$$
     BSPC: $$mdi:backspace-outline$$
+
+    C_BRI_DN: $$tabler:sun-low$$          # see style.scss
+    C_BRI_UP: $$tabler:sun-high$$         # see style.scss
+    C_PREV: $$tabler:player-track-prev$$  # see style.scss
+    C_PP: $$tabler:player-play$$          # see style.scss
+    C_NEXT: $$tabler:player-track-next$$  # see style.scss
+    C_MUTE: $$tabler:volume-3$$           # see style.scss
+    C_VOL_DN: $$tabler:volume-2$$         # see style.scss
+    C_VOL_UP: $$tabler:volume$$           # see style.scss
 
     UP: $$mdi:chevron-up$$
     DOWN: $$mdi:chevron-down$$

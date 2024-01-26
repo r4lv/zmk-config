@@ -172,3 +172,15 @@ text.key.shifted {
 .layer-base g.key.keypos-13 .key.hold, .layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
   fill: #be123c;
 }
+
+.layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
+  fill: #0369a1;
+}
+
+.layer-tri .key.tap.glyph.tabler__volume, .layer-tri .key.tap.glyph.tabler__volume-2, .layer-tri .key.tap.glyph.tabler__volume-3, .layer-tri .key.tap.glyph.tabler__player-track-next, .layer-tri .key.tap.glyph.tabler__player-track-prev, .layer-tri .key.tap.glyph.tabler__player-play, .layer-tri .key.tap.glyph.tabler__sun-high, .layer-tri .key.tap.glyph.tabler__sun-low {
+  transform: scale(1.2);
+}
+
+.icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path {
+  stroke-width: 1.5;
+}
