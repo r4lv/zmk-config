@@ -46,7 +46,7 @@
         layer_lower {
             bindings = <
 /* ╭────────────┬─────────────┬─────────────┬──────────────┬─────────────┬────────────╮   ╭─────────────┬──────────┬──────────┬──────────┬─────────────┬────────────╮ */
-    &mt ESC TAB  &kp DE_CARET  &kp DE_ACUTE  &uni_times     &uni_fwast    &uni_square      &trans        &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &kp DE_SZ
+    &mt ESC TAB  &kp DE_CARET  &kp DE_ACUTE  &uni_times     &uni_fwast    &uni_square      &kp DE_SZ     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &kp DELETE
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
     &kp LCTRL    &kp DE_EXCL   &kp DE_DQT    &kp DE_DOLLAR  &kp DE_PRCNT  &kp DE_AMPS      &kp DE_SLASH  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp RALT
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
@@ -62,9 +62,9 @@
 /* ╭─────────────┬──────────┬──────────┬──────────┬───────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬────────────╮ */
     &kp DE_CARET  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4   &kp DE_N5      &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp DE_ACUTE
 /* ├─────────────┼──────────┼──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼────────────┤ */
-    &kp LCTRL     &trans     &trans     &trans     &trans      &trans         &trans     &trans     &kp UP     &trans     &kp DE_SZ  &kp RALT
+    &kp LCTRL     &trans     &trans     &trans     &trans      &trans         &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DE_SZ  &kp RALT
 /* ├─────────────┼──────────┼──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼────────────┤ */
-    &kp LCMD      &kp DE_LT  &trans     &trans     &trans      &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHIFT
+    &kp LCMD      &kp DE_LT  &trans     &trans     &trans      &trans         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHIFT
 /* ╰─────────────┴──────────┴──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴────────────╯ */
                                         &kp LCMD   &trans      &mo 1          &trans     &trans     &kp LALT
 /*                                     ╰──────────┴───────────┴──────────╯   ╰──────────┴──────────┴──────────╯                                    */

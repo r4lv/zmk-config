@@ -132,6 +132,15 @@ parse_config:
     RETURN: $$mdi:keyboard-return$$
     SPACE: $$mdi:keyboard-space$$
     BSPC: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+
+    # PG_UP: ⇞  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
+    # PG_DN: ⇟  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
+    # HOME: ↖ # $$mdi:arrow-top-left$$
+    # HOME: $$mdi:arrow-top-left$$
+    # HOME: $$tabler:arrow-up-left$$
+    # END: $$mdi:arrow-bottom-right$$
+    # END: ↘  # resvg: Fallback from Liberation Mono to SF Pro.
 
     C_BRI_DN: $$tabler:sun-low$$          # see style.scss
     C_BRI_UP: $$tabler:sun-high$$         # see style.scss
