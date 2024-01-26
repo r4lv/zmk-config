@@ -1,30 +1,18 @@
 #!/bin/bash
-if [ -z "$1" ]; then
-    # shellcheck disable=SC2054
-    args=(
-        --mount "type=bind,source=${PWD}/../zmk,target=/workspaces/zmk,consistency=cached"
-        --mount type=volume,source=zmk-root-user,target=/root
-        --mount type=volume,source=zmk-config,target=/workspaces/zmk-config
-        --mount type=volume,source=zmk-zephyr,target=/workspaces/zmk/zephyr
-        --mount type=volume,source=zmk-zephyr-modules,target=/workspaces/zmk/modules
-        --mount type=volume,source=zmk-zephyr-tools,target=/workspaces/zmk/tools
-        -e WORKSPACE_DIR=/workspaces/zmk
-        --entrypoint /bin/sh
-        -t  # attach tty -> colours in output
-        -i  # interactive (allow ctrl-c to stop container)
-        docker.io/zmkfirmware/zmk-dev-arm:3.2  # same as zmk/.devcontainer/Dockerfile
-        -c "/workspaces/zmk-config/build.sh inside_docker"
-    )
+# flags: --fast, to skip init/update of zephyr and modules
 
-    docker run "${args[@]}"
-elif [ "$1" = "inside_docker" ]; then
+
+if [ "$BUILD_INSIDE_DOCKER_CONTAINER" == "please" ]; then
     set -e
 
     cd /workspaces/zmk/app
+    git config --global --add safe.directory '*'
 
-    west init -l /workspaces/zmk/app || true
-    west update
-    west zephyr-export
+    if [ "$1" != "--fast" ]; then
+        west init -l /workspaces/zmk/app || true
+        west update
+        west zephyr-export
+    fi
 
     west build /workspaces/zmk/app -d build/left  -b nice_nano_v2 -- -DSHIELD=corne_left  -DZMK_CONFIG=/workspaces/zmk-config/config
     west build /workspaces/zmk/app -d build/right -b nice_nano_v2 -- -DSHIELD=corne_right -DZMK_CONFIG=/workspaces/zmk-config/config
@@ -34,5 +22,21 @@ elif [ "$1" = "inside_docker" ]; then
     cp build/right/zephyr/zmk.uf2  /workspaces/zmk-config/firmware/right.uf2
 
     echo "successfully generated zmk-config/firmware/{left,right}.uf2"
+else
+    if [ ! -d "../zmk" ]; then
+        echo "ZMK firmware repo not found"
+        exit 1
+    fi
+    args=(
+        --mount "type=bind,source=${PWD}/../zmk,target=/workspaces/zmk,consistency=cached"
+        --mount "type=bind,source=${PWD},target=/workspaces/zmk-config"
+        -e WORKSPACE_DIR=/workspaces/zmk
+        -e BUILD_INSIDE_DOCKER_CONTAINER=please
+        --entrypoint /bin/sh
+        -t  # attach tty -> colours in output
+        -i  # interactive (allow ctrl-c to stop container)
+        docker.io/zmkfirmware/zmk-dev-arm:3.2  # same as zmk/.devcontainer/Dockerfile
+        -c "/workspaces/zmk-config/build.sh $@"
+    )
+    docker run "${args[@]}" 
 fi
-
