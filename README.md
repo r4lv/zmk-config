@@ -8,12 +8,23 @@ The german macOS key mapping is defined in `de-mac/de-mac.yaml`. It is used to g
 
 ## usage
 
-Use [just](https://github.com/casey/just) to run the commands in `justfile`:
+Use [just](https://github.com/casey/just) to run the recipes in `justfile`:
 
 ``` bash
+just       # list recipes
 just draw  # update keymap-drawer/corne.png
 just build # build zmk firmware with Docker
 ```
+
+## macOS Eingabequellen
+
+Folgende beiden Eingabequellen müssen bei Systemeinstellungen > Tastatur > Eingabequellen hinterlegt sein:
+
+- Deutsch → **Deutsch**
+- Andere → Unicode Hex-Eingabe
+
+Mit ctrl+space kann zwischen den Eingabequellen gewechselt werden.
+
 
 
 ## dependencies
