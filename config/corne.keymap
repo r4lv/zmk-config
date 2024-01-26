@@ -11,6 +11,30 @@
 };
 
 
+// ==>> unicode <<==
+// use ctrl+space to switch to "Unicode Hex-Eingabe" input method, type alt-code, switch back to normal input method
+#define R_UNI_START <&macro_tap &kp LC(SPACE)>, <&macro_press &kp LALT>
+#define R_UNI_END <&macro_release &kp LALT>, <&macro_tap &kp LC(SPACE)>
+
+#define R_UNICODE(NAME, U1, U2, U3, U4) \
+/ { \
+    macros { \
+        NAME: NAME { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>; \
+            wait-ms = <40>; \
+            tap-ms = <40>; \
+            bindings = R_UNI_START, <&macro_tap &kp U1 &kp U2 &kp U3 &kp U4>, R_UNI_END; \
+        }; \
+    }; \
+};
+
+R_UNICODE(uni_times,  N0, N0, D,  N7) // ×  U+00D7  MULTIPLICATION SIGN
+R_UNICODE(uni_fwast,  F,  F,  N0, A)  // ＊  U+FF0A  FULLWIDTH ASTERISK
+R_UNICODE(uni_square, N0, N0, B,  N2) // ²  U+00B2   SUPERSCRIPT TWO
+R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
+
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -133,25 +157,3 @@
 };
 
 
-// ==>> unicode <<==
-// use ctrl+space to switch to "Unicode Hex-Eingabe" input method, type alt-code, switch back to normal input method
-#define R_UNI_START <&macro_tap LC(SPACE)>, <&macro_press &kp LALT>
-#define R_UNI_END <&macro_release &kp LALT>, <&macro_tap LC(SPACE)>
-
-#define R_UNICODE(NAME, BINDINGS) \
-/ { \
-    macros { \
-        NAME: NAME { \
-            compatible = "zmk,behavior-macro"; \
-            #binding-cells = <0>; \
-            wait-ms = <40>; \
-            tap-ms = <40>; \
-            bindings = R_UNI_START, <&macro_tap BINDINGS>, R_UNI_END; \
-        }; \
-    }; \
-};
-
-R_UNICODE(uni_times,  &kp N0 &kp N0 &kp D  &kp N7) // ×  U+00D7  MULTIPLICATION SIGN
-R_UNICODE(uni_fwast,  &kp F  &kp F  &kp N0 &kp A ) // ＊  U+FF0A  FULLWIDTH ASTERISK
-R_UNICODE(uni_square, &kp N0 &kp N0 &kp B  &kp N2) // ²  U+00B2   SUPERSCRIPT TWO
-R_UNICODE(uni_hun_o,  &kp N0 &kp N1 &kp N5 &kp N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
