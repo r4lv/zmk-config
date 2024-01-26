@@ -76,6 +76,7 @@
     combos {
         compatible = "zmk,combos";
 
+        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; };
         qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; };
         we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; };
         er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; };
