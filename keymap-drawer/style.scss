@@ -7,6 +7,7 @@ $tw-stone-50: #fafaf9;
 $tw-stone-300: #d6d3d1;
 $tw-stone-500: #78716c;
 $tw-stone-800: #292524;
+$tw-sky-700: #0369a1;
 // https://tailwindcss.com/docs/customizing-colors
 
 
@@ -215,6 +216,17 @@ text.key.shifted{
     }
   }
 }
+
+
+// unicode input
+.layer-lower g.key.keypos-{
+  &3, &4, &5, &29{
+    .key.hold{
+      fill: $tw-sky-700;
+    }
+  }
+}
+
 
 // make media tabler icons slightly larger
 $larger_tabler_icons: "&volume, &volume-2, &volume-3, \

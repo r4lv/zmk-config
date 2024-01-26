@@ -62,6 +62,19 @@ parse_config:
     "&r_bt1_clr":
       tap: "BT1+CLR"
 
+    "&uni_times":
+      tap: "×"
+      hold: "U+00D7"
+    "&uni_fwast":
+      tap: "＊"
+      hold: "U+FF0A"
+    "&uni_square":
+      tap: "☐²"
+      hold: "U+00B2"
+    "&uni_hun_o":
+      tap: "ő"
+      hold: "U+0151"
+
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle

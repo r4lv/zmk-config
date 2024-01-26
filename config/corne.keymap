@@ -32,11 +32,11 @@
         layer_lower {
             bindings = <
 /* ╭────────────┬─────────────┬─────────────┬──────────────┬─────────────┬────────────╮   ╭─────────────┬──────────┬──────────┬──────────┬─────────────┬────────────╮ */
-    &mt ESC TAB  &kp DE_CARET  &kp DE_ACUTE  &trans         &trans        &trans           &trans        &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &kp DE_SZ
+    &mt ESC TAB  &kp DE_CARET  &kp DE_ACUTE  &uni_times     &uni_fwast    &uni_square      &trans        &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &kp DE_SZ
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
     &kp LCTRL    &kp DE_EXCL   &kp DE_DQT    &kp DE_DOLLAR  &kp DE_PRCNT  &kp DE_AMPS      &kp DE_SLASH  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp RALT
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
-    &kp LCMD     &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &trans        &trans           &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHIFT
+    &kp LCMD     &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &trans        &uni_hun_o       &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHIFT
 /* ╰────────────┴─────────────┴─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┴─────────────┴────────────╯ */
                                              &kp LCMD       &trans        &none            &mo 2         &trans     &kp LALT
 /*                                          ╰──────────────┴─────────────┴────────────╯   ╰─────────────┴──────────┴──────────╯                                       */
@@ -131,3 +131,27 @@
         };
     };
 };
+
+
+// ==>> unicode <<==
+// use ctrl+space to switch to "Unicode Hex-Eingabe" input method, type alt-code, switch back to normal input method
+#define R_UNI_START <&macro_tap LC(SPACE)>, <&macro_press &kp LALT>
+#define R_UNI_END <&macro_release &kp LALT>, <&macro_tap LC(SPACE)>
+
+#define R_UNICODE(NAME, BINDINGS) \
+/ { \
+    macros { \
+        NAME: NAME { \
+            compatible = "zmk,behavior-macro"; \
+            #binding-cells = <0>; \
+            wait-ms = <40>; \
+            tap-ms = <40>; \
+            bindings = R_UNI_START, <&macro_tap BINDINGS>, R_UNI_END; \
+        }; \
+    }; \
+};
+
+R_UNICODE(uni_times,  &kp N0 &kp N0 &kp D  &kp N7) // ×  U+00D7  MULTIPLICATION SIGN
+R_UNICODE(uni_fwast,  &kp F  &kp F  &kp N0 &kp A ) // ＊  U+FF0A  FULLWIDTH ASTERISK
+R_UNICODE(uni_square, &kp N0 &kp N0 &kp B  &kp N2) // ²  U+00B2   SUPERSCRIPT TWO
+R_UNICODE(uni_hun_o,  &kp N0 &kp N1 &kp N5 &kp N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
