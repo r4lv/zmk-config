@@ -133,6 +133,13 @@ g.trans text, g.trans .glyph {
   fill: #be123c;
 }
 
+.rdead rect {
+  stroke: #d97706;
+}
+.rdead .glyph, .rdead text {
+  fill: #d97706;
+}
+
 rect.held, rect.combo.held {
   stroke: #65a30d;
   fill: #65a30d;

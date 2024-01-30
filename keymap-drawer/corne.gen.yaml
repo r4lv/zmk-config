@@ -14,18 +14,18 @@ layers:
   - P
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: +, h: '$$mdi:apple-keyboard-control$$', s: '*'}
+  - J
+  - K
+  - L
+  - {t: +, s: '*'}
   - {t: '#', s: ''''}
-  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - Y
   - X
   - C
@@ -68,7 +68,7 @@ layers:
   - {t: '6', s: '&'}
   - {t: +, s: '*'}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - '='
   - '{'
   - '}'
@@ -100,7 +100,7 @@ layers:
   - {t: '0', s: '='}
   - {t: ´, s: '`'}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: ¨, type: rdead}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -111,7 +111,7 @@ layers:
   - END
   - {t: ß, s: '?'}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: <, s: '>'}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -135,7 +135,7 @@ layers:
   - $$tabler:sun-high$$
   - F3
   - F4
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - F5
   - $$tabler:player-track-prev$$
   - $$tabler:player-play$$
   - $$tabler:player-track-next$$
@@ -143,17 +143,17 @@ layers:
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - {t: BT  1, s: BT1+CLR}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - F13
+  - F14
+  - F15
+  - F16
+  - F17
+  - F18
+  - F19
+  - F20
+  - F21
+  - F23
+  - F24
   - {t: BT  0, s: BT0+CLR}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:restore-alert$$', h: boot}

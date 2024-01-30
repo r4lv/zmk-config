@@ -291,6 +291,13 @@ g.trans text, g.trans .glyph {
   fill: #be123c;
 }
 
+.rdead rect {
+  stroke: #d97706;
+}
+.rdead .glyph, .rdead text {
+  fill: #d97706;
+}
+
 rect.held, rect.combo.held {
   stroke: #65a30d;
   fill: #65a30d;
@@ -327,7 +334,7 @@ text.key.shifted {
   fill: #65a30d;
 }
 
-.layer-base g.key.keypos-13 .key.hold, .layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
+.layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
   fill: #be123c;
 }
 
@@ -403,22 +410,18 @@ text.key.shifted {
 <g transform="translate(84, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(140, 91)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">S</text>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">D</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-command"/>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F</text>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -431,22 +434,18 @@ text.key.shifted {
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">K</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-command"/>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">L</text>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">+</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
 <text x="0" y="-22" class="key shifted">*</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
@@ -456,7 +455,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -691,7 +690,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -836,9 +835,9 @@ text.key.shifted {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
 </g>
-<g transform="translate(84, 105)" class="key trans keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(84, 105)" class="key rdead keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rdead"/>
+<text x="0" y="0" class="key rdead tap">¨</text>
 </g>
 <g transform="translate(140, 91)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -885,7 +884,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -985,9 +984,9 @@ text.key.shifted {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F4</text>
 </g>
-<g transform="translate(308, 42)" class="key trans keypos-5">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(308, 42)" class="key keypos-5">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F5</text>
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1018,49 +1017,49 @@ text.key.shifted {
 <text x="0" y="0" class="key tap">BT 1</text>
 <text x="0" y="-22" class="key shifted">BT1+CLR</text>
 </g>
-<g transform="translate(84, 105)" class="key trans keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(84, 105)" class="key keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F13</text>
 </g>
-<g transform="translate(140, 91)" class="key trans keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(140, 91)" class="key keypos-14">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F14</text>
 </g>
-<g transform="translate(196, 84)" class="key trans keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(196, 84)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F15</text>
 </g>
-<g transform="translate(252, 91)" class="key trans keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(252, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F16</text>
 </g>
-<g transform="translate(308, 98)" class="key trans keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(308, 98)" class="key keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F17</text>
 </g>
-<g transform="translate(532, 98)" class="key trans keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(532, 98)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F18</text>
 </g>
-<g transform="translate(588, 91)" class="key trans keypos-19">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(588, 91)" class="key keypos-19">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F19</text>
 </g>
-<g transform="translate(644, 84)" class="key trans keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(644, 84)" class="key keypos-20">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F20</text>
 </g>
-<g transform="translate(700, 91)" class="key trans keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(700, 91)" class="key keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F21</text>
 </g>
-<g transform="translate(756, 105)" class="key trans keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(756, 105)" class="key keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F23</text>
 </g>
-<g transform="translate(812, 105)" class="key trans keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+<g transform="translate(812, 105)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F24</text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

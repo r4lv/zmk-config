@@ -164,6 +164,13 @@ draw_config:
       fill: #be123c;
     }
 
+    .rdead rect {
+      stroke: #d97706;
+    }
+    .rdead .glyph, .rdead text {
+      fill: #d97706;
+    }
+
     rect.held, rect.combo.held {
       stroke: #65a30d;
       fill: #65a30d;
@@ -200,7 +207,7 @@ draw_config:
       fill: #65a30d;
     }
 
-    .layer-base g.key.keypos-13 .key.hold, .layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
+    .layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
       fill: #be123c;
     }
 
@@ -588,6 +595,9 @@ parse_config:
     RCMD:
       tap: $$mdi:apple-keyboard-command$$
       type: rmod
+    RA(U):
+      tap: ¨
+      type: rdead
 
     TAB: $$mdi:keyboard-tab$$
     ESCAPE: $$mdi:keyboard-esc$$
