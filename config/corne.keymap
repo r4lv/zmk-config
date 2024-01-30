@@ -36,15 +36,15 @@
 
         layer_base {
             bindings = <
-/* ╭────────────┬──────────────────┬──────────────┬──────────────┬────────────────┬─────────╮   ╭─────────┬──────────────────┬──────────────┬──────────────────┬──────────────────┬────────────╮ */
-    &mt ESC TAB  &kp DE_Q           &kp DE_W       &kp DE_E       &kp DE_R         &kp DE_T      &kp DE_Z  &mt DE_U_UML DE_U  &kp DE_I       &mt DE_O_UML DE_O  &kp DE_P           &kp BSPC
-/* ├────────────┼──────────────────┼──────────────┼──────────────┼────────────────┼─────────┤   ├─────────┼──────────────────┼──────────────┼──────────────────┼──────────────────┼────────────┤ */
-    &kp LCTRL    &mt DE_A_UML DE_A  &mt LALT DE_S  &mt LCMD DE_D  &mt RSHIFT DE_F  &kp DE_G      &kp DE_H  &mt RSHIFT DE_J    &mt RCMD DE_K  &mt RALT DE_L      &mt RCTRL DE_PLUS  &kp DE_HASH
-/* ├────────────┼──────────────────┼──────────────┼──────────────┼────────────────┼─────────┤   ├─────────┼──────────────────┼──────────────┼──────────────────┼──────────────────┼────────────┤ */
-    &kp LSHFT    &kp DE_Y           &kp DE_X       &kp DE_C       &kp DE_V         &kp DE_B      &kp DE_N  &kp DE_M           &kp DE_COMMA   &kp DE_DOT         &kp DE_MINUS       &kp RSHFT
-/* ╰────────────┴──────────────────┴──────────────┼──────────────┼────────────────┼─────────┤   ├─────────┼──────────────────┼──────────────┼──────────────────┴──────────────────┴────────────╯ */
-                                                   &kp LCMD       &kp RETURN       &mo LWR       &mo RSE   &kp SPACE          &kp LALT
-/*                                                ╰──────────────┴────────────────┴─────────╯   ╰─────────┴──────────────────┴──────────────╯                                                    */
+/* ╭────────────┬─────────┬─────────┬─────────┬───────────┬─────────╮   ╭─────────┬──────────┬──────────────┬───────────┬─────────────┬────────────╮ */
+    &mt ESC TAB  &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R    &kp DE_T      &kp DE_Z  &kp DE_U   &kp DE_I       &kp DE_O    &kp DE_P      &kp BSPC
+/* ├────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼──────────────┼───────────┼─────────────┼────────────┤ */
+    &kp LCTRL    &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G      &kp DE_H  &kp DE_J   &kp DE_K       &kp DE_L    &kp DE_PLUS   &kp DE_HASH
+/* ├────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼──────────────┼───────────┼─────────────┼────────────┤ */
+    &kp LSHFT    &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA   &kp DE_DOT  &kp DE_MINUS  &kp RSHFT
+/* ╰────────────┴─────────┴─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼──────────────┼───────────┴─────────────┴────────────╯ */
+                                     &kp LCMD  &kp RETURN  &mo LWR       &mo RSE   &kp SPACE  &kp LALT
+/*                                  ╰─────────┴───────────┴─────────╯   ╰─────────┴──────────┴──────────────╯                                        */
             >;
         };
 
@@ -95,18 +95,18 @@
     combos {
         compatible = "zmk,combos";
 
-        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; };
-        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; };
-        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; };
-        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; };
-        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <0>; };
-        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <0>; };
-        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <0>; };
+        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; require-prior-idle-ms = <500> };
+        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500> };
+        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; require-prior-idle-ms = <500> };
+        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; require-prior-idle-ms = <500> };
+        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <0>; require-prior-idle-ms = <500> };
+        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <0>; require-prior-idle-ms = <500> };
+        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500> };
             
-        xc { key-positions = <posX posC>;     bindings = <&kp DE_LBRC>; layers = <0>; };
-        cv { key-positions = <posC posV>;     bindings = <&kp DE_BSLH>; layers = <0>; };
-        mc { key-positions = <posM posKOM>;   bindings = <&kp DE_FSLH>; layers = <0>; };
-        cp { key-positions = <posKOM posPNK>; bindings = <&kp DE_RBRC>; layers = <0>; };
+        xc { key-positions = <posX posC>;     bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500> };
+        cv { key-positions = <posC posV>;     bindings = <&kp DE_BSLH>; layers = <0>; require-prior-idle-ms = <500> };
+        mc { key-positions = <posM posKOM>;   bindings = <&kp DE_FSLH>; layers = <0>; require-prior-idle-ms = <500> };
+        cp { key-positions = <posKOM posPNK>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500> };
     };
 
     conditional_layers {
