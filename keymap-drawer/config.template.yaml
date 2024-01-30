@@ -126,6 +126,9 @@ parse_config:
     RCMD: 
         tap: $$mdi:apple-keyboard-command$$
         type: rmod
+    "RA(U)":
+        tap: "¨"
+        type: rdead
 
     TAB: $$mdi:keyboard-tab$$
     ESCAPE: $$mdi:keyboard-esc$$

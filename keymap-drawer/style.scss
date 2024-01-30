@@ -8,6 +8,14 @@ $tw-stone-300: #d6d3d1;
 $tw-stone-500: #78716c;
 $tw-stone-800: #292524;
 $tw-sky-700: #0369a1;
+$tw-amber-800: #92400e;
+$tw-amber-700: #b45309;
+$tw-amber-600: #d97706;
+$tw-amber-500: #f59e0b;
+$tw-amber-400: #fbbf24;
+$tw-amber-300: #fcd34d;
+$tw-amber-300: #fde68a;
+
 // https://tailwindcss.com/docs/customizing-colors
 
 
@@ -157,6 +165,15 @@ g.trans{
   }
   .glyph, text {
     fill: $tw-rose-700;
+  }
+}
+
+.rdead {
+  rect{
+    stroke: $tw-amber-600;
+  }
+  .glyph, text {
+    fill: $tw-amber-600;
   }
 }
 
