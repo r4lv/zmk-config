@@ -27,3 +27,20 @@ draw:
 # watch for changes and redraw keyboard layout
 draw-watch:
 	ls config/* keymap-drawer/*template* keymap-drawer/style.scss | entr just draw
+
+# flash ZMK firmware to nice!nano
+flash side:
+	#!/usr/bin/env bash
+	set -euxo pipefail
+	if [ ! -f firmware/{{side}}.uf2 ]; then
+		echo "ERROR: firmware/{{side}}.uf2 does not exist"
+		exit 1
+	fi
+	for i in {1...5}; do
+		if [ -d /Volumes/NICENANO ]; then
+			cp firmware/{{side}}.uf2 /Volumes/NICENANO
+			break
+		fi
+		echo -n "."
+		sleep 3
+	done
