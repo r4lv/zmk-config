@@ -95,18 +95,18 @@
     combos {
         compatible = "zmk,combos";
 
-        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; require-prior-idle-ms = <500> };
-        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500> };
-        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; require-prior-idle-ms = <500> };
-        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; require-prior-idle-ms = <500> };
-        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <0>; require-prior-idle-ms = <500> };
-        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <0>; require-prior-idle-ms = <500> };
-        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500> };
+        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; require-prior-idle-ms = <500>; };
+        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500>; };
+        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; require-prior-idle-ms = <500>; };
+        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; require-prior-idle-ms = <500>; };
+        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <0>; require-prior-idle-ms = <500>; };
+        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <0>; require-prior-idle-ms = <500>; };
+        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500>; };
             
-        xc { key-positions = <posX posC>;     bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500> };
-        cv { key-positions = <posC posV>;     bindings = <&kp DE_BSLH>; layers = <0>; require-prior-idle-ms = <500> };
-        mc { key-positions = <posM posKOM>;   bindings = <&kp DE_FSLH>; layers = <0>; require-prior-idle-ms = <500> };
-        cp { key-positions = <posKOM posPNK>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500> };
+        xc { key-positions = <posX posC>;     bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500>; };
+        cv { key-positions = <posC posV>;     bindings = <&kp DE_BSLH>; layers = <0>; require-prior-idle-ms = <500>; };
+        mc { key-positions = <posM posKOM>;   bindings = <&kp DE_FSLH>; layers = <0>; require-prior-idle-ms = <500>; };
+        cp { key-positions = <posKOM posPNK>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500>; };
     };
 
     conditional_layers {
