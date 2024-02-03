@@ -45,24 +45,24 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   lower:
   - °
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - '?'
   - {t: <, s: '>'}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: ß, s: '?'}
+  - /
   - {t: '7', s: /}
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - '!'
   - '"'
   - $
   - '%'
   - '&'
-  - /
+  - '*'
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: '&'}
@@ -74,7 +74,7 @@ layers:
   - '}'
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - '*'
+  - {t: '0', s: '='}
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
   - {t: '3', s: §}
@@ -88,20 +88,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   raise:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '"'}
-  - {t: '3', s: §}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: '&'}
-  - {t: '7', s: /}
-  - {t: '8', s: (}
-  - {t: '9', s: )}
-  - {t: '0', s: '='}
-  - {t: ´, s: '`', type: rdead}
-  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - {t: ¨, s: ^, type: rdead}
-  - {t: ß, s: '?'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -110,10 +98,10 @@ layers:
   - $$mdi:chevron-up$$
   - END
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
-  - {t: ´, s: '`', type: rdead}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - {t: ¨, s: ^, type: rdead}
+  - {t: ß, s: '?'}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -121,6 +109,18 @@ layers:
   - $$mdi:chevron-left$$
   - $$mdi:chevron-down$$
   - $$mdi:chevron-right$$
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: ´, s: '`', type: rdead}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$r:alt-left$$
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$r:alt-right$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}

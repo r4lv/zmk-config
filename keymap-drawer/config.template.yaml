@@ -33,7 +33,17 @@ draw_config:
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
-  glyphs: {}
+  glyphs:
+    r:alt-left: |
+      <svg viewBox="0 0 48 24">
+        <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
+        <use href="#mdi:chevron-left" x="12" y="0" height="24" width="24"/>
+      </svg>
+    r:alt-right: |
+      <svg viewBox="0 0 48 24">
+        <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
+        <use href="#mdi:chevron-right" x="12" y="0" height="24" width="24"/>
+      </svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
@@ -173,4 +183,7 @@ parse_config:
     DOWN: $$mdi:chevron-down$$
     LEFT: $$mdi:chevron-left$$
     RIGHT: $$mdi:chevron-right$$
+
+    'LA(LEFT)': $$r:alt-left$$
+    'LA(RIGHT)': $$r:alt-right$$
   zmk_combos: {}
