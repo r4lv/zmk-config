@@ -31,16 +31,29 @@ draw-watch:
 # flash ZMK firmware to nice!nano
 flash side:
 	#!/usr/bin/env bash
-	set -euxo pipefail
+	set -euo pipefail
 	if [ ! -f firmware/{{side}}.uf2 ]; then
 		echo "ERROR: firmware/{{side}}.uf2 does not exist"
 		exit 1
 	fi
-	for i in {1...5}; do
+	for i in {1..15}; do
 		if [ -d /Volumes/NICENANO ]; then
+			sleep 1
 			cp firmware/{{side}}.uf2 /Volumes/NICENANO
-			break
+			echo 'flashed {{side}} side!'
+			echo -n "Waiting for nice!nano to reboot"
+			for i in {1..15}; do
+				if [ ! -d /Volumes/NICENANO ]; then
+					echo 'okay!'
+					exit 0
+				fi
+				echo -n "."
+				sleep 1
+			done
+			echo 'error: something went wrong...'
+			exit 1
 		fi
 		echo -n "."
-		sleep 3
+		sleep 1
 	done
+	echo "ERROR! Couldn't find nice!nano."
