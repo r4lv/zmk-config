@@ -51,11 +51,11 @@
         layer_lower {
             bindings = <
 /* ╭────────────┬─────────────┬─────────────┬──────────────┬─────────────┬────────────╮   ╭─────────────┬──────────┬──────────┬──────────┬─────────────┬────────────╮ */
-    &mt ESC TAB  &kp DE_CARET  &kp DE_ACUTE  &uni_times     &uni_fwast    &uni_square      &kp DE_SZ     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &kp DELETE
+    &kp DE_DEGREE  &trans      &kp DE_LT     &trans         &trans        &trans           &kp DE_SZ     &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0     &trans
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
     &kp LCTRL    &kp DE_EXCL   &kp DE_DQT    &kp DE_DOLLAR  &kp DE_PRCNT  &kp DE_AMPS      &kp DE_SLASH  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS   &kp RALT
 /* ├────────────┼─────────────┼─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┼─────────────┼────────────┤ */
-    &kp LSHFT    &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &mm_arr       &uni_hun_o       &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHFT
+    &kp LSHFT    &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC    &trans        &trans           &kp DE_ASTRK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS  &kp RSHFT
 /* ╰────────────┴─────────────┴─────────────┼──────────────┼─────────────┼────────────┤   ├─────────────┼──────────┼──────────┼──────────┴─────────────┴────────────╯ */
                                              &kp LCMD       &trans        &none            &mo RSE       &trans     &kp LALT
 /*                                          ╰──────────────┴─────────────┴────────────╯   ╰─────────────┴──────────┴──────────╯                                       */
@@ -65,11 +65,11 @@
         layer_raise {
             bindings = <
 /* ╭─────────────┬──────────┬──────────┬──────────┬───────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬────────────╮ */
-    &kp DE_CARET  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4   &kp DE_N5      &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp DE_ACUTE
+    &trans        &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4   &kp DE_N5      &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp DE_ACUTE
 /* ├─────────────┼──────────┼──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼────────────┤ */
-    &kp LCTRL     &mm_uml_circ  &trans     &trans     &trans      &trans         &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DE_SZ  &kp RALT
+    &kp LCTRL     &mm_uml_circ  &kp DE_SZ  &trans  &trans      &trans         &kp PG_UP  &kp HOME   &kp UP     &kp END    &trans  &kp RALT
 /* ├─────────────┼──────────┼──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼────────────┤ */
-    &kp LSHFT     &kp DE_LT  &trans     &trans     &trans      &trans         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHFT
+    &kp LSHFT     &kp DE_ACUTE  &trans     &trans     &trans      &trans         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &trans     &kp RSHFT
 /* ╰─────────────┴──────────┴──────────┼──────────┼───────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴────────────╯ */
                                         &kp LCMD   &trans      &mo LWR        &trans     &trans     &kp LALT
 /*                                     ╰──────────┴───────────┴──────────╯   ╰──────────┴──────────┴──────────╯                                    */

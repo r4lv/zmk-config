@@ -44,18 +44,18 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   lower:
-  - {t: '$$mdi:keyboard-tab$$', h: ESC}
-  - {t: ^, s: °}
-  - {t: ´, s: '`'}
-  - {t: ×, h: U+00D7}
-  - {t: '$$tabler:asterisk-simple$$', h: U+FF0A}
-  - {t: □², h: U+00B2}
+  - °
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: <, s: '>'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: ß, s: '?'}
   - {t: '7', s: /}
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - '!'
   - '"'
@@ -72,8 +72,8 @@ layers:
   - '='
   - '{'
   - '}'
-  - {t: →, h: U+2192, s: ←}
-  - {t: ő, h: U+0151}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - '*'
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
@@ -87,7 +87,7 @@ layers:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   raise:
-  - {t: ^, s: °}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
   - {t: '3', s: §}
@@ -98,10 +98,10 @@ layers:
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: '0', s: '='}
-  - {t: ´, s: '`'}
+  - {t: ´, s: '`', type: rdead}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - {t: ¨, type: rdead}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: ¨, s: ^, type: rdead}
+  - {t: ß, s: '?'}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -109,10 +109,10 @@ layers:
   - HOME
   - $$mdi:chevron-up$$
   - END
-  - {t: ß, s: '?'}
+  - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
-  - {t: <, s: '>'}
+  - {t: ´, s: '`', type: rdead}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}

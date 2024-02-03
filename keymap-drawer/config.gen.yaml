@@ -282,6 +282,21 @@ parse_config:
     '&uni_rarr':
       tap: →
       hold: U+2192
+    '&mm_uml_circ':
+      tap: ¨
+      shifted: ^
+      type: rdead
+
+    '&kp DE_ACUTE':
+      tap: ´
+      shifted: '`'
+      type: rdead
+    '&kp DE_ACUTE_ACCENT':
+      tap: ´
+      shifted: '`'
+      type: rdead
+    # TODO: why do I need both?
+
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
     '&kp DE_CARET':
@@ -431,12 +446,6 @@ parse_config:
     '&kp DE_QMARK': '?'
     '&kp DE_INVERTED_QUESTION': ¿
     '&kp DE_IQMARK': ¿
-    '&kp DE_ACUTE_ACCENT':
-      tap: ´
-      shifted: '`'
-    '&kp DE_ACUTE':
-      tap: ´
-      shifted: '`'
     '&kp DE_GRAVE_ACCENT': '`'
     '&kp DE_GRAVE': '`'
     '&kp DE_RING_ABOVE': ˚

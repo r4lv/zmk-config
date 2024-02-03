@@ -87,6 +87,17 @@ parse_config:
       tap: "¨"
       shifted: "^"
       type: rdead
+    
+    '&kp DE_ACUTE':
+      tap: ´
+      shifted: '`'
+      type: rdead
+    '&kp DE_ACUTE_ACCENT':
+      tap: ´
+      shifted: '`'
+      type: rdead
+    # TODO: why do I need both?
+
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
