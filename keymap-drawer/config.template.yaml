@@ -83,6 +83,10 @@ parse_config:
     "&uni_rarr":
       tap: "→"
       hold: "U+2192"
+    "&mm_uml_circ":
+      tap: "¨"
+      shifted: "^"
+      type: rdead
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
