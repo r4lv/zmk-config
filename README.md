@@ -26,6 +26,40 @@ Folgende beiden Eingabequellen müssen bei Systemeinstellungen > Tastatur > Eing
 Mit ctrl+space kann zwischen den Eingabequellen gewechselt werden.
 
 
+## macOS Tastaturkurzbefehle
+
+### fn
+
+Auf dem Apple Magic Keyboard A1644 ist noch eine `fn` Taste aufgedruckt, die bei den neueren 2nd Generation (A2449, A2450) ist `🌐 fn` aufgedruckt.
+
+Über die fn-Taste werden eingegeben:
+
+- `fn ←`: HOME, `↖`
+- `fn →`: END, `↘`
+- `fn ↑`: `PG_UP`, page up, `⇞`
+- `fn ↓`: `PG_DN``, page down, `⇟`
+- `fn ↵`: `KP_ENTER`, keypad enter, `keypad_enter`, `⌤`, "Enter" (macOS calls the normal key "Return") 
+- `fn ⌫`: `DEL` / forward delete, `⌦` (macOS calls `BACKSPACE` "Delete", and `DELETE` "Forward Delete")
+
+und zusätzlich:
+
+- die F-Tasten F1-F12, die ansonsten die Bildschirmhelligkeit, Lautstärke, Medien, etc steuern
+- accessibility, über `fn ctrl F..`
+
+Manche Apps verwenden die Globe-Taste als Shortcut, z.B.:
+
+- `🌐 E`: Bearbeiten > Emoji & Symbole
+- `🌐 F`: Darstellung > Vollbildmodus
+
+
+### F-Tasten
+
+- Key Codes.app zeigt die Key Codes der Tasten F13,F16-F19 an.
+   - F14 und F15 verändern die Bildschirmhelligkeit
+   - F20 wird angezeigt, aber nicht erkannt: `Unicode 16 / 0x10, Keys ----, Key Code 90 / 0x5a, Modifiers 256 / 0x100`
+- Karabiner Elements zeigt F13–F23 an
+   - F24 nicht getestet
+
 
 ## dependencies
 
