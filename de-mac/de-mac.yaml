@@ -302,7 +302,7 @@ tasten:
       pretty: "Ä"
       alias: [A_UMLAUT, A_UML]
   "#/'":
-    zmk_key: HASH
+    zmk_key: BACKSLASH
     tap:
       pretty: "#"
       alias: [HASH, POUND]  # official
