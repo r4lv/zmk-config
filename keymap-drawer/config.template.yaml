@@ -44,6 +44,14 @@ draw_config:
         <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
         <use href="#mdi:chevron-right" x="12" y="0" height="24" width="24"/>
       </svg>
+    r:alt-plus: |
+      <svg viewBox="0 0 48 24">
+        <defs>
+          <svg id="rmdi:plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus</title><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+        </defs>
+        <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
+        <use href="#rmdi:plus" x="12" y="0" height="24" width="24"/>
+      </svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
@@ -107,6 +115,14 @@ parse_config:
       shifted: '`'
       type: rdead
     # TODO: why do I need both?
+    
+    '&kp LA(DE_PLUS)':
+      tap: $$r:alt-plus$$
+    
+    "&sthld RSHFT RSHFT":
+      tap: $$mdi:apple-keyboard-shift$$
+      type: rmod
+      hold: sticky
 
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
@@ -148,6 +164,9 @@ parse_config:
     RSHFT: 
         tap: $$mdi:apple-keyboard-shift$$
         type: rmod
+    "&sthld RSHFT":
+        tap: $$mdi:apple-keyboard-shift$$
+        type: rmod
     RCMD: 
         tap: $$mdi:apple-keyboard-command$$
         type: rmod
@@ -186,4 +205,7 @@ parse_config:
 
     'LA(LEFT)': $$r:alt-left$$
     'LA(RIGHT)': $$r:alt-right$$
+    'LA(DE_PLUS)': $$r:alt-plus$$
+
+    C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}

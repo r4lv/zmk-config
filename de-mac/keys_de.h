@@ -104,6 +104,7 @@
 #define DE_LBRC (LA(N8))  /* { */
 #define DE_SMALL_TILDE_MODIFIER (LS(LA(N8)))  /* ˜ */
 #define DE_UNI_SMALL_TILDE (LS(LA(N8)))  /* ˜ */
+#define DE_U02DC (LS(LA(N8)))  /* ˜ */
 
 /* 9/) */
 #define DE_NUMBER_9 (N9)
@@ -217,6 +218,11 @@
 #define DE_ASTERISK (LS(RIGHT_BRACKET))  /* * */
 #define DE_ASTRK (LS(RIGHT_BRACKET))  /* * */
 #define DE_STAR (LS(RIGHT_BRACKET))  /* * */
+#define DE_PM (LA(RIGHT_BRACKET))  /* ± */
+#define DE_PLUS_MINUS (LA(RIGHT_BRACKET))  /* ± */
+#define DE_U00B1 (LA(RIGHT_BRACKET))  /* ± */
+#define DE_UNI_PLUS_MINUS_SIGN (LA(RIGHT_BRACKET))  /* ± */
+#define DE_APPLE (LS(LA(RIGHT_BRACKET)))  /*  */
 
 /* a */
 #define DE_A (A)
@@ -225,14 +231,26 @@
 /* s */
 #define DE_S (S)
 
+#define DE_U201A (LA(S))  /* ‚ */
+#define DE_UNI_SINGLE_LOW_9_QUOTATION_MARK (LA(S))  /* ‚ */
+#define DE_QUOT_LO9 (LA(S))  /* ‚ */
+#define DE_UNI_LATIN_CAPITAL_LETTER_I_WITH_ACUTE (LS(LA(S)))  /* Í */
+#define DE_U00CD (LS(LA(S)))  /* Í */
 
 /* d */
 #define DE_D (D)
 
+#define DE_PARTIAL (LA(D))  /* ∂ */
+#define DE_DEL (LA(D))  /* ∂ */
+#define DE_UNI_PARTIAL_DIFFERENTIAL (LA(D))  /* ∂ */
+#define DE_U2202 (LA(D))  /* ∂ */
 
 /* f */
 #define DE_F (F)
 
+#define DE_HOOK_F (LA(F))  /* ƒ */
+#define DE_UNI_LATIN_SMALL_LETTER_F_WITH_HOOK (LA(F))  /* ƒ */
+#define DE_U0192 (LA(F))  /* ƒ */
 
 /* g */
 #define DE_G (G)
@@ -256,29 +274,41 @@
 #define DE_AT_SIGN (LA(L))  /* @ */
 #define DE_AT (LA(L))  /* @ */
 #define DE_FL (LS(LA(L)))  /* ﬂ */
-#define DE_FL_LIGATURE (LS(LA(L)))  /* ﬂ */
+#define DE_FL_LIG (LS(LA(L)))  /* ﬂ */
 #define DE_UNI_LATIN_SMALL_LIGATURE_FL (LS(LA(L)))  /* ﬂ */
 
 /* ö */
 #define DE_O_UMLAUT (SEMICOLON)
 #define DE_O_UML (SEMICOLON)
 
+#define DE_OE_LIG (LA(SEMICOLON))  /* œ */
+#define DE_UNI_LATIN_SMALL_LIGATURE_OE (LA(SEMICOLON))  /* œ */
+#define DE_OE_LIG_CAP (LS(LA(SEMICOLON)))  /* Œ */
+#define DE_UNI_LATIN_CAPITAL_LIGATURE_OE (LS(LA(SEMICOLON)))  /* Œ */
+#define DE_U0152 (LS(LA(SEMICOLON)))  /* Œ */
 
 /* ä */
 #define DE_A_UMLAUT (APOSTROPHE)
 #define DE_A_UML (APOSTROPHE)
 
+#define DE_AE_LIG (LA(APOSTROPHE))  /* æ */
+#define DE_UNI_LATIN_SMALL_LETTER_AE (LA(APOSTROPHE))  /* æ */
+#define DE_U00E6 (LA(APOSTROPHE))  /* æ */
+#define DE_AE_LIG_CAP (LS(LA(APOSTROPHE)))  /* Æ */
+#define DE_UNI_LATIN_CAPITAL_LETTER_AE (LS(LA(APOSTROPHE)))  /* Æ */
+#define DE_U00C6 (LS(LA(APOSTROPHE)))  /* Æ */
 
 /* #/' */
-#define DE_HASH (HASH)
-#define DE_POUND (HASH)
+#define DE_HASH (BACKSLASH)
+#define DE_POUND (BACKSLASH)
 
-#define DE_SINGLE_QUOTE (LS(HASH))  /* ' */
-#define DE_SQT (LS(HASH))  /* ' */
-#define DE_APOSTROPHE (LS(HASH))  /* ' */
-#define DE_APOS (LS(HASH))  /* ' */
-#define DE_U2019 (LS(LA(HASH)))  /* ’ */
-#define DE_UNI_RIGHT_SINGLE_QUOTATION_MARK (LS(LA(HASH)))  /* ’ */
+#define DE_SINGLE_QUOTE (LS(BACKSLASH))  /* ' */
+#define DE_SQT (LS(BACKSLASH))  /* ' */
+#define DE_APOSTROPHE (LS(BACKSLASH))  /* ' */
+#define DE_APOS (LS(BACKSLASH))  /* ' */
+#define DE_QUOT_HI9 (LS(LA(BACKSLASH)))  /* ’ */
+#define DE_U2019 (LS(LA(BACKSLASH)))  /* ’ */
+#define DE_UNI_RIGHT_SINGLE_QUOTATION_MARK (LS(LA(BACKSLASH)))  /* ’ */
 
 /* </> */
 #define DE_LESS_THAN (GRAVE)

@@ -250,7 +250,7 @@ text.key.shifted{
 // make media tabler icons slightly larger
 $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
 &player-track-next, &player-track-prev, &player-play, \
-&sun-high, &sun-low";
+&sun-high, &sun-low, &player-eject";
 
 .key.tap.glyph.tabler__{
   #{$larger_tabler_icons}{

@@ -215,11 +215,11 @@ draw_config:
       fill: #0369a1;
     }
 
-    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low {
+    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject {
       transform: scale(1.2);
     }
 
-    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path {
+    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path {
       stroke-width: 1.5;
     }
 
@@ -240,14 +240,19 @@ draw_config:
         <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
         <use href="#mdi:chevron-right" x="12" y="0" height="24" width="24"/>
       </svg>
+    r:alt-plus: |
+      <svg viewBox="0 0 48 24">
+        <defs>
+          <svg id="rmdi:plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus</title><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+        </defs>
+        <use href="#mdi:apple-keyboard-option" x="-12" y="0" height="24" width="24"/>
+        <use href="#rmdi:plus" x="12" y="0" height="24" width="24"/>
+      </svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
-    mdi: 
-      https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-    mdil: 
-      https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-    material: 
-      https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
     lucide: https://cdn.jsdelivr.net/npm/lucide-static@0.310.0/icons/{}.svg  # has copyright as first line -> breaks keymap
   use_local_cache: true
 parse_config:
@@ -306,6 +311,13 @@ parse_config:
       shifted: '`'
       type: rdead
     # TODO: why do I need both?
+    '&kp LA(DE_PLUS)':
+      tap: $$r:alt-plus$$
+
+    '&sthld RSHFT RSHFT':
+      tap: $$mdi:apple-keyboard-shift$$
+      type: rmod
+      hold: sticky
 
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
@@ -420,6 +432,7 @@ parse_config:
     '&kp DE_LBRC': '{'
     '&kp DE_SMALL_TILDE_MODIFIER': ˜
     '&kp DE_UNI_SMALL_TILDE': ˜
+    '&kp DE_U02DC': ˜
     '&kp DE_NUMBER_9':
       tap: '9'
       shifted: )
@@ -499,10 +512,27 @@ parse_config:
     '&kp DE_ASTERISK': '*'
     '&kp DE_ASTRK': '*'
     '&kp DE_STAR': '*'
+    '&kp DE_PM': ±
+    '&kp DE_PLUS_MINUS': ±
+    '&kp DE_U00B1': ±
+    '&kp DE_UNI_PLUS_MINUS_SIGN': ±
+    '&kp DE_APPLE': 
     '&kp DE_A': A
     '&kp DE_S': S
+    '&kp DE_U201A': ‚
+    '&kp DE_UNI_SINGLE_LOW_9_QUOTATION_MARK': ‚
+    '&kp DE_QUOT_LO9': ‚
+    '&kp DE_UNI_LATIN_CAPITAL_LETTER_I_WITH_ACUTE': Í
+    '&kp DE_U00CD': Í
     '&kp DE_D': D
+    '&kp DE_PARTIAL': ∂
+    '&kp DE_DEL': ∂
+    '&kp DE_UNI_PARTIAL_DIFFERENTIAL': ∂
+    '&kp DE_U2202': ∂
     '&kp DE_F': F
+    '&kp DE_HOOK_F': ƒ
+    '&kp DE_UNI_LATIN_SMALL_LETTER_F_WITH_HOOK': ƒ
+    '&kp DE_U0192': ƒ
     '&kp DE_G': G
     '&kp DE_H': H
     '&kp DE_J': J
@@ -511,12 +541,23 @@ parse_config:
     '&kp DE_AT_SIGN': '@'
     '&kp DE_AT': '@'
     '&kp DE_FL': ﬂ
-    '&kp DE_FL_LIGATURE': ﬂ
+    '&kp DE_FL_LIG': ﬂ
     '&kp DE_UNI_LATIN_SMALL_LIGATURE_FL': ﬂ
     '&kp DE_O_UMLAUT': Ö
     '&kp DE_O_UML': Ö
+    '&kp DE_OE_LIG': œ
+    '&kp DE_UNI_LATIN_SMALL_LIGATURE_OE': œ
+    '&kp DE_OE_LIG_CAP': Œ
+    '&kp DE_UNI_LATIN_CAPITAL_LIGATURE_OE': Œ
+    '&kp DE_U0152': Œ
     '&kp DE_A_UMLAUT': Ä
     '&kp DE_A_UML': Ä
+    '&kp DE_AE_LIG': æ
+    '&kp DE_UNI_LATIN_SMALL_LETTER_AE': æ
+    '&kp DE_U00E6': æ
+    '&kp DE_AE_LIG_CAP': Æ
+    '&kp DE_UNI_LATIN_CAPITAL_LETTER_AE': Æ
+    '&kp DE_U00C6': Æ
     '&kp DE_HASH':
       tap: '#'
       shifted: "'"
@@ -527,6 +568,7 @@ parse_config:
     '&kp DE_SQT': "'"
     '&kp DE_APOSTROPHE': "'"
     '&kp DE_APOS': "'"
+    '&kp DE_QUOT_HI9': ’
     '&kp DE_U2019': ’
     '&kp DE_UNI_RIGHT_SINGLE_QUOTATION_MARK': ’
     '&kp DE_LESS_THAN':
@@ -611,6 +653,9 @@ parse_config:
     RSHFT:
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
+    '&sthld RSHFT':
+      tap: $$mdi:apple-keyboard-shift$$
+      type: rmod
     RCMD:
       tap: $$mdi:apple-keyboard-command$$
       type: rmod
@@ -649,4 +694,7 @@ parse_config:
 
     LA(LEFT): $$r:alt-left$$
     LA(RIGHT): $$r:alt-right$$
+    LA(DE_PLUS): $$r:alt-plus$$
+
+    C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}

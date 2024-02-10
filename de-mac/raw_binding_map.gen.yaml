@@ -111,6 +111,7 @@
 '&kp DE_LBRC': '{'
 '&kp DE_SMALL_TILDE_MODIFIER': ˜
 '&kp DE_UNI_SMALL_TILDE': ˜
+'&kp DE_U02DC': ˜
 '&kp DE_NUMBER_9':
   tap: '9'
   shifted: )
@@ -196,10 +197,27 @@
 '&kp DE_ASTERISK': '*'
 '&kp DE_ASTRK': '*'
 '&kp DE_STAR': '*'
+'&kp DE_PM': ±
+'&kp DE_PLUS_MINUS': ±
+'&kp DE_U00B1': ±
+'&kp DE_UNI_PLUS_MINUS_SIGN': ±
+'&kp DE_APPLE': 
 '&kp DE_A': A
 '&kp DE_S': S
+'&kp DE_U201A': ‚
+'&kp DE_UNI_SINGLE_LOW_9_QUOTATION_MARK': ‚
+'&kp DE_QUOT_LO9': ‚
+'&kp DE_UNI_LATIN_CAPITAL_LETTER_I_WITH_ACUTE': Í
+'&kp DE_U00CD': Í
 '&kp DE_D': D
+'&kp DE_PARTIAL': ∂
+'&kp DE_DEL': ∂
+'&kp DE_UNI_PARTIAL_DIFFERENTIAL': ∂
+'&kp DE_U2202': ∂
 '&kp DE_F': F
+'&kp DE_HOOK_F': ƒ
+'&kp DE_UNI_LATIN_SMALL_LETTER_F_WITH_HOOK': ƒ
+'&kp DE_U0192': ƒ
 '&kp DE_G': G
 '&kp DE_H': H
 '&kp DE_J': J
@@ -208,12 +226,23 @@
 '&kp DE_AT_SIGN': '@'
 '&kp DE_AT': '@'
 '&kp DE_FL': ﬂ
-'&kp DE_FL_LIGATURE': ﬂ
+'&kp DE_FL_LIG': ﬂ
 '&kp DE_UNI_LATIN_SMALL_LIGATURE_FL': ﬂ
 '&kp DE_O_UMLAUT': Ö
 '&kp DE_O_UML': Ö
+'&kp DE_OE_LIG': œ
+'&kp DE_UNI_LATIN_SMALL_LIGATURE_OE': œ
+'&kp DE_OE_LIG_CAP': Œ
+'&kp DE_UNI_LATIN_CAPITAL_LIGATURE_OE': Œ
+'&kp DE_U0152': Œ
 '&kp DE_A_UMLAUT': Ä
 '&kp DE_A_UML': Ä
+'&kp DE_AE_LIG': æ
+'&kp DE_UNI_LATIN_SMALL_LETTER_AE': æ
+'&kp DE_U00E6': æ
+'&kp DE_AE_LIG_CAP': Æ
+'&kp DE_UNI_LATIN_CAPITAL_LETTER_AE': Æ
+'&kp DE_U00C6': Æ
 '&kp DE_HASH':
   tap: '#'
   shifted: "'"
@@ -224,6 +253,7 @@
 '&kp DE_SQT': "'"
 '&kp DE_APOSTROPHE': "'"
 '&kp DE_APOS': "'"
+'&kp DE_QUOT_HI9': ’
 '&kp DE_U2019': ’
 '&kp DE_UNI_RIGHT_SINGLE_QUOTATION_MARK': ’
 '&kp DE_LESS_THAN':
