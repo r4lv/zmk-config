@@ -132,7 +132,8 @@ tasten:
       # aka UNI_LEFT_CURLY_BRACKET
     alt_shifted:
       pretty: "˜"
-      alias: [SMALL_TILDE_MODIFIER, UNI_SMALL_TILDE]
+      # U+02DC SMALL TILDE / Spacing Modifier Letters
+      alias: [SMALL_TILDE_MODIFIER, UNI_SMALL_TILDE, U02DC]
   "9/)":
     zmk_key: N9
     tap:
@@ -260,21 +261,41 @@ tasten:
     shifted:
       pretty: "*"
       alias: [ASTERISK, ASTRK, STAR]
-    #alt:
-    # TODO: 1Password shortcut
-    # alt_shifted:
-    #   pretty: ""
-    #   alias: [APPLE]
+    alt:
+      pretty: "±"
+      alias: [PM, PLUS_MINUS, U00B1, UNI_PLUS_MINUS_SIGN]
+    alt_shifted:
+      pretty: ""
+      alias: [APPLE]
 
   
   "a":
     zmk_key: A
   "s":
     zmk_key: S
+    alt:
+      pretty: "‚" 
+      # U+201A SINGLE LOW-9 QUOTATION MARK / General Punctuation
+      alias: [U201A, UNI_SINGLE_LOW_9_QUOTATION_MARK, QUOT_LO9]
+    alt_shifted:
+      pretty: "Í"
+      # U+00CD LATIN CAPITAL LETTER I WITH ACUTE / Latin-1 Supplement
+      alias: [UNI_LATIN_CAPITAL_LETTER_I_WITH_ACUTE, U00CD]
+
+
   "d":
     zmk_key: D
+    alt:
+      pretty: "∂"
+      # U+2202 PARTIAL DIFFERENTIAL / Mathematical Operators
+      alias: [PARTIAL, DEL, UNI_PARTIAL_DIFFERENTIAL, U2202]
   "f":
     zmk_key: F
+    alt:
+      pretty: "ƒ"
+      # U+0192 LATIN SMALL LETTER F WITH HOOK / Latin Extended-B
+      alias: [HOOK_F, UNI_LATIN_SMALL_LETTER_F_WITH_HOOK, U0192]
+    
   "g":
     zmk_key: G
   "h":
@@ -290,19 +311,36 @@ tasten:
       alias: [AT_SIGN, AT]  # official
     alt_shifted:
       pretty: "ﬂ"
-      alias: ["FL", "FL_LIGATURE", "UNI_LATIN_SMALL_LIGATURE_FL"]
+      alias: ["FL", "FL_LIG", "UNI_LATIN_SMALL_LIGATURE_FL"]
   "ö":
     zmk_key: SEMICOLON
     tap:
       pretty: "Ö"
       alias: [O_UMLAUT, O_UML]
+    alt:
+      pretty: "œ"
+      alias: [OE_LIG, UNI_LATIN_SMALL_LIGATURE_OE]
+    alt_shifted:
+      pretty: "Œ"
+      # U+0152    LATIN CAPITAL LIGATURE OE / Latin Extended-A
+      alias: [OE_LIG_CAP, UNI_LATIN_CAPITAL_LIGATURE_OE, U0152]
   "ä":
     zmk_key: APOSTROPHE
     tap:
       pretty: "Ä"
       alias: [A_UMLAUT, A_UML]
+    alt:
+      pretty: "æ"
+      # U+00E6 LATIN SMALL LETTER AE / Latin-1 Supplement
+      alias: [AE_LIG, UNI_LATIN_SMALL_LETTER_AE, U00E6]
+    alt_shifted:
+      pretty: "Æ"
+      # U+00C6 LATIN CAPITAL LETTER AE / Latin-1 Supplement
+      alias: [AE_LIG_CAP, UNI_LATIN_CAPITAL_LETTER_AE, U00C6]
   "#/'":
     zmk_key: BACKSLASH
+    # /* Keyboard \ and | (Backslash and Pipe) */
+    karabiner: backslash
     tap:
       pretty: "#"
       alias: [HASH, POUND]  # official
@@ -311,8 +349,8 @@ tasten:
       alias: [SINGLE_QUOTE, SQT, APOSTROPHE, APOS]  # official
     alt_shifted:
       pretty: "’"
-      alias: [U2019, UNI_RIGHT_SINGLE_QUOTATION_MARK]
-      # ’	U+2019    	RIGHT SINGLE QUOTATION MARK / General Punctuation
+      alias: [QUOT_HI9, U2019, UNI_RIGHT_SINGLE_QUOTATION_MARK]
+      # ’ U+2019 RIGHT SINGLE QUOTATION MARK / General Punctuation
   "</>":
     zmk_key: GRAVE
     tap:
