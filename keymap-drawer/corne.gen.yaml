@@ -137,34 +137,34 @@ layers:
   - $$tabler:player-play$$
   - $$tabler:player-track-next$$
   - •
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$r:hyper-u$$
+  - $$r:hyper-i$$
+  - $$r:hyper-o$$
+  - $$r:hyper-p$$
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
-  - F13
-  - F14
+  - {t: F16, h: '$$tabler:sun-low$$'}
+  - {t: F17, h: '$$tabler:sun-high$$'}
   - $$tabler:volume-3$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ±
-  - ''
-  - ''
-  - ''
+  - $$r:hyper-j$$
+  - $$r:hyper-k$$
+  - $$r:hyper-l$$
   - ''
   - $$r:alt-plus$$
   - {t: BT  0, s: BT0+CLR}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$r:hyper-y$$
+  - $$r:hyper-x$$
+  - $$r:hyper-c$$
+  - $$r:hyper-v$$
+  - $$r:hyper-b$$
   - °
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$r:hyper-m$$
+  - $$r:hyper-,$$
+  - $$r:hyper-.$$
+  - $$r:hyper--$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
