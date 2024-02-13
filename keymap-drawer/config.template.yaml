@@ -210,6 +210,13 @@ parse_config:
     C_VOL_DN: $$tabler:volume-2$$         # see style.scss
     C_VOL_UP: $$tabler:volume$$           # see style.scss
 
+    F16:
+      tap: F16
+      hold: $$tabler:sun-low$$
+    F17:
+      tap: F17
+      hold: $$tabler:sun-high$$
+
     UP: $$mdi:chevron-up$$
     DOWN: $$mdi:chevron-down$$
     LEFT: $$mdi:chevron-left$$
