@@ -6,6 +6,11 @@
 
 The german macOS key mapping is defined in `de-mac/de-mac.yaml`. It is used to generate the `keys_de.h` mapping which provides `DE_Y`, `DE_SZ` etc for `corne.keymap`.
 
+## Features
+
+- **QWERTZ** This layout is intended to be used with macOS' German keyboard layout (`Deutsch > Deutsch` or `Deutsch > ABC — QWERTZ`)
+- **screen brightness** The F16 and F17 keys on the `tri` layer are intended to be mapped to external screen brightness control, e.g. with [superduper/BrightnessMenulet](https://github.com/superduper/BrightnessMenulet).
+
 ## usage
 
 Use [just](https://github.com/casey/just) to run the recipes in `justfile`:
@@ -20,7 +25,7 @@ just build # build zmk firmware with Docker
 
 Folgende beiden Eingabequellen müssen bei Systemeinstellungen > Tastatur > Eingabequellen hinterlegt sein:
 
-- Deutsch → **Deutsch**
+- Deutsch → **Deutsch** (oder **ABC — QWERTZ**)
 - Andere → Unicode Hex-Eingabe
 
 Mit ctrl+space kann zwischen den Eingabequellen gewechselt werden.
@@ -55,7 +60,7 @@ Manche Apps verwenden die Globe-Taste als Shortcut, z.B.:
 ### F-Tasten
 
 - Key Codes.app zeigt die Key Codes der Tasten F13,F16-F19 an.
-   - F14 und F15 verändern die Bildschirmhelligkeit
+   - F14 und F15 verändern die Bildschirmhelligkeit (siehe [discussions.apple.com](https://discussions.apple.com/thread/253836891))
    - F20 wird angezeigt, aber nicht erkannt: `Unicode 16 / 0x10, Keys ----, Key Code 90 / 0x5a, Modifiers 256 / 0x100`
 - Karabiner Elements zeigt F13–F23 an
    - F24 nicht getestet
