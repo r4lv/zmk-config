@@ -118,9 +118,9 @@ layers:
   - {t: '3', s: §}
   - {t: ',', s: ;}
   - ''
-  - $$r:alt-left$$
+  - $$combo:alt/chevron-left$$
   - ''
-  - $$r:alt-right$$
+  - $$combo:alt/chevron-right$$
   - ''
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
@@ -137,10 +137,10 @@ layers:
   - $$tabler:player-play$$
   - $$tabler:player-track-next$$
   - •
-  - $$r:hyper-u$$
-  - $$r:hyper-i$$
-  - $$r:hyper-o$$
-  - $$r:hyper-p$$
+  - $$combo:atom/text:U$$
+  - $$combo:atom/text:I$$
+  - $$combo:atom/text:O$$
+  - $$combo:atom/text:P$$
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
   - {t: F16, h: '$$tabler:sun-low$$'}
@@ -149,22 +149,22 @@ layers:
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ±
-  - $$r:hyper-j$$
-  - $$r:hyper-k$$
-  - $$r:hyper-l$$
+  - $$combo:atom/text:J$$
+  - $$combo:atom/text:K$$
+  - $$combo:atom/text:L$$
   - ''
-  - $$r:alt-plus$$
+  - $$combo:alt/text:+$$
   - {t: BT  0, s: BT0+CLR}
-  - $$r:hyper-y$$
-  - $$r:hyper-x$$
-  - $$r:hyper-c$$
-  - $$r:hyper-v$$
-  - $$r:hyper-b$$
+  - $$combo:atom/text:Y$$
+  - $$combo:atom/text:X$$
+  - $$combo:atom/text:C$$
+  - $$combo:atom/text:V$$
+  - $$combo:atom/text:B$$
   - °
-  - $$r:hyper-m$$
-  - $$r:hyper-,$$
-  - $$r:hyper-.$$
-  - $$r:hyper--$$
+  - $$combo:atom/text:M$$
+  - $$combo:atom/text:,$$
+  - $$combo:atom/text:.$$
+  - $$combo:atom/text:-$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
