@@ -35,7 +35,7 @@ else
         --entrypoint /bin/sh
         -t  # attach tty -> colours in output
         -i  # interactive (allow ctrl-c to stop container)
-        docker.io/zmkfirmware/zmk-dev-arm:3.2  # same as zmk/.devcontainer/Dockerfile
+        docker.io/zmkfirmware/zmk-dev-arm:3.5  # same as zmk/.devcontainer/Dockerfile
         -c "/workspaces/zmk-config/build.sh $@"
     )
     docker run "${args[@]}" 
