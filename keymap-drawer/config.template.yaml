@@ -112,7 +112,7 @@ parse_config:
       tap: "$$combo:atom/text:.$$"
     "&kp HY(DE_MINUS)":
       tap: "$$combo:atom/text:-$$"
-    "&kp HY(DE_OUML)":
+    "&kp HY(DE_O_UML)":
       tap: "$$combo:atom/text:Ö$$"
     # definition for hyper+alpha are added by generate_drawer_config.py
 
