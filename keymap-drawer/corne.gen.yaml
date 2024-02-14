@@ -23,7 +23,7 @@ layers:
   - J
   - K
   - L
-  - '"'
+  - {t: +, s: '*'}
   - {t: '#', s: ''''}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - Y
@@ -70,7 +70,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - _
-  - ''
+  - {t: +, s: '*'}
   - ;
   - '*'
   - {t: '#', s: ''''}
@@ -93,11 +93,11 @@ layers:
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: ß, s: '?'}
-  - PG UP
   - HOME
+  - $$combo:apple-keyboard-command/chevron-left$$
   - $$mdi:chevron-up$$
+  - $$combo:apple-keyboard-command/chevron-right$$
   - END
-  - ''
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - {t: ´, s: '`', type: rdead}
@@ -105,7 +105,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: '&'}
   - {t: ., s: ':'}
-  - PG DN
+  - PG UP
   - $$mdi:chevron-left$$
   - $$mdi:chevron-down$$
   - $$mdi:chevron-right$$
@@ -117,7 +117,7 @@ layers:
   - {t: '2', s: '"'}
   - {t: '3', s: §}
   - {t: ',', s: ;}
-  - ''
+  - PG DN
   - $$combo:alt/chevron-left$$
   - ''
   - $$combo:alt/chevron-right$$
@@ -152,7 +152,7 @@ layers:
   - $$combo:atom/text:J$$
   - $$combo:atom/text:K$$
   - $$combo:atom/text:L$$
-  - ''
+  - $$combo:atom/text:Ö$$
   - $$combo:alt/text:+$$
   - {t: BT  0, s: BT0+CLR}
   - $$combo:atom/text:Y$$
