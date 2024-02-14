@@ -560,7 +560,7 @@ text.key.shifted {
 <g transform="translate(812, 161)" class="key rmod keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
-<text x="0" y="22" class="key rmod hold">sticky</text>
+<text x="0" y="22" class="key rmod hold">magic</text>
 </g>
 <g transform="translate(224, 205)" class="key rmod keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>

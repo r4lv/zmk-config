@@ -43,7 +43,7 @@
 /* ├────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼────────────┤ */
     &kp LCTRL    &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G      &kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &kp DE_PLUS   &kp DE_HASH
 /* ├────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼────────────┤ */
-    &kp LSHFT    &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &sthld RSHFT RSHFT
+    &kp LSHFT    &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &stcap
 /* ╰────────────┴─────────┴─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┴─────────────┴────────────╯ */
                                      &kp LCMD  &kp RETURN  &mo CDE       &mo NAV   &kp SPACE  &kp LALT                                           
 /*                                  ╰─────────┴───────────┴─────────╯   ╰─────────┴──────────┴─────────────╯                                        */
@@ -148,6 +148,13 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sk>;
+        };
+
+        stcap: behavior_sticky_caps {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sthld RSHIFT RSHIFT>, <&caps_word>;
         };
     };
 };

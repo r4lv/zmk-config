@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '-', s: _}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: magic, type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - $$mdi:keyboard-return$$
   - code

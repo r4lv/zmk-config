@@ -370,6 +370,10 @@ parse_config:
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: sticky
+    '&stcap':
+      tap: $$mdi:apple-keyboard-shift$$
+      type: rmod
+      hold: magic
 
     '&kp HY(DE_COMMA)':
       tap: $$combo:atom/text:,$$
