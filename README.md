@@ -43,7 +43,7 @@ Auf dem Apple Magic Keyboard A1644 ist noch eine `fn` Taste aufgedruckt, die bei
 - `fn ←`: HOME, `↖`
 - `fn →`: END, `↘`
 - `fn ↑`: `PG_UP`, page up, `⇞`
-- `fn ↓`: `PG_DN``, page down, `⇟`
+- `fn ↓`: `PG_DN`, page down, `⇟`
 - `fn ↵`: `KP_ENTER`, keypad enter, `keypad_enter`, `⌤`, "Enter" (macOS calls the normal key "Return") 
 - `fn ⌫`: `DEL` / forward delete, `⌦` (macOS calls `BACKSPACE` "Delete", and `DELETE` "Forward Delete")
 
