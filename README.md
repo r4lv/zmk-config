@@ -32,13 +32,13 @@ Folgende beiden Eingabequellen müssen bei Systemeinstellungen > Tastatur > Eing
 Mit ctrl+space kann zwischen den Eingabequellen gewechselt werden.
 
 
-## macOS Tastaturkurzbefehle
+## macOS keyboard shortcuts
 
-### fn
+### fn / globe key
 
-Auf dem Apple Magic Keyboard A1644 ist noch eine `fn` Taste aufgedruckt, die bei den neueren 2nd Generation (A2449, A2450) ist `🌐 fn` aufgedruckt.
+The Apple Magic Keyboard A1644 has an `fn` key, while the newer 2nd generation keyboards (A2449, A2450) have `🌐 fn` printed on it.
 
-Über die fn-Taste werden eingegeben:
+The `fn` key is used to input:
 
 - `fn ←`: HOME, `↖`
 - `fn →`: END, `↘`
@@ -47,24 +47,23 @@ Auf dem Apple Magic Keyboard A1644 ist noch eine `fn` Taste aufgedruckt, die bei
 - `fn ↵`: `KP_ENTER`, keypad enter, `keypad_enter`, `⌤`, "Enter" (macOS calls the normal key "Return") 
 - `fn ⌫`: `DEL` / forward delete, `⌦` (macOS calls `BACKSPACE` "Delete", and `DELETE` "Forward Delete")
 
-und zusätzlich:
+and additionally:
 
-- die F-Tasten F1-F12, die ansonsten die Bildschirmhelligkeit, Lautstärke, Medien, etc steuern
-- accessibility, über `fn ctrl F..`
+- the F-keys F1-F12, which would otherwise control the screen brightness, volume, media playback, etc
+- accessibility, with `fn ctrl F..`
 
-Manche Apps verwenden die Globe-Taste als Shortcut, z.B.:
+Some apps use the globe-key as shortcuts, e.g.:
 
 - `🌐 E`: Bearbeiten > Emoji & Symbole
 - `🌐 F`: Darstellung > Vollbildmodus
 
 
-### F-Tasten
+### F-keys
 
-- Key Codes.app zeigt die Key Codes der Tasten F13,F16-F19 an.
-   - F14 und F15 verändern die Bildschirmhelligkeit (siehe [discussions.apple.com](https://discussions.apple.com/thread/253836891))
-   - F20 wird angezeigt, aber nicht erkannt: `Unicode 16 / 0x10, Keys ----, Key Code 90 / 0x5a, Modifiers 256 / 0x100`
-- Karabiner Elements zeigt F13–F23 an
-   - F24 nicht getestet
+- Key Codes.app shows the key codes of the keys F13 and F16-F19.
+   - F14 and F15 change the screen brightness (siehe [discussions.apple.com](https://discussions.apple.com/thread/253836891))
+   - F20 is shown, but not (correctly) recognized: `Unicode 16 / 0x10, Keys ----, Key Code 90 / 0x5a, Modifiers 256 / 0x100`
+- Karabiner Elements shows F13–F24
 
 
 ## dependencies
