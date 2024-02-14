@@ -8,14 +8,21 @@ if [ "$BUILD_INSIDE_DOCKER_CONTAINER" == "please" ]; then
     cd /workspaces/zmk/app
     git config --global --add safe.directory '*'
 
-    if [ "$1" != "--fast" ]; then
+    if [ "$1" == "--fast" ]; then
+        shift
+    else
         west init -l /workspaces/zmk/app || true
         west update
         west zephyr-export
     fi
 
     west build /workspaces/zmk/app -d build/left  -b nice_nano_v2 -- -DSHIELD=corne_left  -DZMK_CONFIG=/workspaces/zmk-config/config
-    west build /workspaces/zmk/app -d build/right -b nice_nano_v2 -- -DSHIELD=corne_right -DZMK_CONFIG=/workspaces/zmk-config/config
+    if [ "$1" == "left" ]; then
+        shift
+    else
+        # build right side only if 'left' is not specified
+        west build /workspaces/zmk/app -d build/right -b nice_nano_v2 -- -DSHIELD=corne_right -DZMK_CONFIG=/workspaces/zmk-config/config
+    fi
 
     mkdir -p /workspaces/zmk-config/firmware
     cp build/left/zephyr/zmk.uf2  /workspaces/zmk-config/firmware/left.uf2

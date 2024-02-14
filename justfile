@@ -11,6 +11,11 @@ build-fast:
 	just generate-mapping
 	./build.sh --fast
 
+# build ZMK Firmware for left side only
+build-left:
+    just generate-mapping
+    ./build.sh --fast left
+
 # generate German macOS key mapping
 generate-mapping:
 	python de-mac/generate_de_key_mapping.py  # generates de-mac/keys_de.h
