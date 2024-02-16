@@ -140,7 +140,7 @@ layers:
   - $$combo:atom/text:U$$
   - $$combo:atom/text:I$$
   - $$combo:atom/text:O$$
-  - $$combo:atom/text:P$$
+  - $$tabler:lock$$
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
   - {t: F16, h: '$$tabler:sun-low$$'}

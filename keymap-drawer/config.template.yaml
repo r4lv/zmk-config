@@ -210,5 +210,9 @@ parse_config:
     "LG(RIGHT)": "$$combo:cmd/chevron-right$$"
     # DE_ keys don't work here, use raw_binding_map above
 
+    "LC(LG((Q)))":
+      tap: $$tabler:lock$$
+      # hold: $todo$combo:ctrl/cmd/text:Q$todo$  # TODO: three glyphs combo
+
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}

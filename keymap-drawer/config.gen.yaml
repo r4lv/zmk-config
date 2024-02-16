@@ -215,11 +215,11 @@ draw_config:
       fill: #0369a1;
     }
 
-    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject {
+    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject, .key.tap.glyph.tabler__lock {
       transform: scale(1.2);
     }
 
-    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path {
+    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path, .icon-tabler-lock > path {
       stroke-width: 1.5;
     }
 
@@ -793,6 +793,10 @@ parse_config:
     LG(LEFT): $$combo:cmd/chevron-left$$
     LG(RIGHT): $$combo:cmd/chevron-right$$
     # DE_ keys don't work here, use raw_binding_map above
+
+    LC(LG((Q))):
+      tap: $$tabler:lock$$
+      # hold: $todo$combo:ctrl/cmd/text:Q$todo$  # TODO: three glyphs combo
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}

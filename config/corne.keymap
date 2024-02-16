@@ -81,9 +81,9 @@
         layer_tri {
             bindings = <
 /* ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────────┬───────────────┬─────────────────┬─────────────────────────╮ */
-    &mm_out     &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV    &kp C_PP      &kp C_NEXT        &kp DE_BULLET  &kp HY(DE_U)  &kp HY(DE_I)      &kp HY(DE_O)    &kp HY(DE_P)      &kp C_AL_KEYBOARD_LAYOUT
+    &mm_out     &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV    &kp C_PP      &kp C_NEXT        &kp DE_BULLET  &kp HY(DE_U)  &kp HY(DE_I)      &kp HY(DE_O)    &kp LC(LG(DE_Q))     &kp C_AL_KEYBOARD_LAYOUT
 /* ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┼─────────────────┼─────────────────────────┤ */
-    &mm_btsel1  &kp F16       &kp F17       &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP      &kp DE_PM      &kp HY(DE_J)  &kp HY(DE_K)      &kp HY(DE_L)    &kp HY(DE_O_UML)   &kp LA(DE_PLUS)         
+    &mm_btsel1  &kp F16       &kp F17       &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP      &kp DE_PM      &kp HY(DE_J)  &kp HY(DE_K)      &kp HY(DE_L)    &kp HY(DE_O_UML)  &kp LA(DE_PLUS)         
 /* ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┼─────────────────┼─────────────────────────┤ */
     &mm_btsel0  &kp HY(DE_Y)  &kp HY(DE_X)  &kp HY(DE_C)  &kp HY(DE_V)  &kp HY(DE_B)      &kp DE_DEGREE  &kp HY(DE_M)  &kp HY(DE_COMMA)  &kp HY(DE_DOT)  &kp HY(DE_MINUS)  &kp RSHIFT              
 /* ╰───────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┴─────────────────┴─────────────────────────╯ */
