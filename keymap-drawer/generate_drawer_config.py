@@ -35,8 +35,8 @@ with open(HERE / "../de-mac/raw_binding_map.gen.yaml") as f:
             cfg["parse_config"]["raw_binding_map"][k] = v
 
 
-def get_glyph(key):
-    key = dict(alt="mdi:apple-keyboard-option").get(key, key)
+def get_glyph(key) -> tuple[str, str, str]:
+    key = dict(alt="apple-keyboard-option", cmd="apple-keyboard-command").get(key, key)
     if ":" not in key:
         key = f"mdi:{key}"
     group, key = key.split(":")
@@ -46,9 +46,12 @@ def get_glyph(key):
     url = cfg["draw_config"]["glyph_urls"][group].format(key)
     try:
         with urlopen(url) as f:
+            # TODO: it would be nicer to re-use keymap-drawer's cache here.
             data = f.read().decode("utf-8")
             data = re.sub(r"id=\".*?\"", "", data).replace("<svg", f"<svg id='rglyph:{key}'")
             data = re.sub(r"viewBox=\"(.*?)\"", r"viewBox='\g<1>'", data, flags=re.IGNORECASE)
+            # this is a fix for nested SVGs - the regex in keymap-drawer always picks up the LAST
+            # viewBox attribute with double quotes, so we use single quotes to hide the inner SVGs.
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         raise e

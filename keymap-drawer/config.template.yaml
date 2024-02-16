@@ -122,11 +122,6 @@ parse_config:
       tap: "$$combo:atom/text:Ö$$"
     # definition for hyper+alpha are added by generate_drawer_config.py
 
-    "&kp LG(LEFT)":
-      tap: "$$combo:apple-keyboard-command/chevron-left$$"
-    "&kp LG(RIGHT)":
-      tap: "$$combo:apple-keyboard-command/chevron-right$$"
-
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle
@@ -209,9 +204,11 @@ parse_config:
     LEFT: $$mdi:chevron-left$$
     RIGHT: $$mdi:chevron-right$$
 
-    'LA(LEFT)': $$combo:alt/chevron-left$$
-    'LA(RIGHT)': $$combo:alt/chevron-right$$
-    #'LA(DE_PLUS)': $$r:alt-plus$$  # doesn't work (DE) -> see above
+    "LA(LEFT)": $$combo:alt/chevron-left$$
+    "LA(RIGHT)": $$combo:alt/chevron-right$$
+    "LG(LEFT)": "$$combo:cmd/chevron-left$$"
+    "LG(RIGHT)": "$$combo:cmd/chevron-right$$"
+    # DE_ keys don't work here, use raw_binding_map above
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}
