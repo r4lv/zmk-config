@@ -100,6 +100,8 @@ parse_config:
     
     '&kp LA(DE_PLUS)':
       tap: $$combo:alt/text:+$$
+    "&kp LC(DE_GRAVE)":
+      tap: "`"
     
     "&sthld RSHFT RSHFT":
       tap: $$mdi:apple-keyboard-shift$$
