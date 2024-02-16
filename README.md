@@ -1,20 +1,25 @@
-# zmk-config for Corne / QWERTZ / macOS
+# zmk-config for Corne Keyboard / QWERTZ / macOS
 
 ![layout](keymap-drawer/corne.png)
 
-## Deutsches Layout
-
-The german macOS key mapping is defined in `de-mac/de-mac.yaml`. It is used to generate the `keys_de.h` mapping which provides `DE_Y`, `DE_SZ` etc for `corne.keymap`.
 
 ## Features
 
 - **QWERTZ** This layout is intended to be used with macOS' German keyboard layout (`Deutsch > Deutsch` or `Deutsch > ABC — QWERTZ`)
 - **screen brightness** The F16 and F17 keys on the `tri` layer are intended to be mapped to external screen brightness control, e.g. with [superduper/BrightnessMenulet](https://github.com/superduper/BrightnessMenulet).
-- **hyper** Many keys on the `tri` layer are mapped to the `HYPER` modifier (`⇧⌃⌥⌘`), symbolized by the atom symbol. Those keys can be remapped on-the-fly with [karabiner-elements](https://karabiner-elements.pqrs.org).
+- **hyper** Many keys on the `tri` layer are mapped to the `HYPER` modifier (`⇧⌃⌥⌘`), symbolized by the atom symbol. Those keys can be remapped on-the-fly with [karabiner-elements](https://karabiner-elements.pqrs.org), instead of re-flashing the firmware each time.
 - **magic shift** The right _magic_ shift key on the base layer behaves like
    - a regular RSHIFT when held,
    - a sticky RSHIFT when tapped (to capitalize the next letter), and
    - like `&caps_word` when double-tapped (to capitalize the next word).
+
+
+## German QWERTZ on macOS
+
+While most keyboards send the US keycodes to the operating system, even if the keycaps printed on the keyboard are in a different language, it is the operating system's job to map the **keycodes** to the **characters** which will appear on the screen, depending on the selected input source.
+
+To simplify the configuration in the ZMK keymap file, the mapping between the desired (German) characters and the (US) keycodes is defined in `de-mac/de-mac.yaml`. It is used to generate the `keys_de.h` mapping which provides `DE_Y`, `DE_SZ` etc for `corne.keymap`, and the correct symbols for keymap-drawer.
+
 
 ## usage
 
@@ -26,14 +31,14 @@ just draw  # update keymap-drawer/corne.png
 just build # build zmk firmware with Docker
 ```
 
-## macOS Eingabequellen
+## macOS input sources
 
-Folgende beiden Eingabequellen müssen bei Systemeinstellungen > Tastatur > Eingabequellen hinterlegt sein:
+The following input sources should be set up in System Preferences > Keyboard > Input Sources:
 
-- Deutsch → **Deutsch** (oder **ABC — QWERTZ**)
-- Andere → Unicode Hex-Eingabe
+- Deutsch → **Deutsch** (or **ABC — QWERTZ**)
+- ~~Andere → Unicode Hex-Eingabe~~ (no unicode symbols in the keymap for now)
 
-Mit ctrl+space kann zwischen den Eingabequellen gewechselt werden.
+Use `ctrl+space` to toggle between the input sources.
 
 
 ## macOS keyboard shortcuts
@@ -44,12 +49,12 @@ The Apple Magic Keyboard A1644 has an `fn` key, while the newer 2nd generation k
 
 The `fn` key is used to input:
 
-- `fn ←`: HOME, `↖`
-- `fn →`: END, `↘`
-- `fn ↑`: `PG_UP`, page up, `⇞`
-- `fn ↓`: `PG_DN`, page down, `⇟`
-- `fn ↵`: `KP_ENTER`, keypad enter, `keypad_enter`, `⌤`, "Enter" (macOS calls the normal key "Return") 
-- `fn ⌫`: `DEL` / forward delete, `⌦` (macOS calls `BACKSPACE` "Delete", and `DELETE` "Forward Delete")
+- `fn ←`: `HOME` <kbd>↖</kbd>
+- `fn →`: `END` <kbd>↘</kbd>
+- `fn ↑`: `PG_UP` <kbd>⇞</kbd>
+- `fn ↓`: `PG_DN` <kbd>⇟</kbd>
+- `fn ↵`: `KP_ENTER`/`keypad_enter` <kbd>⌤</kbd>, "Enter" (macOS calls the normal <kbd>↵</kbd> key "Return") 
+- `fn ⌫`: `DEL` <kbd>⌦</kbd>, "forward delete" (macOS calls <kbd>⌫</kbd>/`BACKSPACE` "Delete", and <kbd>⌦</kbd>/`DELETE` "Forward Delete")
 
 and additionally:
 
