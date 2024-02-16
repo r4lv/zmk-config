@@ -44,7 +44,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   code:
-  - ''
+  - '`'
   - '!'
   - \
   - ':'
@@ -94,9 +94,9 @@ layers:
   - {t: '9', s: )}
   - {t: ß, s: '?'}
   - HOME
-  - $$combo:apple-keyboard-command/chevron-left$$
+  - $$combo:cmd/chevron-left$$
   - $$mdi:chevron-up$$
-  - $$combo:apple-keyboard-command/chevron-right$$
+  - $$combo:cmd/chevron-right$$
   - END
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
