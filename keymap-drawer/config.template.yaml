@@ -107,7 +107,7 @@ parse_config:
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: sticky
-    "&stcap":
+    "&magicshift RSHIFT 0":
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: magic
