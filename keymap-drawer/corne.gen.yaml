@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-outline$$
-  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - {t: +, s: '*'}
   - {t: '#', s: ''''}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - Y
   - X
   - C
@@ -56,7 +56,7 @@ layers:
   - /
   - '?'
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - '['
   - {t: <, s: '>'}
   - (
@@ -68,7 +68,7 @@ layers:
   - '>'
   - ']'
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - _
   - {t: +, s: '*'}
   - ;
@@ -99,7 +99,7 @@ layers:
   - $$combo:cmd/chevron-right$$
   - END
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: ´, s: '`', type: rdead}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -111,7 +111,7 @@ layers:
   - $$mdi:chevron-right$$
   - ''
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - {t: '0', s: '='}
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}

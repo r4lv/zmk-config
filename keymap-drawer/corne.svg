@@ -470,7 +470,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -520,7 +520,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -735,7 +735,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -784,7 +784,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -915,7 +915,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(84, 105)" class="key rdead keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rdead"/>
@@ -969,7 +969,7 @@ text.key.shifted {
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
