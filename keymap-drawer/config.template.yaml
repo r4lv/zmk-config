@@ -120,7 +120,16 @@ parse_config:
       tap: "$$combo:atom/text:-$$"
     "&kp HY(DE_O_UML)":
       tap: "$$combo:atom/text:Ö$$"
+      hold: 1Password
     # definition for hyper+alpha are added by generate_drawer_config.py
+
+
+    "&kp HY(DE_J)":
+      tap: "$$combo:atom/text:J$$"
+      hold: iTerm
+    "&kp HY(DE_K)":
+      tap: "$$combo:atom/text:J$$"
+      hold: Alfred
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
@@ -212,7 +221,8 @@ parse_config:
 
     "LC(LG((Q)))":
       tap: $$tabler:lock$$
-      # hold: $todo$combo:ctrl/cmd/text:Q$todo$  # TODO: three glyphs combo
+      hold: $$combo:ctrl/cmd/text:Q$$
+
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
   zmk_combos: {}

@@ -24,7 +24,7 @@ css = (HERE / "style.gen.css").read_text()
 cfg["draw_config"]["svg_style"] = LS(css + "\n" + cfg["draw_config"].get("svg_style", ""))
 
 for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-    cfg["parse_config"]["raw_binding_map"][f"&kp HYPER(DE_{char})"] = f"$$combo:atom/text:{char}$$"
+    cfg["parse_config"]["raw_binding_map"].setdefault(f"&kp HY(DE_{char})", f"$$combo:atom/text:{char}$$")
 
 with open(HERE / "../de-mac/raw_binding_map.gen.yaml") as f:
     raw_binding_data = yaml.load(f)
@@ -36,7 +36,12 @@ with open(HERE / "../de-mac/raw_binding_map.gen.yaml") as f:
 
 
 def get_glyph(key) -> tuple[str, str, str]:
-    key = dict(alt="apple-keyboard-option", cmd="apple-keyboard-command").get(key, key)
+    key = dict(
+        alt="apple-keyboard-option",
+        cmd="apple-keyboard-command",
+        shift="apple-keyboard-shift",
+        ctrl="apple-keyboard-control",
+    ).get(key, key)
     if ":" not in key:
         key = f"mdi:{key}"
     group, key = key.split(":")
@@ -64,7 +69,21 @@ def yaml_dumps(data) -> str:
     return buf.getvalue()
 
 
-for left, right in re.findall(r"\$\$combo:(.*?)/(.*?)\$\$", yaml_dumps(cfg)):
+for left, middle, right in re.findall(r"\$\$combo:(.*?)/(.*?)/(.*?)\$\$", yaml_dumps(cfg)):
+    lgrp, lkey, ldef = get_glyph(left)
+    mgrp, mkey, mdef = get_glyph(middle)
+    rgrp, rkey, rdef = get_glyph(right)
+    svg = f"""<svg viewBox="0 0 72 24"><defs>{ldef}{mdef}{rdef}</defs>"""
+    svg += f"""<use href="#rglyph:{lkey}" x="-24" y="0" width="24" height="24"/>"""
+    svg += f"""<use href="#rglyph:{mkey}" x="0" y="0" width="24" height="24"/>"""
+    if rgrp == "text":
+        svg += f"""<text x="48" y="14" style="font-size: 24px; text-anchor: start;">{rkey}</text>"""
+    else:
+        svg += f"""<use href="#rglyph:{rkey}" x="24" y="0" width="24" height="24" />"""
+    svg += """</svg>"""
+    cfg["draw_config"]["glyphs"][f"combo:{left}/{middle}/{right}"] = LS(svg)
+
+for left, right in re.findall(r"\$\$combo:([^/]*?)/([^/]*?)\$\$", yaml_dumps(cfg)):
     lgrp, lkey, ldef = get_glyph(left)
     rgrp, rkey, rdef = get_glyph(right)
     svg = f"""<svg viewBox="0 0 48 24"><defs>{ldef}{rdef}</defs>"""
