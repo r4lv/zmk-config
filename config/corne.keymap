@@ -53,7 +53,7 @@
         layer_code {
             bindings = <
 /* ╭──────────┬─────────────┬────────────┬─────────────┬──────────────┬────────────╮   ╭─────────────┬────────────┬─────────────┬────────────┬─────────────┬──────────╮ */
-    &kp LC(DE_GRAVE)  &kp DE_EXCL   &kp DE_BSLH  &kp DE_COLON  &kp DE_DOLLAR  &kp DE_HASH      &kp DE_PRCNT  &kp DE_AMPS  &kp DE_EQUAL  &kp DE_FSLH  &kp DE_QMARK  &mm_bspc 
+    &kp LA(LS(KP_N7))  &kp DE_EXCL   &kp DE_BSLH  &kp DE_COLON  &kp DE_DOLLAR  &kp DE_HASH      &kp DE_PRCNT  &kp DE_AMPS  &kp DE_EQUAL  &kp DE_FSLH  &kp DE_QMARK  &mm_bspc 
 /* ├──────────┼─────────────┼────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┼─────────────┼──────────┤ */
     &kp LSHFT  &kp DE_LBKT   &kp DE_LT    &kp DE_LPAR   &kp DE_SQT     &kp DE_LBRC      &kp DE_RBRC   &kp DE_DQT   &kp DE_RPAR   &kp DE_GT    &kp DE_RBKT   &kp RALT 
 /* ├──────────┼─────────────┼────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┼─────────────┼──────────┤ */
