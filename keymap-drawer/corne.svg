@@ -6,6 +6,9 @@
 <svg id="combo:alt/chevron-right">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-option' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg><svg id='rglyph:chevron-right' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg></defs><use href="#rglyph:apple-keyboard-option" x="-12" y="0"/><use href="#rglyph:chevron-right" x="12" y="0" /></svg>
 </svg>
+<svg id="combo:alt/shift/numeric-7-circle-outline">
+<svg viewBox="0 0 72 24"><defs><svg id='rglyph:apple-keyboard-option' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg><svg id='rglyph:apple-keyboard-shift' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg><svg id='rglyph:numeric-7-circle-outline' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M11,17H9L13,9H9V7H15V9L11,17M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z" /></svg></defs><use href="#rglyph:apple-keyboard-option" x="-24" y="0"/><use href="#rglyph:apple-keyboard-shift" x="0" y="0"/><use href="#rglyph:numeric-7-circle-outline" x="24" y="0" /></svg>
+</svg>
 <svg id="combo:alt/text:+">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-option' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg></defs><use href="#rglyph:apple-keyboard-option" x="-12" y="0"/><text x="24" y="14" style="font-size: 24px; text-anchor: start;">+</text></svg>
 </svg>
@@ -29,9 +32,6 @@
 </svg>
 <svg id="combo:atom/text:J">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:atom' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z" /></svg></defs><use href="#rglyph:atom" x="-12" y="0"/><text x="24" y="14" style="font-size: 24px; text-anchor: start;">J</text></svg>
-</svg>
-<svg id="combo:atom/text:K">
-<svg viewBox="0 0 48 24"><defs><svg id='rglyph:atom' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z" /></svg></defs><use href="#rglyph:atom" x="-12" y="0"/><text x="24" y="14" style="font-size: 24px; text-anchor: start;">K</text></svg>
 </svg>
 <svg id="combo:atom/text:L">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:atom' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z" /></svg></defs><use href="#rglyph:atom" x="-12" y="0"/><text x="24" y="14" style="font-size: 24px; text-anchor: start;">L</text></svg>
@@ -62,6 +62,9 @@
 </svg>
 <svg id="combo:cmd/chevron-right">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg id='rglyph:chevron-right' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg></defs><use href="#rglyph:apple-keyboard-command" x="-12" y="0"/><use href="#rglyph:chevron-right" x="12" y="0" /></svg>
+</svg>
+<svg id="combo:ctrl/cmd/text:Q">
+<svg viewBox="0 0 72 24"><defs><svg id='rglyph:apple-keyboard-control' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg></defs><use href="#rglyph:apple-keyboard-control" x="-24" y="0"/><use href="#rglyph:apple-keyboard-command" x="0" y="0"/><text x="48" y="14" style="font-size: 24px; text-anchor: start;">Q</text></svg>
 </svg>
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -686,6 +689,7 @@ text.key.shifted {
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">`</text>
+<use href="#combo:alt/shift/numeric-7-circle-outline" xlink:href="#combo:alt/shift/numeric-7-circle-outline" x="-18" y="10" height="12" width="36.0" class="key hold glyph combo:alt/shift/numeric-7-circle-outline"/>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1094,6 +1098,7 @@ text.key.shifted {
 <g transform="translate(756, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler__lock" xlink:href="#tabler__lock" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler__lock"/>
+<use href="#combo:ctrl/cmd/text:Q" xlink:href="#combo:ctrl/cmd/text:Q" x="-18" y="10" height="12" width="36.0" class="key hold glyph combo:ctrl/cmd/text:Q"/>
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1133,10 +1138,12 @@ text.key.shifted {
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#combo:atom/text:J" xlink:href="#combo:atom/text:J" x="-14" y="-7" height="14" width="28.0" class="key tap glyph combo:atom/text:J"/>
+<text x="0" y="22" class="key hold">iTerm</text>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#combo:atom/text:K" xlink:href="#combo:atom/text:K" x="-14" y="-7" height="14" width="28.0" class="key tap glyph combo:atom/text:K"/>
+<use href="#combo:atom/text:J" xlink:href="#combo:atom/text:J" x="-14" y="-7" height="14" width="28.0" class="key tap glyph combo:atom/text:J"/>
+<text x="0" y="22" class="key hold">Alfred</text>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1145,6 +1152,7 @@ text.key.shifted {
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#combo:atom/text:Ö" xlink:href="#combo:atom/text:Ö" x="-14" y="-7" height="14" width="28.0" class="key tap glyph combo:atom/text:Ö"/>
+<text x="0" y="22" class="key hold"><tspan style="font-size: 78%">1Password</tspan></text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1220,6 +1228,10 @@ text.key.shifted {
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <use href="#mdi:triangle-down-outline" xlink:href="#mdi:triangle-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:triangle-down-outline"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
+<use href="#tabler__volume-3" xlink:href="#tabler__volume-3" x="273" y="88" height="14" width="14.0" class="combo tap glyph tabler__volume-3"/>
 </g>
 </g>
 </g>

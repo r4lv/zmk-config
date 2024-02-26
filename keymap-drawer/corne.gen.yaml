@@ -44,7 +44,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   code:
-  - '`'
+  - {t: '`', h: '$$combo:alt/shift/numeric-7-circle-outline$$'}
   - '!'
   - \
   - ':'
@@ -140,7 +140,7 @@ layers:
   - $$combo:atom/text:U$$
   - $$combo:atom/text:I$$
   - $$combo:atom/text:O$$
-  - $$tabler:lock$$
+  - {t: '$$tabler:lock$$', h: '$$combo:ctrl/cmd/text:Q$$'}
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
   - {t: F16, h: '$$tabler:sun-low$$'}
@@ -149,10 +149,10 @@ layers:
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ±
-  - $$combo:atom/text:J$$
-  - $$combo:atom/text:K$$
+  - {t: '$$combo:atom/text:J$$', h: iTerm}
+  - {t: '$$combo:atom/text:J$$', h: Alfred}
   - $$combo:atom/text:L$$
-  - $$combo:atom/text:Ö$$
+  - {t: '$$combo:atom/text:Ö$$', h: 1Password}
   - $$combo:alt/text:+$$
   - {t: BT  0, s: BT0+CLR}
   - $$combo:atom/text:Y$$
@@ -236,3 +236,6 @@ combos:
 - p: [10, 22]
   k: '0'
   l: [base]
+- p: [16, 17]
+  k: $$tabler:volume-3$$
+  l: [tri]
