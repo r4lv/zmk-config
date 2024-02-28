@@ -131,6 +131,16 @@ parse_config:
       tap: "$$combo:atom/text:J$$"
       hold: Alfred
     
+    "&kp HY(DE_C)":
+      tap: "$$combo:atom/text:C$$"
+      hold: Code
+    "&kp HY(DE_V)":
+      tap: "$$combo:atom/text:V$$"
+      hold: VNC
+    "&kp HY(DE_B)":
+      tap: "$$combo:atom/text:B$$"
+      hold: Browser
+    
     "&mm_3":
       tap: "3"
       shifted: "$$combo:shift/cmd/text:3$$"
