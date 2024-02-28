@@ -130,6 +130,19 @@ parse_config:
     "&kp HY(DE_K)":
       tap: "$$combo:atom/text:J$$"
       hold: Alfred
+    
+    "&mm_3":
+      tap: "3"
+      shifted: "$$combo:shift/cmd/text:3$$"
+      hold: "screenshot"
+    "&mm_4":
+      tap: "4"
+      shifted: "$$combo:shift/cmd/text:4$$"
+      hold: "screenshot"
+    "&mm_7":
+      tap: "7"
+      shifted: "$$combo:shift/cmd/text:7$$"
+      hold: "comment"
 
     "&emoji":
       tap: "$$combo:web/text:E$$"

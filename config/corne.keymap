@@ -18,6 +18,14 @@
         bindings = REGULAR, SHIFTED; \
         mods = <(MOD_LSFT|MOD_RSFT)>; \
     };
+#define R_SHIFT_CMD_NUM(NAME, NUMBER) \
+    NAME: NAME { \
+        compatible = "zmk,behavior-mod-morph"; \
+        #binding-cells = <0>; \
+        bindings = <&kp NUMBER>, <&kp LG(NUMBER)>; \
+        mods = <(MOD_LSFT|MOD_RSFT)>; \
+        keep-mods = <(MOD_LSFT|MOD_RSFT)>; \
+    };
 
 #define R_UNI_START <&macro_tap &kp LC(SPACE)>, <&macro_press &kp LALT>
 #define R_UNI_END <&macro_release &kp LALT>, <&macro_tap &kp LC(SPACE)>
@@ -67,11 +75,11 @@
         layer_navi {
             bindings = <
 /* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭──────────┬─────────────┬─────────┬──────────────┬────────┬──────────╮ */
-    &emoji     &mm_uml_circ  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp HOME   &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp END  &mm_bspc 
+    &emoji     &mm_uml_circ  &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp HOME   &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp END  &mm_bspc 
 /* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
-    &kp LSHFT  &kp DE_ACUTE  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP  &kp LEFT      &kp DOWN  &kp RIGHT      &none    &kp RALT 
+    &kp LSHFT  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP  &kp LEFT      &kp DOWN  &kp RIGHT      &none    &kp RALT 
 /* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
-    &kp LCTRL  &kp DE_N0     &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_COMMA      &kp PG_DN  &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none    &kp RSHFT
+    &kp LCTRL  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN  &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none    &kp RSHFT
 /* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┴────────┴──────────╯ */
                                         &kp LCMD   &trans     &mo CDE           &trans     &trans        &kp LALT                                   
 /*                                     ╰──────────┴──────────┴─────────────╯   ╰──────────┴─────────────┴─────────╯                                    */
@@ -156,6 +164,10 @@
 
         R_SHIFTED(mm_uml_circ, <&kp RA(U)>, <&kp DE_CARET>)
         R_SHIFTED(mm_bspc, <&kp BSPC>, <&kp DELETE>)
+
+        R_SHIFT_CMD_NUM(mm_3, N3)
+        R_SHIFT_CMD_NUM(mm_4, N4)
+        R_SHIFT_CMD_NUM(mm_7, N7)
 
         sthld: behavior_sthld {
             compatible = "zmk,behavior-hold-tap";
