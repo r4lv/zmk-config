@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   base:
-  - {t: '$$mdi:keyboard-tab$$', h: ESC}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -44,7 +44,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   code:
-  - {t: '`', h: '$$combo:alt/shift/numeric-7-circle-outline$$'}
+  - {t: '`', h: '$$combo:shift/alt/numeric-7-circle-outline$$'}
   - '!'
   - \
   - ':'
@@ -87,9 +87,9 @@ layers:
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   navi:
-  - ''
+  - {t: '$$combo:web/text:E$$', h: emoji}
   - {t: ¨, s: ^, type: rdead}
-  - {t: '7', s: /}
+  - {t: '7', h: comment, s: '$$combo:shift/cmd/text:7$$'}
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: ß, s: '?'}
@@ -101,7 +101,7 @@ layers:
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: ´, s: '`', type: rdead}
-  - {t: '4', s: $}
+  - {t: '4', h: screenshot, s: '$$combo:shift/cmd/text:4$$'}
   - {t: '5', s: '%'}
   - {t: '6', s: '&'}
   - {t: ., s: ':'}
@@ -115,7 +115,7 @@ layers:
   - {t: '0', s: '='}
   - {t: '1', s: '!'}
   - {t: '2', s: '"'}
-  - {t: '3', s: §}
+  - {t: '3', h: screenshot, s: '$$combo:shift/cmd/text:3$$'}
   - {t: ',', s: ;}
   - PG DN
   - $$combo:alt/chevron-left$$
@@ -157,9 +157,9 @@ layers:
   - {t: BT  0, s: BT0+CLR}
   - $$combo:atom/text:Y$$
   - $$combo:atom/text:X$$
-  - $$combo:atom/text:C$$
-  - $$combo:atom/text:V$$
-  - $$combo:atom/text:B$$
+  - {t: '$$combo:atom/text:C$$', h: Code}
+  - {t: '$$combo:atom/text:V$$', h: VNC}
+  - {t: '$$combo:atom/text:B$$', h: Browser}
   - °
   - $$combo:atom/text:M$$
   - $$combo:atom/text:,$$
@@ -239,3 +239,6 @@ combos:
 - p: [16, 17]
   k: $$tabler:volume-3$$
   l: [tri]
+- p: [8, 9]
+  k: $$smallcombo:shift/cmd/text:7$$
+  l: [code]
