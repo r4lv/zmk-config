@@ -253,6 +253,8 @@ parse_config:
     "LC(LG((Q)))":
       tap: $$tabler:lock$$
       hold: $$combo:ctrl/cmd/text:Q$$
+    "LS(LG(N7))":
+      tap: "$$smallcombo:shift/cmd/text:7$$"
 
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
