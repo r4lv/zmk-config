@@ -131,6 +131,10 @@ parse_config:
       tap: "$$combo:atom/text:J$$"
       hold: Alfred
 
+    "&emoji":
+      tap: "$$combo:web/text:E$$"
+      hold: "emoji"
+
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle

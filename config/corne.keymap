@@ -67,7 +67,7 @@
         layer_navi {
             bindings = <
 /* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭──────────┬─────────────┬─────────┬──────────────┬────────┬──────────╮ */
-    &none      &mm_uml_circ  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp HOME   &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp END  &mm_bspc 
+    &emoji     &mm_uml_circ  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp HOME   &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp END  &mm_bspc 
 /* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
     &kp LSHFT  &kp DE_ACUTE  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP  &kp LEFT      &kp DOWN  &kp RIGHT      &none    &kp RALT 
 /* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
@@ -142,6 +142,8 @@
         R_UNICODE(uni_hun_o,  N0, N1, N5, N1) // ő  U+0151  LATIN SMALL LETTER O WITH DOUBLE ACUTE
         R_UNICODE(uni_rarr,   N2, N1, N9, N2) // →  U+2192  RIGHTWARDS ARROW
         R_UNICODE(uni_larr,   N2, N1, N9, N0) // ←  U+2190  LEFTWARDS ARROW
+
+        ZMK_MACRO(emoji, bindings = <&macro_press &kp GLOBE>, <&macro_tap &kp E>, <&macro_release &kp GLOBE>; wait-ms = <0>;)
     };
 
     behaviors {
