@@ -235,9 +235,9 @@ parse_config:
     "LG(LEFT)": "$$combo:cmd/chevron-left$$"
     "LG(RIGHT)": "$$combo:cmd/chevron-right$$"
 
-    "LA(LS(KP_N7))":
+    "LS(LA(KP_N7))":
       tap: "`"
-      hold: "$$combo:alt/shift/numeric-7-circle-outline$$"
+      hold: "$$combo:shift/alt/numeric-7-circle-outline$$"
     # DE_ keys don't work here, use raw_binding_map above
 
     "LC(LG((Q)))":
