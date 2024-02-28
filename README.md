@@ -8,6 +8,7 @@
 - **QWERTZ** This layout is intended to be used with macOS' German keyboard layout (`Deutsch > Deutsch` or `Deutsch > ABC — QWERTZ`)
 - **screen brightness** The F16 and F17 keys on the `tri` layer are intended to be mapped to external screen brightness control, e.g. with [superduper/BrightnessMenulet](https://github.com/superduper/BrightnessMenulet).
 - **hyper** Many keys on the `tri` layer are mapped to the `HYPER` modifier (`⇧⌃⌥⌘`), symbolized by the atom symbol. Those keys can be remapped on-the-fly with [karabiner-elements](https://karabiner-elements.pqrs.org), instead of re-flashing the firmware each time.
+   - note that karabiner-elements might [interfere](https://zmk.dev/docs/behaviors/mod-morph#advanced-configuration) with mod-morph (like the shift-backspace on the _code_ layer, or the circumflex on the _navi_ layer)
 - **magic shift** The right _magic_ shift key on the base layer behaves like
    - a regular RSHIFT when held,
    - a sticky RSHIFT when tapped (to capitalize the next letter), and

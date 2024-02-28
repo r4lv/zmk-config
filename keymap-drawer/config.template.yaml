@@ -121,6 +121,8 @@ parse_config:
     "&kp HY(DE_O_UML)":
       tap: "$$combo:atom/text:Ö$$"
       hold: 1Password
+    "&kp HY(DE_A_UML)":
+      tap: "$$combo:atom/text:Ä$$"
     # definition for hyper+alpha are added by generate_drawer_config.py
 
 

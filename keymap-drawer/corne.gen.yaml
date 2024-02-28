@@ -131,10 +131,10 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   tri:
   - {t: OUT BLE, s: OUT USB}
-  - $$tabler:sun-low$$
-  - $$tabler:sun-high$$
+  - {t: F16, h: '$$tabler:sun-low$$'}
+  - {t: F17, h: '$$tabler:sun-high$$'}
+  - $$combo:atom/text:E$$
   - $$tabler:player-track-prev$$
-  - $$tabler:player-play$$
   - $$tabler:player-track-next$$
   - •
   - $$combo:atom/text:U$$
@@ -143,9 +143,9 @@ layers:
   - {t: '$$tabler:lock$$', h: '$$combo:ctrl/cmd/text:Q$$'}
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
-  - {t: F16, h: '$$tabler:sun-low$$'}
-  - {t: F17, h: '$$tabler:sun-high$$'}
-  - $$tabler:volume-3$$
+  - $$combo:atom/text:A$$
+  - $$combo:atom/text:S$$
+  - $$combo:atom/text:D$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ±
@@ -153,7 +153,7 @@ layers:
   - {t: '$$combo:atom/text:J$$', h: Alfred}
   - $$combo:atom/text:L$$
   - {t: '$$combo:atom/text:Ö$$', h: 1Password}
-  - $$combo:alt/text:+$$
+  - $$combo:atom/text:Ä$$
   - {t: BT  0, s: BT0+CLR}
   - $$combo:atom/text:Y$$
   - $$combo:atom/text:X$$
@@ -238,6 +238,9 @@ combos:
   l: [base]
 - p: [16, 17]
   k: $$tabler:volume-3$$
+  l: [tri]
+- p: [4, 5]
+  k: $$tabler:player-play$$
   l: [tri]
 - p: [8, 9]
   k: $$smallcombo:shift/cmd/text:7$$
