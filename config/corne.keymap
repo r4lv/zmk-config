@@ -129,6 +129,8 @@
         n0 { key-positions = <posP posOE>; bindings = <&kp N0>; layers = <0>; require-prior-idle-ms = <200>; };
 
         mute { key-positions = <posF posG>; bindings = <&kp C_MUTE>; layers = <TRI>; require-prior-idle-ms = <200>; };
+
+        comment { key-positions = <posI posO>; bindings = <&kp LS(LG(N7))>; layers = <CDE>; require-prior-idle-ms = <200>; };
     };
 
     conditional_layers {
