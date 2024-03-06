@@ -1,10 +1,12 @@
 #!/usr/bin/env python
-"""
-creates
+"""Generate german key mapping for ZMK and keymap-drawer.
+
+Create
     - keys_de.h (for ZMK)
     - raw_binding_map.gen.yaml (for generate_drawer_config.py / keymap-drawer)
 from de-mac.yaml.
 """
+
 from pathlib import Path
 
 from ruamel.yaml import YAML

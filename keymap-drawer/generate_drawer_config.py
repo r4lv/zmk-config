@@ -1,14 +1,13 @@
 #!/usr/bin/env python
-"""
-Generates config.gen.yaml from config.template.yaml + style.gen.css + raw_binding_map.gen.yaml
-"""
+"""Generate config.gen.yaml from config.template.yaml + style.gen.css + raw_binding_map.gen.yaml."""
+
+import io
+import re
 from pathlib import Path
 from urllib.request import urlopen
-import re
-import io
 
 from ruamel.yaml import YAML
-from ruamel.yaml.scalarstring import LiteralScalarString as LS
+from ruamel.yaml.scalarstring import LiteralScalarString as STR
 
 yaml = YAML()
 yaml.default_flow_style = False
@@ -21,7 +20,7 @@ with open(HERE / "config.template.yaml") as f:
 cfg.yaml_set_start_comment(f"generated with {Path(__file__).name}")
 
 css = (HERE / "style.gen.css").read_text()
-cfg["draw_config"]["svg_style"] = LS(css + "\n" + cfg["draw_config"].get("svg_style", ""))
+cfg["draw_config"]["svg_style"] = STR(css + "\n" + cfg["draw_config"].get("svg_style", ""))
 
 for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
     cfg["parse_config"]["raw_binding_map"].setdefault(
@@ -53,12 +52,12 @@ def get_glyph(key) -> tuple[str, str, str]:
             f"text-{key}",
             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox=\'0 0 24 24\' id="rglyph:text-{key}">'
             + f'<text x="10" y="14" text-anchor="middle" style="font-size: 24px;">{key}</text>'
-            + '</svg>',
+            + "</svg>",
         )
 
     url = cfg["draw_config"]["glyph_urls"][group].format(key)
     try:
-        with urlopen(url) as f:
+        with urlopen(url) as f:  # noqa: S310
             # TODO: it would be nicer to re-use keymap-drawer's cache here.
             data = f.read().decode("utf-8")
             data = re.sub(r"id=\".*?\"", "", data)
@@ -90,7 +89,7 @@ for small, l, m, r in re.findall(r"\$\$(small)?combo:(.*?)/(.*?)/(.*?)\$\$", yam
     svg += f"""<use href="#rglyph:{mkey}" x="24" y="0" width='24' height='24'/>"""
     svg += f"""<use href="#rglyph:{rkey}" x="48" y="0" width='24' height='24' />"""
     svg += """</svg>"""
-    cfg["draw_config"]["glyphs"][f"{small}combo:{l}/{m}/{r}"] = LS(svg)
+    cfg["draw_config"]["glyphs"][f"{small}combo:{l}/{m}/{r}"] = STR(svg)
 
 for l, r in re.findall(r"\$\$combo:([^/]*?)/([^/]*?)\$\$", yaml_dumps(cfg)):
     lgrp, lkey, ldef = get_glyph(l)
@@ -100,7 +99,7 @@ for l, r in re.findall(r"\$\$combo:([^/]*?)/([^/]*?)\$\$", yaml_dumps(cfg)):
     svg += f"""<use href="#rglyph:{lkey}" x="-12" y="0" width="24" height="24"/>"""
     svg += f"""<use href="#rglyph:{rkey}" x="12" y="0" width="24" height="24" />"""
     svg += """</svg>"""
-    cfg["draw_config"]["glyphs"][f"combo:{l}/{r}"] = LS(svg)
+    cfg["draw_config"]["glyphs"][f"combo:{l}/{r}"] = STR(svg)
 
 
 with open(HERE / "config.gen.yaml", "w") as f:
