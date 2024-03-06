@@ -380,8 +380,20 @@ tasten:
     zmk_key: "B"
   "n":
     zmk_key: "N"
+    alt:
+      pretty: "~"
+      alias: [TILDE]
+    alt_shifted:
+      pretty: '›'
+      alias: [SGUI_R, U203A, UNI_SINGLE_RIGHT_POINTING_ANGLE_QUOTATION_MARK]
   "m":
     zmk_key: "M"
+    alt:
+      pretty: "µ"
+      alias: [MU, MICRO, U00B5, UNI_MICRO_SIGN]
+    alt_shifted:
+      pretty: "˘"
+      alias: [BREVE, U02D8, UNI_BREVE, UNI_BREVE_SPACING_MODIFIER]
   ",/;":
     zmk_key: COMMA
     tap:

@@ -346,10 +346,22 @@
 /* n */
 #define DE_N (N)
 
+#define DE_TILDE (LA(N))  /* ~ */
+#define DE_SGUI_R (LS(LA(N)))  /* › */
+#define DE_U203A (LS(LA(N)))  /* › */
+#define DE_UNI_SINGLE_RIGHT_POINTING_ANGLE_QUOTATION_MARK (LS(LA(N)))  /* › */
 
 /* m */
 #define DE_M (M)
 
+#define DE_MU (LA(M))  /* µ */
+#define DE_MICRO (LA(M))  /* µ */
+#define DE_U00B5 (LA(M))  /* µ */
+#define DE_UNI_MICRO_SIGN (LA(M))  /* µ */
+#define DE_BREVE (LS(LA(M)))  /* ˘ */
+#define DE_U02D8 (LS(LA(M)))  /* ˘ */
+#define DE_UNI_BREVE (LS(LA(M)))  /* ˘ */
+#define DE_UNI_BREVE_SPACING_MODIFIER (LS(LA(M)))  /* ˘ */
 
 /* ,/; */
 #define DE_COMMA (COMMA)

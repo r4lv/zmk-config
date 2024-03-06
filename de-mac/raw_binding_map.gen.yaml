@@ -276,7 +276,19 @@
 '&kp DE_V': V
 '&kp DE_B': B
 '&kp DE_N': N
+'&kp DE_TILDE': '~'
+'&kp DE_SGUI_R': ›
+'&kp DE_U203A': ›
+'&kp DE_UNI_SINGLE_RIGHT_POINTING_ANGLE_QUOTATION_MARK': ›
 '&kp DE_M': M
+'&kp DE_MU': µ
+'&kp DE_MICRO': µ
+'&kp DE_U00B5': µ
+'&kp DE_UNI_MICRO_SIGN': µ
+'&kp DE_BREVE': ˘
+'&kp DE_U02D8': ˘
+'&kp DE_UNI_BREVE': ˘
+'&kp DE_UNI_BREVE_SPACING_MODIFIER': ˘
 '&kp DE_COMMA':
   tap: ','
   shifted: ;
