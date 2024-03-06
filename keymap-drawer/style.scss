@@ -267,3 +267,47 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
     }
   }
 }
+
+
+
+@mixin keymod-large {
+  text.key.tap {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+
+.layer-base g.key.keypos-{
+  &32, &33 {
+    @include keymod-large;
+  }
+}
+.layer-code g.key.keypos-{
+  &0, &28, &30 {
+    @include keymod-large;
+  }
+}
+.layer-navi g.key.keypos-{
+  &1, &13, &17, &29 {
+    @include keymod-large;
+  }
+}
+
+// shift down accent keys
+@mixin keymod-shiftdown {
+  text.key.tap {
+    transform: translate(0, 5px); // chrome
+    transform: translate(0, 5);   // resvg
+  }
+}
+
+.layer-code g.key.keypos-{
+  &0, &28 {
+    @include keymod-shiftdown;
+  }
+}
+.layer-navi g.key.keypos-{
+  &1, &13 {
+    @include keymod-shiftdown;
+  }
+}
