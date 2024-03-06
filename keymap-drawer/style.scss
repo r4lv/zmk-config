@@ -20,7 +20,6 @@ $tw-amber-300: #fde68a;
 
 // https://tailwindcss.com/docs/customizing-colors
 
-
 // inherit to force styles through use tags
 svg path {
     fill: inherit;
@@ -30,7 +29,7 @@ svg path {
 svg.keymap {
     font-family: "Quicksand", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     font-size: 16px;
-    font-weight: 500;  // resvg will pick Quicksand-Medium.ttf
+    font-weight: 500; // resvg will pick Quicksand-Medium.ttf
     font-kerning: normal;
     text-rendering: optimizeLegibility;
     fill: $tw-stone-800;
@@ -49,17 +48,20 @@ rect.side {
 }
 
 /* color accent for combo boxes */
-rect.combo, rect.combo-separate {
+rect.combo,
+rect.combo-separate {
     fill: #cdf;
 }
 
 /* color accent for held keys */
-rect.held, rect.combo.held {
+rect.held,
+rect.combo.held {
     fill: #fdd;
 }
 
 /* color accent for ghost (optional) keys */
-rect.ghost, rect.combo.ghost {
+rect.ghost,
+rect.combo.ghost {
     stroke-dasharray: 4, 4;
     stroke-width: 2;
 }
@@ -79,7 +81,9 @@ text.label {
 }
 
 /* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+text.combo,
+text.hold,
+text.shifted {
     font-size: 11px;
 }
 
@@ -94,10 +98,10 @@ text.shifted {
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold,
+text.combo.shifted {
     font-size: 8px;
 }
-
 
 /* styling for combo dendrons */
 path.combo {
@@ -106,15 +110,14 @@ path.combo {
     fill: none;
 }
 
-g.trans{
-  opacity: 0.7;
+g.trans {
+    opacity: 0.7;
 
-  text, .glyph{
-      opacity: .1
-  }
+    text,
+    .glyph {
+        opacity: 0.1;
+    }
 }
-
-
 
 /* Start Tabler Icons Cleanup */
 /* cannot use height/width with glyphs */
@@ -129,185 +132,165 @@ g.trans{
 }
 /* End Tabler Icons Cleanup */
 
-
 //==============================================================================
 
 .rsym {
-  rect{
-    stroke: $tw-fuchsia-800;
-  }
-  .glyph, text{
-    fill: $tw-fuchsia-800;
-  }
+    rect {
+        stroke: $tw-fuchsia-800;
+    }
+    .glyph,
+    text {
+        fill: $tw-fuchsia-800;
+    }
 }
 
 .rlayer {
-  rect{
-    stroke: $tw-lime-600 /*lime-600*/;
-    fill: $tw-lime-50;
-  }
-  .glyph, text{
-    fill: $tw-lime-600 /*lime-600*/;
-  }
-  .glyph, &-held .glyph {
-    transform: scale(1.5);
-  }
-  &-held rect{
-    stroke: $tw-lime-600 /*lime-600*/;
-    fill: $tw-lime-600;
-  }
-  &-held .glyph, &-held text{
-    fill: white;
-  }
+    rect {
+        stroke: $tw-lime-600 /*lime-600*/;
+        fill: $tw-lime-50;
+    }
+    .glyph,
+    text {
+        fill: $tw-lime-600 /*lime-600*/;
+    }
+    .glyph,
+    &-held .glyph {
+        transform: scale(1.5);
+    }
+    &-held rect {
+        stroke: $tw-lime-600 /*lime-600*/;
+        fill: $tw-lime-600;
+    }
+    &-held .glyph,
+    &-held text {
+        fill: white;
+    }
 }
 
-
 .rmod {
-  rect{
-    stroke: $tw-rose-700;
-  }
-  .glyph, text {
-    fill: $tw-rose-700;
-  }
+    rect {
+        stroke: $tw-rose-700;
+    }
+    .glyph,
+    text {
+        fill: $tw-rose-700;
+    }
 }
 
 .rdead {
-  rect{
-    stroke: $tw-amber-600;
-  }
-  .glyph, text {
-    fill: $tw-amber-600;
-  }
+    rect {
+        stroke: $tw-amber-600;
+    }
+    .glyph,
+    text {
+        fill: $tw-amber-600;
+    }
 }
 
-rect.held, rect.combo.held {
-  stroke: $tw-lime-600;
-  fill: $tw-lime-600;
+rect.held,
+rect.combo.held {
+    stroke: $tw-lime-600;
+    fill: $tw-lime-600;
 }
-rect.combo, rect.combo-separate{
-  fill: $tw-neutral-200;
-  opacity: 0.7;
-}
-
-.key.shifted, .key.hold {
-  opacity: .6
+rect.combo,
+rect.combo-separate {
+    fill: $tw-neutral-200;
+    opacity: 0.7;
 }
 
-
-
-text.label{
-  // shift layer label down just above the keys
-  transform: translate(0, 20px); // chrome
-  transform: translate(0, 20); // resvg
+.key.shifted,
+.key.hold {
+    opacity: 0.6;
 }
 
-text.key.shifted{
-  // more space between shifted label and top of key
-  transform: translate(0, 2px); // chrome
-  transform: translate(0, 2); // resvg
+text.label {
+    // shift layer label down just above the keys
+    transform: translate(0, 20px); // chrome
+    transform: translate(0, 20); // resvg
 }
 
-
+text.key.shifted {
+    // more space between shifted label and top of key
+    transform: translate(0, 2px); // chrome
+    transform: translate(0, 2); // resvg
+}
 
 //==============================================================================
 // per-key styling
 //==============================================================================
 
 // thumb keys
-.keypos-38, .keypos-39{
-  rect{
-      stroke: $tw-lime-600;
-      fill: $tw-lime-50;
-  }
-  text, .glyph{
-      fill: $tw-lime-600;
-  }
-  rect.held{
-    // overwrite
-    stroke: $tw-lime-600;
-    fill: $tw-lime-600;
-  }
-}
-
-
-// home row modifiers
-.layer-base g.key.keypos-{
-  &14, &15, &16, &19, &20, &21, &22{
-    .key.hold{
-      fill: $tw-rose-700;
+.keypos-38, .keypos-39 {
+    rect {
+        stroke: $tw-lime-600;
+        fill: $tw-lime-50;
     }
-  }
-}
-
-
-// unicode input
-.layer-lower g.key.keypos-{
-  &3, &4, &5, &28, &29{
-    .key.hold{
-      fill: $tw-sky-700;
+    text, .glyph {
+        fill: $tw-lime-600;
     }
-  }
+    rect.held {
+        // overwrite
+        stroke: $tw-lime-600;
+        fill: $tw-lime-600;
+    }
 }
-
 
 // make media tabler icons slightly larger
 $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
 &player-track-next, &player-track-prev, &player-play, \
 &sun-high, &sun-low, &player-eject, &lock";
 
-.key.tap.glyph.tabler__{
-  #{$larger_tabler_icons}{
-    transform: scale(1.2);
-  }
-}
-.icon-tabler-{
-  #{$larger_tabler_icons}{
-    > path{
-      stroke-width: 1.5;
+.key.tap.glyph.tabler__ {
+    #{$larger_tabler_icons} {
+        transform: scale(1.2);
     }
-  }
 }
-
-
+.icon-tabler- {
+    #{$larger_tabler_icons} {
+        > path {
+            stroke-width: 1.5;
+        }
+    }
+}
 
 @mixin keymod-large {
-  text.key.tap {
-    font-size: 26px;
-    font-weight: 400;
-  }
+    text.key.tap {
+        font-size: 26px;
+        font-weight: 400;
+    }
 }
 
-.layer-base g.key.keypos-{
-  &32, &33 {
-    @include keymod-large;
-  }
+.layer-base g.key.keypos- {
+    &32, &33 {
+        @include keymod-large;
+    }
 }
-.layer-code g.key.keypos-{
-  &0, &28, &30 {
-    @include keymod-large;
-  }
+.layer-code g.key.keypos- {
+    &0, &28, &30 {
+        @include keymod-large;
+    }
 }
-.layer-navi g.key.keypos-{
-  &1, &13, &17, &29 {
-    @include keymod-large;
-  }
+.layer-navi g.key.keypos- {
+    &1, &13, &17, &29 {
+        @include keymod-large;
+    }
 }
 
 // shift down accent keys
 @mixin keymod-shiftdown {
-  text.key.tap {
-    transform: translate(0, 5px); // chrome
-    transform: translate(0, 5);   // resvg
-  }
+    text.key.tap {
+        transform: translate(0, 5px); // chrome
+        transform: translate(0, 5); // resvg
+    }
 }
 
-.layer-code g.key.keypos-{
-  &0, &28 {
-    @include keymod-shiftdown;
-  }
+.layer-code g.key.keypos- {
+    &0, &28 {
+        @include keymod-shiftdown;
+    }
 }
-.layer-navi g.key.keypos-{
-  &1, &13 {
-    @include keymod-shiftdown;
-  }
+.layer-navi g.key.keypos- {
+    &1, &13 {
+        @include keymod-shiftdown;
+    }
 }
