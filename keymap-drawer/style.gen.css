@@ -4,8 +4,9 @@ svg path {
 
 /* font and background color specifications */
 svg.keymap {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 14px;
+  font-family: "Quicksand", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 16px;
+  font-weight: 500;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   fill: #292524;
@@ -24,17 +25,20 @@ rect.side {
 }
 
 /* color accent for combo boxes */
-rect.combo, rect.combo-separate {
+rect.combo,
+rect.combo-separate {
   fill: #cdf;
 }
 
 /* color accent for held keys */
-rect.held, rect.combo.held {
+rect.held,
+rect.combo.held {
   fill: #fdd;
 }
 
 /* color accent for ghost (optional) keys */
-rect.ghost, rect.combo.ghost {
+rect.ghost,
+rect.combo.ghost {
   stroke-dasharray: 4, 4;
   stroke-width: 2;
 }
@@ -54,7 +58,9 @@ text.label {
 }
 
 /* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+text.combo,
+text.hold,
+text.shifted {
   font-size: 11px;
 }
 
@@ -69,7 +75,8 @@ text.shifted {
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold,
+text.combo.shifted {
   font-size: 8px;
 }
 
@@ -83,7 +90,8 @@ path.combo {
 g.trans {
   opacity: 0.7;
 }
-g.trans text, g.trans .glyph {
+g.trans text,
+g.trans .glyph {
   opacity: 0.1;
 }
 
@@ -104,7 +112,8 @@ g.trans text, g.trans .glyph {
 .rsym rect {
   stroke: #86198f;
 }
-.rsym .glyph, .rsym text {
+.rsym .glyph,
+.rsym text {
   fill: #86198f;
 }
 
@@ -112,7 +121,8 @@ g.trans text, g.trans .glyph {
   stroke: #65a30d;
   fill: #f7fee7;
 }
-.rlayer .glyph, .rlayer text {
+.rlayer .glyph,
+.rlayer text {
   fill: #65a30d;
 }
 .rlayer .glyph, .rlayer-held .glyph {
@@ -129,28 +139,33 @@ g.trans text, g.trans .glyph {
 .rmod rect {
   stroke: #be123c;
 }
-.rmod .glyph, .rmod text {
+.rmod .glyph,
+.rmod text {
   fill: #be123c;
 }
 
 .rdead rect {
   stroke: #d97706;
 }
-.rdead .glyph, .rdead text {
+.rdead .glyph,
+.rdead text {
   fill: #d97706;
 }
 
-rect.held, rect.combo.held {
+rect.held,
+rect.combo.held {
   stroke: #65a30d;
   fill: #65a30d;
 }
 
-rect.combo, rect.combo-separate {
-  fill: #d4d4d4;
+rect.combo,
+rect.combo-separate {
+  fill: #e5e5e5;
   opacity: 0.7;
 }
 
-.key.shifted, .key.hold {
+.key.shifted,
+.key.hold {
   opacity: 0.6;
 }
 
@@ -176,18 +191,35 @@ text.key.shifted {
   fill: #65a30d;
 }
 
-.layer-base g.key.keypos-14 .key.hold, .layer-base g.key.keypos-15 .key.hold, .layer-base g.key.keypos-16 .key.hold, .layer-base g.key.keypos-19 .key.hold, .layer-base g.key.keypos-20 .key.hold, .layer-base g.key.keypos-21 .key.hold, .layer-base g.key.keypos-22 .key.hold {
-  fill: #be123c;
-}
-
-.layer-lower g.key.keypos-3 .key.hold, .layer-lower g.key.keypos-4 .key.hold, .layer-lower g.key.keypos-5 .key.hold, .layer-lower g.key.keypos-28 .key.hold, .layer-lower g.key.keypos-29 .key.hold {
-  fill: #0369a1;
-}
-
 .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject, .key.tap.glyph.tabler__lock {
   transform: scale(1.2);
 }
 
 .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path, .icon-tabler-lock > path {
   stroke-width: 1.5;
+}
+
+.layer-base g.key.keypos-32 text.key.tap, .layer-base g.key.keypos-33 text.key.tap {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.layer-code g.key.keypos-0 text.key.tap, .layer-code g.key.keypos-28 text.key.tap, .layer-code g.key.keypos-30 text.key.tap {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.layer-navi g.key.keypos-1 text.key.tap, .layer-navi g.key.keypos-13 text.key.tap, .layer-navi g.key.keypos-17 text.key.tap, .layer-navi g.key.keypos-29 text.key.tap {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.layer-code g.key.keypos-0 text.key.tap, .layer-code g.key.keypos-28 text.key.tap {
+  transform: translate(0, 5px);
+  transform: translate(0, 5);
+}
+
+.layer-navi g.key.keypos-1 text.key.tap, .layer-navi g.key.keypos-13 text.key.tap {
+  transform: translate(0, 5px);
+  transform: translate(0, 5);
 }
