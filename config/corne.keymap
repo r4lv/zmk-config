@@ -128,6 +128,9 @@
         n9 { key-positions = <posO posL>;  bindings = <&kp N9>; layers = <0>; require-prior-idle-ms = <200>; };
         n0 { key-positions = <posP posOE>; bindings = <&kp N0>; layers = <0>; require-prior-idle-ms = <200>; };
 
+        codeArrowLeft  { key-positions = <posA posS>;  bindings = <&tp_lt_minus>; layers = <CDE>; require-prior-idle-ms = <100>; };
+        codeArrowRight { key-positions = <posL posOE>; bindings = <&tp_minus_gt>; layers = <CDE>; require-prior-idle-ms = <100>; };
+
         mute { key-positions = <posF posG>; bindings = <&kp C_MUTE>; layers = <TRI>; require-prior-idle-ms = <200>; };
         playpause { key-positions = <posR posT>; bindings = <&kp C_PP>; layers = <TRI>; require-prior-idle-ms = <200>; };
 
@@ -146,6 +149,10 @@
     macros {
         ZMK_MACRO(r_bt0_clr, bindings = <&bt BT_SEL 0 &bt BT_CLR>; wait-ms = <0>;)
         ZMK_MACRO(r_bt1_clr, bindings = <&bt BT_SEL 1 &bt BT_CLR>; wait-ms = <0>;)
+        
+        // "type" macros
+        ZMK_MACRO(tp_lt_minus, bindings = <&macro_tap &kp DE_LT &kp DE_MINUS>; wait-ms = <10>;)
+        ZMK_MACRO(tp_minus_gt, bindings = <&macro_tap &kp DE_MINUS &kp DE_GT>; wait-ms = <10>;)
 
         R_UNICODE(uni_times,  N0, N0, D,  N7) // ×  U+00D7  MULTIPLICATION SIGN
         R_UNICODE(uni_fwast,  F,  F,  N0, A)  // ＊  U+FF0A  FULLWIDTH ASTERISK

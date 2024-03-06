@@ -160,6 +160,9 @@ parse_config:
       tap: "$$combo:web/text:E$$"
       hold: "emoji"
 
+    "&tp_lt_minus": "<-"
+    "&tp_minus_gt": "->"
+
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
   toggle_label: toggle
