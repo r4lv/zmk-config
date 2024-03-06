@@ -28,8 +28,9 @@ svg path {
 
 /* font and background color specifications */
 svg.keymap {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-    font-size: 14px;
+    font-family: "Quicksand", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: 16px;
+    font-weight: 500;  // resvg will pick Quicksand-Medium.ttf
     font-kerning: normal;
     text-rendering: optimizeLegibility;
     fill: $tw-stone-800;

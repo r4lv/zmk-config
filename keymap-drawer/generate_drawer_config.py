@@ -52,7 +52,7 @@ def get_glyph(key) -> tuple[str, str, str]:
             group,
             f"text-{key}",
             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox=\'0 0 24 24\' id="rglyph:text-{key}">'
-            + f'<text x="12" y="13" text-anchor="middle" style="font-size: 24px;">{key}</text>'
+            + f'<text x="10" y="14" text-anchor="middle" style="font-size: 24px;">{key}</text>'
             + '</svg>',
         )
 
