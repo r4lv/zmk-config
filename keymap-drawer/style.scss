@@ -37,9 +37,9 @@ svg.keymap {
 
 /* default key styling */
 rect.key {
-    fill: $tw-stone-50;
-    stroke: $tw-stone-300;
-    stroke-width: 1;
+    fill: white;
+    stroke: $tw-neutral-300;
+    stroke-width: 0.7;
 }
 
 /* default key side styling, only used is draw_key_sides is set */
@@ -194,7 +194,7 @@ rect.combo.held {
 }
 rect.combo,
 rect.combo-separate {
-    fill: $tw-neutral-200;
+    fill: $tw-neutral-100;
     opacity: 0.7;
 }
 
@@ -220,20 +220,20 @@ text.key.shifted {
 //==============================================================================
 
 // thumb keys
-.keypos-38, .keypos-39 {
-    rect {
-        stroke: $tw-lime-600;
-        fill: $tw-lime-50;
-    }
-    text, .glyph {
-        fill: $tw-lime-600;
-    }
-    rect.held {
-        // overwrite
-        stroke: $tw-lime-600;
-        fill: $tw-lime-600;
-    }
-}
+// .keypos-38, .keypos-39 {
+//     rect {
+//         stroke: $tw-lime-600;
+//         fill: $tw-lime-50;
+//     }
+//     text, .glyph {
+//         fill: $tw-lime-600;
+//     }
+//     rect.held {
+//         // overwrite
+//         stroke: $tw-lime-600;
+//         fill: $tw-lime-600;
+//     }
+// }
 
 // make media tabler icons slightly larger
 $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
@@ -302,6 +302,42 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
     //     stroke: $tw-rose-700;
     //     stroke-width: 1;
     // }
+}
+
+
+
+// make thumb icons larger:
+// these are lucide icons, so they have a stroke (currentColor) instead of a fill
+g.key.keypos-{
+    &38, &39 {
+        .glyph {
+            transform: scale(2.3);
+            stroke-width: 1;
+        }
+    }
+}
+#lucide-sun,
+#lucide-moon {
+    svg {
+        // allow overwriting stroke-width with .glyph selector
+        stroke-width: inherit;
+    }
+}
+
+
+// 'hold' state for thumb keys
+.layer-code g.key.keypos-38,
+.layer-navi g.key.keypos-39,
+.layer-tri g.key.keypos-38,
+.layer-tri g.key.keypos-39{
+    rect.key {
+        stroke: black /*lime-600*/;
+        fill: black;
+    }
+    .glyph, text {
+        // fill: white;
+        color: white; // for lucide icons
+    }
 }
 
 
