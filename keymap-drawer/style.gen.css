@@ -14,9 +14,9 @@ svg.keymap {
 
 /* default key styling */
 rect.key {
-  fill: #fafaf9;
-  stroke: #d6d3d1;
-  stroke-width: 1;
+  fill: white;
+  stroke: #d4d4d4;
+  stroke-width: 0.7;
 }
 
 /* default key side styling, only used is draw_key_sides is set */
@@ -160,7 +160,7 @@ rect.combo.held {
 
 rect.combo,
 rect.combo-separate {
-  fill: #e5e5e5;
+  fill: #f5f5f5;
   opacity: 0.7;
 }
 
@@ -177,18 +177,6 @@ text.label {
 text.key.shifted {
   transform: translate(0, 2px);
   transform: translate(0, 2);
-}
-
-.keypos-38 rect, .keypos-39 rect {
-  stroke: #65a30d;
-  fill: #f7fee7;
-}
-.keypos-38 text, .keypos-38 .glyph, .keypos-39 text, .keypos-39 .glyph {
-  fill: #65a30d;
-}
-.keypos-38 rect.held, .keypos-39 rect.held {
-  stroke: #65a30d;
-  fill: #65a30d;
 }
 
 .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject, .key.tap.glyph.tabler__lock {
@@ -222,4 +210,35 @@ text.key.shifted {
 .layer-navi g.key.keypos-1 text.key.tap, .layer-navi g.key.keypos-13 text.key.tap {
   transform: translate(0, 5px);
   transform: translate(0, 5);
+}
+
+.combo.combopos-21 {
+  fill: #be123c;
+}
+
+g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
+  transform: scale(2.3);
+  stroke-width: 1;
+}
+
+#lucide-sun svg,
+#lucide-moon svg {
+  stroke-width: inherit;
+}
+
+.layer-code g.key.keypos-38 rect.key,
+.layer-navi g.key.keypos-39 rect.key,
+.layer-tri g.key.keypos-38 rect.key,
+.layer-tri g.key.keypos-39 rect.key {
+  stroke: black;
+  fill: black;
+}
+.layer-code g.key.keypos-38 .glyph, .layer-code g.key.keypos-38 text,
+.layer-navi g.key.keypos-39 .glyph,
+.layer-navi g.key.keypos-39 text,
+.layer-tri g.key.keypos-38 .glyph,
+.layer-tri g.key.keypos-38 text,
+.layer-tri g.key.keypos-39 .glyph,
+.layer-tri g.key.keypos-39 text {
+  color: white;
 }

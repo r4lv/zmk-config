@@ -39,8 +39,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: magic, type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - $$mdi:keyboard-return$$
-  - code
-  - navi
+  - $$lucide-sun$$
+  - $$lucide-moon$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   code:
@@ -82,13 +82,13 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {type: held}
-  - navi
+  - $$lucide-sun$$
+  - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   navi:
   - {t: '$$combo:web/text:E$$', h: emoji}
-  - {t: ¨, s: ^, type: rdead}
+  - {t: ¨, s: ^}
   - {t: '7', h: comment, s: '$$combo:shift/cmd/text:7$$'}
   - {t: '8', s: (}
   - {t: '9', s: )}
@@ -100,7 +100,7 @@ layers:
   - END
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
-  - {t: ´, s: '`', type: rdead}
+  - {t: ´, s: '`'}
   - {t: '4', h: screenshot, s: '$$combo:shift/cmd/text:4$$'}
   - {t: '5', s: '%'}
   - {t: '6', s: '&'}
@@ -125,8 +125,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - code
-  - {type: held}
+  - $$lucide-sun$$
+  - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   tri:
@@ -168,8 +168,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - $$lucide-sun$$
+  - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
 combos:
@@ -251,3 +251,6 @@ combos:
 - p: [8, 9]
   k: $$smallcombo:shift/cmd/text:7$$
   l: [code]
+- p: [24, 25]
+  k: {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  l: [base]
