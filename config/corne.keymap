@@ -135,6 +135,8 @@
         playpause { key-positions = <posR posT>; bindings = <&kp C_PP>; layers = <TRI>; require-prior-idle-ms = <200>; };
 
         comment { key-positions = <posI posO>; bindings = <&kp LS(LG(N7))>; layers = <CDE>; require-prior-idle-ms = <200>; };
+
+        lalt { key-positions = <posLT posY>; bindings = <&kp RALT>; layers = <BSE>; require-prior-idle-ms = <200>; };
     };
 
     conditional_layers {

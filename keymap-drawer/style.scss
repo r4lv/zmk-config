@@ -294,3 +294,14 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
         @include keymod-shiftdown;
     }
 }
+
+// modifier combos
+.combo.combopos-21 {
+    fill: $tw-rose-700;
+    // rect {
+    //     stroke: $tw-rose-700;
+    //     stroke-width: 1;
+    // }
+}
+
+
