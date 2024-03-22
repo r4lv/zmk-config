@@ -36,6 +36,7 @@ draw_config:
   glyphs:
     lucide-sun: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
     lucide-moon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    lucide-orbit: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
@@ -113,36 +114,35 @@ parse_config:
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: magic
-
-    "&kp HY(DE_COMMA)":
-      tap: "$$combo:atom/text:,$$"
-    "&kp HY(DE_DOT)":
-      tap: "$$combo:atom/text:.$$"
-    "&kp HY(DE_MINUS)":
-      tap: "$$combo:atom/text:-$$"
-    "&kp HY(DE_O_UML)":
-      tap: "$$combo:atom/text:Ö$$"
-      hold: 1Password
-    "&kp HY(DE_A_UML)":
-      tap: "$$combo:atom/text:Ä$$"
+    
     # definition for hyper+alpha are added by generate_drawer_config.py
-
-
+    # overwrite some of them here, to add a label
+    "&kp HY(DE_O_UML)":
+      tap: "$$combo:lucide-orbit/text:Ö$$"
+      hold: "1Password"
+    "&kp HY(DE_I)":
+      tap: "$$combo:lucide-orbit/text:I$$"
+      hold: Scoot
+    "&kp HY(DE_U)":
+      tap: "$$combo:lucide-orbit/text:U$$"
+      hold: Scoot
     "&kp HY(DE_J)":
-      tap: "$$combo:atom/text:J$$"
+      tap: "$$combo:lucide-orbit/text:J$$"
       hold: iTerm
     "&kp HY(DE_K)":
-      tap: "$$combo:atom/text:J$$"
+      tap: "$$combo:lucide-orbit/text:J$$"
       hold: Alfred
-    
+    "&kp HY(DE_L)":
+      tap: "$$combo:lucide-orbit/text:L$$"
+      hold: symbols
     "&kp HY(DE_C)":
-      tap: "$$combo:atom/text:C$$"
+      tap: "$$combo:lucide-orbit/text:C$$"
       hold: Code
     "&kp HY(DE_V)":
-      tap: "$$combo:atom/text:V$$"
+      tap: "$$combo:lucide-orbit/text:V$$"
       hold: VNC
     "&kp HY(DE_B)":
-      tap: "$$combo:atom/text:B$$"
+      tap: "$$combo:lucide-orbit/text:B$$"
       hold: Browser
     
     "&mm_3":

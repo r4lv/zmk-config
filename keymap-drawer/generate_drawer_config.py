@@ -24,7 +24,12 @@ cfg["draw_config"]["svg_style"] = STR(css + "\n" + cfg["draw_config"].get("svg_s
 
 for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
     cfg["parse_config"]["raw_binding_map"].setdefault(
-        f"&kp HY(DE_{char})", f"$$combo:atom/text:{char}$$"
+        f"&kp HY(DE_{char})", f"$$combo:lucide-orbit/text:{char}$$"
+    )
+for key, char in dict(COMMA=",", DOT=".", MINUS="\u2013", O_UML="Ö", A_UML="Ä").items():
+    # endash for Minus, for better readability
+    cfg["parse_config"]["raw_binding_map"].setdefault(
+        f"&kp HY(DE_{key})", f"$$combo:lucide-orbit/text:{char}$$"
     )
 
 with open(HERE / "../de-mac/raw_binding_map.gen.yaml") as f:
