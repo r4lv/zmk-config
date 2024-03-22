@@ -257,6 +257,8 @@ parse_config:
     "LA(RIGHT)": $$combo:alt/chevron-right$$
     "LG(LEFT)": "$$combo:cmd/chevron-left$$"
     "LG(RIGHT)": "$$combo:cmd/chevron-right$$"
+    "LG(UP)": "$$combo:cmd/chevron-up$$"
+    "LG(DOWN)": "$$combo:cmd/chevron-down$$"
 
     "LS(LA(KP_N7))":
       tap: "`"
