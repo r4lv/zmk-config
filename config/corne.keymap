@@ -104,39 +104,47 @@
     combos {
         compatible = "zmk,combos";
 
-        tq { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <0>; require-prior-idle-ms = <500>; };
-        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500>; };
-        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <0>; require-prior-idle-ms = <500>; };
-        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <0>; require-prior-idle-ms = <500>; };
-        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <0>; require-prior-idle-ms = <500>; };
-        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <0>; require-prior-idle-ms = <500>; };
-        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500>; };
-            
-        xc { key-positions = <posX posC>;     bindings = <&kp DE_LBRC>; layers = <0>; require-prior-idle-ms = <500>; };
-        cv { key-positions = <posC posV>;     bindings = <&kp DE_BSLH>; layers = <0>; require-prior-idle-ms = <500>; };
-        mc { key-positions = <posM posKOM>;   bindings = <&kp DE_FSLH>; layers = <0>; require-prior-idle-ms = <500>; };
-        cp { key-positions = <posKOM posPNK>; bindings = <&kp DE_RBRC>; layers = <0>; require-prior-idle-ms = <500>; };
+        // ╭─────────────────────────╮ ╭─────────────────────────╮
+        // │ TAB  Q   W   E   R   T  │ │  Z   U   I   O   P   UE │
+        // │ CPS  A   S   D   F   G  │ │  H   J   K   L   OE  AE │
+        // │  LT  Y   X   C   V   B  │ │  N   M   ,  PNK MNS RSH │
+        // ╰───────────╮ DL2 DL1 DL0 │ │ DR0 DR1 DR2 ╭───────────╯
+        //             ╰─────────────╯ ╰─────────────╯
 
-        n1 { key-positions = <posQ posA>;  bindings = <&kp N1>; layers = <0>; require-prior-idle-ms = <200>; };
-        n2 { key-positions = <posW posS>;  bindings = <&kp N2>; layers = <0>; require-prior-idle-ms = <200>; };
-        n3 { key-positions = <posE posD>;  bindings = <&kp N3>; layers = <0>; require-prior-idle-ms = <200>; };
-        n4 { key-positions = <posR posF>;  bindings = <&kp N4>; layers = <0>; require-prior-idle-ms = <200>; };
-        n5 { key-positions = <posT posG>;  bindings = <&kp N5>; layers = <0>; require-prior-idle-ms = <200>; };
-        n6 { key-positions = <posZ posH>;  bindings = <&kp N6>; layers = <0>; require-prior-idle-ms = <200>; };
-        n7 { key-positions = <posU posJ>;  bindings = <&kp N7>; layers = <0>; require-prior-idle-ms = <200>; };
-        n8 { key-positions = <posI posK>;  bindings = <&kp N8>; layers = <0>; require-prior-idle-ms = <200>; };
-        n9 { key-positions = <posO posL>;  bindings = <&kp N9>; layers = <0>; require-prior-idle-ms = <200>; };
-        n0 { key-positions = <posP posOE>; bindings = <&kp N0>; layers = <0>; require-prior-idle-ms = <200>; };
+        esc { key-positions = <posTAB posQ>; bindings = <&kp ESC>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        qw { key-positions = <posQ posW>; bindings = <&kp DE_LBRC>; layers = <BASE>; require-prior-idle-ms = <500>; };
+        we { key-positions = <posW posE>; bindings = <&kp DE_LPAR>; layers = <BASE>; require-prior-idle-ms = <500>; };
+        er { key-positions = <posE posR>; bindings = <&kp DE_LBKT>; layers = <BASE>; require-prior-idle-ms = <500>; };
+        ui { key-positions = <posU posI>; bindings = <&kp DE_RBKT>; layers = <BASE>; require-prior-idle-ms = <500>; };
+        io { key-positions = <posI posO>; bindings = <&kp DE_RPAR>; layers = <BASE>; require-prior-idle-ms = <500>; };
+        op { key-positions = <posO posP>; bindings = <&kp DE_RBRC>; layers = <BASE>; require-prior-idle-ms = <500>; };
 
-        codeArrowLeft  { key-positions = <posA posS>;  bindings = <&tp_lt_minus>; layers = <CDE>; require-prior-idle-ms = <100>; };
-        codeArrowRight { key-positions = <posL posOE>; bindings = <&tp_minus_gt>; layers = <CDE>; require-prior-idle-ms = <100>; };
+        n1 { key-positions = <posQ posA>;  bindings = <&kp N1>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n2 { key-positions = <posW posS>;  bindings = <&kp N2>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n3 { key-positions = <posE posD>;  bindings = <&kp N3>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n4 { key-positions = <posR posF>;  bindings = <&kp N4>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n5 { key-positions = <posT posG>;  bindings = <&kp N5>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n6 { key-positions = <posZ posH>;  bindings = <&kp N6>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n7 { key-positions = <posU posJ>;  bindings = <&kp N7>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n8 { key-positions = <posI posK>;  bindings = <&kp N8>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n9 { key-positions = <posO posL>;  bindings = <&kp N9>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        n0 { key-positions = <posP posOE>; bindings = <&kp N0>; layers = <BASE>; require-prior-idle-ms = <200>; };
 
-        mute { key-positions = <posF posG>; bindings = <&kp C_MUTE>; layers = <TRI>; require-prior-idle-ms = <200>; };
-        playpause { key-positions = <posR posT>; bindings = <&kp C_PP>; layers = <TRI>; require-prior-idle-ms = <200>; };
+        codeArrowLeft  { key-positions = <posA posS>;  bindings = <&tp_lt_minus>; layers = <SUN>; require-prior-idle-ms = <100>; };
+        codeArrowRight { key-positions = <posL posOE>; bindings = <&tp_minus_gt>; layers = <SUN>; require-prior-idle-ms = <100>; };
 
-        comment { key-positions = <posI posO>; bindings = <&kp LS(LG(N7))>; layers = <CDE>; require-prior-idle-ms = <200>; };
+        mute { key-positions = <posF posG>; bindings = <&kp C_MUTE>; layers = <ECLIPSE>; require-prior-idle-ms = <200>; };
+        playpause { key-positions = <posR posT>; bindings = <&kp C_PP>; layers = <ECLIPSE>; require-prior-idle-ms = <200>; };
 
-        lalt { key-positions = <posLT posY>; bindings = <&kp RALT>; layers = <BSE>; require-prior-idle-ms = <200>; };
+        comment { key-positions = <posI posO>; bindings = <&kp LS(LG(N7))>; layers = <SUN>; require-prior-idle-ms = <200>; };
+
+        lalt { key-positions = <posLT posY>; bindings = <&kp RALT>; layers = <BASE SUN MOON>; require-prior-idle-ms = <200>; };
+        del { key-positions = <posP posUE>; bindings = <&kp DELETE>; layers = <BASE SUN MOON>; require-prior-idle-ms = <100>; };
+        lbsp { key-positions = <posTAB posCPS>; bindings = <&kp BSPC>; layers = <BASE>; require-prior-idle-ms = <100>; };
+        ctrlA { key-positions = <posY posX>; bindings = <&kp LC(DE_A)>; layers = <BASE>; require-prior-idle-ms = <300>; };
+        ctrlC { key-positions = <posC posV>; bindings = <&kp LC(DE_C)>; layers = <BASE>; require-prior-idle-ms = <300>; };
+
+        eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE>; require-prior-idle-ms = <200>; };
     };
 
     conditional_layers {

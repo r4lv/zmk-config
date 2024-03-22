@@ -189,8 +189,9 @@ g.trans {
 
 rect.held,
 rect.combo.held {
-    stroke: $tw-lime-600;
-    fill: $tw-lime-600;
+    // like regular key
+    stroke: $tw-neutral-300;
+    fill: white;
 }
 rect.combo,
 rect.combo-separate {
@@ -296,7 +297,9 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
 }
 
 // modifier combos
-.combo.combopos-21 {
+.layer-base .combo.combopos-17,
+.layer-sun .combo.combopos-3,
+.layer-moon .combo.combopos-0 {
     fill: $tw-rose-700;
     // rect {
     //     stroke: $tw-rose-700;

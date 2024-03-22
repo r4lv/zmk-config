@@ -36,6 +36,7 @@ draw_config:
   glyphs:
     lucide-sun: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
     lucide-moon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    lucide-eclipse: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eclipse"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 10 10"/></svg>
     lucide-orbit: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
@@ -144,6 +145,15 @@ parse_config:
     "&kp HY(DE_B)":
       tap: "$$combo:lucide-orbit/text:B$$"
       hold: Browser
+
+    "&kp LC(DE_A)":
+      tap: "$$combo:ctrl/text:A$$"
+    "&kp LC(DE_X)":
+      tap: "$$combo:ctrl/text:X$$"
+    "&kp LC(DE_C)":
+      tap: "$$combo:ctrl/text:C$$"
+    "&kp LC(DE_V)":
+      tap: "$$combo:ctrl/text:V$$"
     
     "&mm_3":
       tap: "3"
@@ -170,6 +180,10 @@ parse_config:
       tap: "$$lucide-sun$$"
     "&mo MOON":
       tap: "$$lucide-moon$$"
+    "&mo ECLIPSE":
+      # momentary layer switch on combo key
+      tap: "$$lucide-eclipse$$"
+      # tap: "$$combo:lucide-sun/lucide-moon$$"
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
