@@ -206,8 +206,8 @@ rect.combo-separate {
 
 text.label {
     // shift layer label down just above the keys
-    transform: translate(0, 20px); // chrome
-    transform: translate(0, 20); // resvg
+    transform: translate(26px, 20px); // chrome
+    transform: translate(26, 20); // resvg
 }
 
 text.key.shifted {
