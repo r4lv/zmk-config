@@ -43,7 +43,7 @@ layers:
   - $$lucide-moon$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  code:
+  sun:
   - {t: '`', h: '$$combo:shift/alt/numeric-7-circle-outline$$'}
   - '!'
   - \
@@ -86,18 +86,18 @@ layers:
   - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  navi:
+  moon:
   - {t: '$$combo:web/text:E$$', h: emoji}
   - {t: ¨, s: ^}
   - {t: '7', h: comment, s: '$$combo:shift/cmd/text:7$$'}
   - {t: '8', s: (}
   - {t: '9', s: )}
   - {t: ß, s: '?'}
-  - HOME
+  - $$combo:cmd/chevron-up$$
   - $$combo:cmd/chevron-left$$
   - $$mdi:chevron-up$$
   - $$combo:cmd/chevron-right$$
-  - END
+  - $$combo:cmd/chevron-down$$
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - {t: ´, s: '`'}
@@ -129,42 +129,42 @@ layers:
   - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
-  tri:
+  eclipse:
   - {t: OUT BLE, s: OUT USB}
   - {t: F16, h: '$$tabler:sun-low$$'}
   - {t: F17, h: '$$tabler:sun-high$$'}
-  - $$combo:atom/text:E$$
+  - $$combo:lucide-orbit/text:E$$
   - $$tabler:player-track-prev$$
   - $$tabler:player-track-next$$
   - •
-  - $$combo:atom/text:U$$
-  - $$combo:atom/text:I$$
-  - $$combo:atom/text:O$$
+  - {t: '$$combo:lucide-orbit/text:U$$', h: Scoot}
+  - {t: '$$combo:lucide-orbit/text:I$$', h: Scoot}
+  - $$combo:lucide-orbit/text:O$$
   - {t: '$$tabler:lock$$', h: '$$combo:ctrl/cmd/text:Q$$'}
   - $$tabler:player-eject$$
   - {t: BT  1, s: BT1+CLR}
-  - $$combo:atom/text:A$$
-  - $$combo:atom/text:S$$
-  - $$combo:atom/text:D$$
+  - $$combo:lucide-orbit/text:A$$
+  - $$combo:lucide-orbit/text:S$$
+  - $$combo:lucide-orbit/text:D$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - ±
-  - {t: '$$combo:atom/text:J$$', h: iTerm}
-  - {t: '$$combo:atom/text:J$$', h: Alfred}
-  - $$combo:atom/text:L$$
-  - {t: '$$combo:atom/text:Ö$$', h: 1Password}
-  - $$combo:atom/text:Ä$$
+  - {t: '$$combo:lucide-orbit/text:J$$', h: iTerm}
+  - {t: '$$combo:lucide-orbit/text:J$$', h: Alfred}
+  - {t: '$$combo:lucide-orbit/text:L$$', h: symbols}
+  - {t: '$$combo:lucide-orbit/text:Ö$$', h: 1Password}
+  - $$combo:lucide-orbit/text:Ä$$
   - {t: BT  0, s: BT0+CLR}
-  - $$combo:atom/text:Y$$
-  - $$combo:atom/text:X$$
-  - {t: '$$combo:atom/text:C$$', h: Code}
-  - {t: '$$combo:atom/text:V$$', h: VNC}
-  - {t: '$$combo:atom/text:B$$', h: Browser}
+  - $$combo:lucide-orbit/text:Y$$
+  - $$combo:lucide-orbit/text:X$$
+  - {t: '$$combo:lucide-orbit/text:C$$', h: Code}
+  - {t: '$$combo:lucide-orbit/text:V$$', h: VNC}
+  - {t: '$$combo:lucide-orbit/text:B$$', h: Browser}
   - °
-  - $$combo:atom/text:M$$
-  - $$combo:atom/text:,$$
-  - $$combo:atom/text:.$$
-  - $$combo:atom/text:-$$
+  - $$combo:lucide-orbit/text:M$$
+  - $$combo:lucide-orbit/text:,$$
+  - $$combo:lucide-orbit/text:.$$
+  - $$combo:lucide-orbit/text:–$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -192,18 +192,6 @@ combos:
   k: )
   l: [base]
 - p: [9, 10]
-  k: '}'
-  l: [base]
-- p: [26, 27]
-  k: '{'
-  l: [base]
-- p: [27, 28]
-  k: \
-  l: [base]
-- p: [31, 32]
-  k: /
-  l: [base]
-- p: [32, 33]
   k: '}'
   l: [base]
 - p: [1, 13]
@@ -238,19 +226,34 @@ combos:
   l: [base]
 - p: [13, 14]
   k: <-
-  l: [code]
+  l: [sun]
 - p: [21, 22]
   k: ->
-  l: [code]
+  l: [sun]
 - p: [16, 17]
   k: $$tabler:volume-3$$
-  l: [tri]
+  l: [eclipse]
 - p: [4, 5]
   k: $$tabler:player-play$$
-  l: [tri]
+  l: [eclipse]
 - p: [8, 9]
   k: $$smallcombo:shift/cmd/text:7$$
-  l: [code]
+  l: [sun]
 - p: [24, 25]
   k: {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  l: [base, sun, moon]
+- p: [10, 11]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [base, sun, moon]
+- p: [0, 12]
+  k: $$mdi:backspace-outline$$
+  l: [base]
+- p: [25, 26]
+  k: $$combo:ctrl/text:A$$
+  l: [base]
+- p: [27, 28]
+  k: $$combo:ctrl/text:C$$
+  l: [base]
+- p: [39, 40]
+  k: $$lucide-eclipse$$
   l: [base]

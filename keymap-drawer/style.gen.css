@@ -154,8 +154,8 @@ g.trans .glyph {
 
 rect.held,
 rect.combo.held {
-  stroke: #65a30d;
-  fill: #65a30d;
+  stroke: #d4d4d4;
+  fill: white;
 }
 
 rect.combo,
@@ -170,8 +170,8 @@ rect.combo-separate {
 }
 
 text.label {
-  transform: translate(0, 20px);
-  transform: translate(0, 20);
+  transform: translate(26px, 20px);
+  transform: translate(26, 20);
 }
 
 text.key.shifted {
@@ -192,27 +192,29 @@ text.key.shifted {
   font-weight: 400;
 }
 
-.layer-code g.key.keypos-0 text.key.tap, .layer-code g.key.keypos-28 text.key.tap, .layer-code g.key.keypos-30 text.key.tap {
+.layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap, .layer-sun g.key.keypos-30 text.key.tap {
   font-size: 26px;
   font-weight: 400;
 }
 
-.layer-navi g.key.keypos-1 text.key.tap, .layer-navi g.key.keypos-13 text.key.tap, .layer-navi g.key.keypos-17 text.key.tap, .layer-navi g.key.keypos-29 text.key.tap {
+.layer-moon g.key.keypos-1 text.key.tap, .layer-moon g.key.keypos-13 text.key.tap, .layer-moon g.key.keypos-17 text.key.tap, .layer-moon g.key.keypos-29 text.key.tap {
   font-size: 26px;
   font-weight: 400;
 }
 
-.layer-code g.key.keypos-0 text.key.tap, .layer-code g.key.keypos-28 text.key.tap {
+.layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap {
   transform: translate(0, 5px);
   transform: translate(0, 5);
 }
 
-.layer-navi g.key.keypos-1 text.key.tap, .layer-navi g.key.keypos-13 text.key.tap {
+.layer-moon g.key.keypos-1 text.key.tap, .layer-moon g.key.keypos-13 text.key.tap {
   transform: translate(0, 5px);
   transform: translate(0, 5);
 }
 
-.combo.combopos-21 {
+.layer-base .combo.combopos-17,
+.layer-sun .combo.combopos-3,
+.layer-moon .combo.combopos-0 {
   fill: #be123c;
 }
 
@@ -226,19 +228,19 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
   stroke-width: inherit;
 }
 
-.layer-code g.key.keypos-38 rect.key,
-.layer-navi g.key.keypos-39 rect.key,
-.layer-tri g.key.keypos-38 rect.key,
-.layer-tri g.key.keypos-39 rect.key {
+.layer-sun g.key.keypos-38 rect.key,
+.layer-moon g.key.keypos-39 rect.key,
+.layer-eclipse g.key.keypos-38 rect.key,
+.layer-eclipse g.key.keypos-39 rect.key {
   stroke: black;
   fill: black;
 }
-.layer-code g.key.keypos-38 .glyph, .layer-code g.key.keypos-38 text,
-.layer-navi g.key.keypos-39 .glyph,
-.layer-navi g.key.keypos-39 text,
-.layer-tri g.key.keypos-38 .glyph,
-.layer-tri g.key.keypos-38 text,
-.layer-tri g.key.keypos-39 .glyph,
-.layer-tri g.key.keypos-39 text {
+.layer-sun g.key.keypos-38 .glyph, .layer-sun g.key.keypos-38 text,
+.layer-moon g.key.keypos-39 .glyph,
+.layer-moon g.key.keypos-39 text,
+.layer-eclipse g.key.keypos-38 .glyph,
+.layer-eclipse g.key.keypos-38 text,
+.layer-eclipse g.key.keypos-39 .glyph,
+.layer-eclipse g.key.keypos-39 text {
   color: white;
 }
