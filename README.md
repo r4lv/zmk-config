@@ -1,4 +1,4 @@
-# zmk-config for Corne Keyboard / QWERTZ / macOS
+# Keyboard Firmware for Corne • QWERTZ • macOS • ZMK
 
 ![layout](keymap-drawer/corne.png)
 
@@ -6,20 +6,19 @@
 ## Features
 
 - **QWERTZ** This layout is intended to be used with macOS' German keyboard layout (`Deutsch > Deutsch` or `Deutsch > ABC — QWERTZ`)
-- **screen brightness** The F16 and F17 keys on the `tri` layer are intended to be mapped to external screen brightness control, e.g. with [superduper/BrightnessMenulet](https://github.com/superduper/BrightnessMenulet).
-- **hyper** Many keys on the `tri` layer are mapped to the `HYPER` modifier (`⇧⌃⌥⌘`), symbolized by the atom symbol. Those keys can be remapped on-the-fly with [karabiner-elements](https://karabiner-elements.pqrs.org), instead of re-flashing the firmware each time.
-   - note that karabiner-elements might [interfere](https://zmk.dev/docs/behaviors/mod-morph#advanced-configuration) with mod-morph (like the shift-backspace on the _code_ layer, or the circumflex on the _navi_ layer)
+- **screen brightness** The F16 and F17 keys on the _eclipse_ layer are intended to be mapped to external screen brightness control, e.g. with [Lunar](https://lunar.fyi/) or [florianbeck/BrightnessMenulet](https://github.com/florianbeck/BrightnessMenulet).
+- **hyper** Many keys on the `eclipse` layer are mapped to the <kbd>HYPER</kbd> modifier (<kbd>⇧⌃⌥⌘</kbd>), symbolized by the orbit symbol. Those keys can be mapped to global shortcuts.
    - the keyboard shortcuts on the right side, for iTerm, Alfred and 1Password are directly mapped in those apps as hotkeys.
    - the keyboard shortcuts on the left side, for VS Code, VNC Viewer, and the Browser are mapped with Alfred to open/activate the respective app.
 - **magic shift** The right _magic_ shift key on the base layer behaves like
    - a regular RSHIFT when held,
    - a sticky RSHIFT when tapped (to capitalize the next letter), and
    - like `&caps_word` when double-tapped (to capitalize the next word).
-- **numblock** The navi layer features a numblock for the left hand, with `.` and `,` nearby. The shifted numbers 3, 4 and 7 press the cmd modifier as well, so in order to e.g. send `shift-cmd-7` (line comment in VS Code), you can press <kbd>navi shift 7</kbd>.
-- **mirrored symbols** Many symbols in the `code` layer, many symbols are mirrored between the left and the right hand, like the braces `[]<>(){}`, the slashes `\/`, and `_-` `;,` `!?`.
-- **non-dead backtick** The backtick on the German macOS keyboard layout is a dead key, which messes up some text input fields. The upper left key on the `code` layer actually sens <kbd>shift alt numblock 7</kbd>, which does nothing on its own, but that is a free slot on the German keyboard layout which can be remapped using the Ukelele.app, when creating a custom keyboard layout. Note that a non-dead backtick can also be accessed with <kbd>ctrl shift grave</kbd> on the standard macOS layout, but that is interpreted as keyboard shortcut by many apps using non-standard input fields and thus does NOT send the backtick character.
-- **emoji** The upper left key on the `navi` layer sends the <kbd>globe E</kbd> keyboard shortcut, which opens the emoji picker on newer versions of macOS. Older versions required <kbd>ctrl cmd space</kbd>.
-
+- **mouse replacement** [Scoot](https://github.com/mjrusso/scoot) can be used to replace the mouse (using <kbd>hyper I</kbd> and <kbd>hyper U</kbd> on the _eclipse_ layer)
+- **numblock** The moon layer features a numblock for the left hand, with `.` and `,` nearby. The shifted numbers 3, 4 and 7 press the <kbd>cmd</kbd> modifier as well, so in order to e.g. send <kbd>cmd shift 7</kbd> (line comment in VS Code), you can press <kbd>moon shift 7</kbd>.
+- **mirrored symbols** Many symbols in the _sun_ layer, many symbols are mirrored between the left and the right hand, like the braces `[]<>(){}`, the slashes `\/`, and `_-` `;,` `!?`.
+- **non-dead backtick** The backtick on the German macOS keyboard layout is a dead key, which messes up some text input fields. The upper left key on the _sun_ layer actually sens <kbd>shift alt numblock-7</kbd>, which does nothing on its own, but that is a free slot on the German keyboard layout which can be remapped using the Ukelele.app, when creating a custom keyboard layout. Note that a non-dead backtick can also be accessed with <kbd>ctrl shift grave</kbd> on the standard macOS layout, but that is interpreted as keyboard shortcut by many apps using non-standard input fields and thus does NOT send the backtick character.
+- **emoji** The upper left key on the _moon_ layer sends the <kbd>globe E</kbd> keyboard shortcut, which opens the emoji picker on newer versions of macOS. Older versions required <kbd>ctrl cmd space</kbd>.
 
 
 ## German QWERTZ on macOS
