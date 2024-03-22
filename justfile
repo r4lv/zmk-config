@@ -139,3 +139,9 @@ setup-zephyr-sdk:
     # only keep arm-zephyr-eabi, 7,0G -> 913M
     rm -rf aarch* arc* microblazeel* mips* nios2* risc* sparc* x86* xtensa*
     ./setup.sh -c
+
+debug-svg:
+    open -a "Arc" "file://$PWD/keymap-drawer/corne.svg"
+
+preview-readme:
+    grip README.md
