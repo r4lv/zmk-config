@@ -51,7 +51,7 @@ flash side:
         echo "ERROR: firmware/{{side}}.uf2 does not exist"
         exit 1
     fi
-    for i in {1..15}; do
+    for i in {1..30}; do
         if [ -d /Volumes/NICENANO ]; then
             sleep 1
             west flash -d build/{{side}}
