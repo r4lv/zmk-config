@@ -5,10 +5,10 @@
 #include "keys_de.h"
 #include "keypos_qwertz.h"
 
-#define BSE 0
-#define CDE 1
-#define NAV 2
-#define TRI 3
+#define BASE 0
+#define SUN 1
+#define MOON 2
+#define ECLIPSE 3
 
 
 #define R_SHIFTED(NAME, REGULAR, SHIFTED) \
@@ -53,12 +53,12 @@
 /* ├──────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼─────────────────────┤ */
     &kp LSHFT  &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &magicshift RSHIFT 0
 /* ╰──────────┴─────────┴─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┴─────────────┴─────────────────────╯ */
-                                   &kp LCMD  &kp RETURN  &mo CDE       &mo NAV   &kp SPACE  &kp LALT
+                                   &kp LCMD  &kp RETURN  &mo SUN       &mo MOON  &kp SPACE  &kp LALT
 /*                                ╰─────────┴───────────┴─────────╯   ╰─────────┴──────────┴─────────────╯                                                 */
             >;
         };
 
-        layer_code {
+        layer_sun {
             bindings = <
 /* ╭──────────────────┬─────────────┬────────────┬─────────────┬──────────────┬────────────╮   ╭─────────────┬────────────┬─────────────┬────────────┬─────────────┬──────────╮ */
     &kp LS(LA(KP_N7))  &kp DE_EXCL   &kp DE_BSLH  &kp DE_COLON  &kp DE_DOLLAR  &none            &kp DE_PRCNT  &kp DE_AMPS  &kp DE_EQUAL  &kp DE_FSLH  &kp DE_QMARK  &mm_bspc
@@ -67,12 +67,12 @@
 /* ├──────────────────┼─────────────┼────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┼─────────────┼──────────┤ */
     &kp LSHFT          &kp DE_UNDER  &kp DE_PLUS  &kp DE_SEMI   &kp DE_ASTRK   &kp DE_HASH      &kp DE_TILDE  &kp DE_PIPE  &trans        &trans       &trans        &kp RSHFT
 /* ╰──────────────────┴─────────────┴────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┴─────────────┴──────────╯ */
-                                                  &kp LCMD      &trans         &mo CDE          &mo NAV       &trans       &kp LALT
+                                                  &kp LCMD      &trans         &mo SUN          &mo MOON      &trans       &kp LALT
 /*                                               ╰─────────────┴──────────────┴────────────╯   ╰─────────────┴────────────┴─────────────╯                                       */
             >;
         };
 
-        layer_navi {
+        layer_moon {
             bindings = <
 /* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭──────────┬─────────────┬─────────┬──────────────┬────────┬──────────╮ */
     &emoji     &mm_uml_circ  &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp HOME   &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp END  &mm_bspc
@@ -81,12 +81,12 @@
 /* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
     &kp LSHFT  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN  &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none    &kp RSHFT
 /* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┴────────┴──────────╯ */
-                                        &kp LCMD   &trans     &mo CDE           &mo NAV    &trans        &kp LALT
+                                        &kp LCMD   &trans     &mo SUN           &mo MOON   &trans        &kp LALT
 /*                                     ╰──────────┴──────────┴─────────────╯   ╰──────────┴─────────────┴─────────╯                                    */
             >;
         };
 
-        layer_tri {
+        layer_eclipse {
             bindings = <
 /* ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────────┬───────────────┬─────────────────┬─────────────────────────╮ */
     &mm_out     &kp F16       &kp F17       &kp HY(DE_E)  &kp C_PREV    &kp C_NEXT        &kp DE_BULLET  &kp HY(DE_U)  &kp HY(DE_I)      &kp HY(DE_O)    &kp LC(LG(DE_Q))  &kp C_AL_KEYBOARD_LAYOUT
@@ -95,7 +95,7 @@
 /* ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┼─────────────────┼─────────────────────────┤ */
     &mm_btsel0  &kp HY(DE_Y)  &kp HY(DE_X)  &kp HY(DE_C)  &kp HY(DE_V)  &kp HY(DE_B)      &kp DE_DEGREE  &kp HY(DE_M)  &kp HY(DE_COMMA)  &kp HY(DE_DOT)  &kp HY(DE_MINUS)  &kp RSHIFT
 /* ╰───────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┴─────────────────┴─────────────────────────╯ */
-                                            &trans        &trans        &mo CDE           &mo NAV        &trans        &trans
+                                            &trans        &trans        &mo SUN           &mo MOON        &trans        &trans
 /*                                         ╰─────────────┴─────────────┴─────────────╯   ╰──────────────┴─────────────┴─────────────────╯                                                             */
             >;
         };
@@ -143,8 +143,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <CDE NAV>;
-            then-layer = <TRI>;
+            if-layers = <SUN MOON>;
+            then-layer = <ECLIPSE>;
         };
     };
 

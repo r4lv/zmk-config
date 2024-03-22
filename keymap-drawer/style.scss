@@ -265,12 +265,12 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
         @include keymod-large;
     }
 }
-.layer-code g.key.keypos- {
+.layer-sun g.key.keypos- {
     &0, &28, &30 {
         @include keymod-large;
     }
 }
-.layer-navi g.key.keypos- {
+.layer-moon g.key.keypos- {
     &1, &13, &17, &29 {
         @include keymod-large;
     }
@@ -284,12 +284,12 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
     }
 }
 
-.layer-code g.key.keypos- {
+.layer-sun g.key.keypos- {
     &0, &28 {
         @include keymod-shiftdown;
     }
 }
-.layer-navi g.key.keypos- {
+.layer-moon g.key.keypos- {
     &1, &13 {
         @include keymod-shiftdown;
     }
@@ -326,10 +326,10 @@ g.key.keypos-{
 
 
 // 'hold' state for thumb keys
-.layer-code g.key.keypos-38,
-.layer-navi g.key.keypos-39,
-.layer-tri g.key.keypos-38,
-.layer-tri g.key.keypos-39{
+.layer-sun g.key.keypos-38,
+.layer-moon g.key.keypos-39,
+.layer-eclipse g.key.keypos-38,
+.layer-eclipse g.key.keypos-39{
     rect.key {
         stroke: black /*lime-600*/;
         fill: black;

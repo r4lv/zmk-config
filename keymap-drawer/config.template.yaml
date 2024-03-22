@@ -166,9 +166,9 @@ parse_config:
     "&tp_minus_gt": "->"
 
     # this disables the 'held' status for the keys, which will be implemented in css
-    "&mo CDE":
+    "&mo SUN":
       tap: "$$lucide-sun$$"
-    "&mo NAV":
+    "&mo MOON":
       tap: "$$lucide-moon$$"
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
