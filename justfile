@@ -26,7 +26,7 @@ draw-watch:
 	ls config/* keymap-drawer/*template* keymap-drawer/*.py keymap-drawer/style.scss | entr just draw
 
 # build ZMK firmware for one side
-build side: generate-mapping
+build side="left": generate-mapping
     #!/usr/bin/env bash
     # TODO: generate-mapping breaks ninjas change detection. build aways takes 9s,
     # even when nothing changed. I never get a "ninja: no work to do" message.
@@ -42,7 +42,7 @@ build side: generate-mapping
 
 
 # flash ZMK firmware to nice!nano
-flash side:
+flash side="left":
     #!/usr/bin/env bash
     set -euo pipefail
     source .venv/bin/activate
