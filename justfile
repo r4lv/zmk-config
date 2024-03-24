@@ -9,22 +9,23 @@ generate-mapping:
 
 # draw keyboard layout as PNG
 draw: generate-mapping
-    bunx sass@1.54.0 --no-source-map keymap-drawer/style.scss keymap-drawer/style.gen.css
-    python keymap-drawer/generate_drawer_config.py  # generate config.gen.yaml
-    keymap -c keymap-drawer/config.gen.yaml parse -z config/corne.keymap > keymap-drawer/corne.gen.yaml
-    keymap -c keymap-drawer/config.gen.yaml draw keymap-drawer/corne.gen.yaml | sed 's/tabler:/tabler__/g' \
+    bunx sass@1.54.0 --no-source-map cheatsheet/style.scss cheatsheet/style.gen.css
+    python cheatsheet/generate_drawer_config.py  # generate config.gen.yaml
+    keymap -c cheatsheet/config.gen.yaml parse -z config/corne.keymap > cheatsheet/corne.gen.yaml
+    keymap -c cheatsheet/config.gen.yaml draw cheatsheet/corne.gen.yaml \
+        | sed 's/tabler:/tabler__/g' \
         | sed 's/>base</></g' \
-        > keymap-drawer/corne.svg
-    python keymap-drawer/inject-svg.py keymap-drawer/corne.svg \
-        keymap-drawer/owl.svg \
-        keymap-drawer/inject-layer-symbols.svg
-    resvg --background white -w 2000 keymap-drawer/corne.svg keymap-drawer/corne.png \
-        --use-fonts-dir keymap-drawer/fonts/Quicksand/static \
+        > cheatsheet/corne.svg
+    python cheatsheet/inject-svg.py cheatsheet/corne.svg \
+        cheatsheet/owl.svg \
+        cheatsheet/inject-layer-symbols.svg
+    resvg --background white -w 2000 cheatsheet/corne.svg cheatsheet/corne.png \
+        --use-fonts-dir cheatsheet/fonts/Quicksand/static \
         --skip-system-fonts
 
 # watch for changes and redraw keyboard layout
 draw-watch:
-	ls config/* keymap-drawer/*template* keymap-drawer/*.py keymap-drawer/style.scss | entr just draw
+	ls config/* cheatsheet/*template* cheatsheet/*.py cheatsheet/style.scss | entr just draw
 
 # build ZMK firmware for one side
 build side="left": generate-mapping
@@ -143,7 +144,7 @@ setup-zephyr-sdk:
 
 # open svg in Browser to use web inspector
 debug-svg:
-    open -a "Arc" "file://$PWD/keymap-drawer/corne.svg"
+    open -a "Arc" "file://$PWD/cheatsheet/corne.svg"
 
 # preview README.md like on GitHub
 preview-readme:

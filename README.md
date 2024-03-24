@@ -1,6 +1,6 @@
 # Keyboard Firmware for Corne • QWERTZ • macOS • ZMK
 
-![layout](keymap-drawer/corne.png)
+![layout](cheatsheet/corne.png)
 
 
 ## Features
@@ -35,7 +35,7 @@ Use [just](https://github.com/casey/just) to run the recipes in `justfile`:
 
 ``` bash
 just       # list recipes
-just draw  # update keymap-drawer/corne.png
+just draw  # update cheatsheet/corne.png
 just build # build zmk firmware with Docker
 ```
 
