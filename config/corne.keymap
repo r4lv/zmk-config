@@ -35,11 +35,6 @@
 #define HYPER(keycode) LS(LC(LA(LG(keycode))))
 #define HY HYPER
 
-&mt {
-    // overwrite settings
-    flavor = "tap-preferred"; // default is "hold-preferred"
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -74,28 +69,28 @@
 
         layer_moon {
             bindings = <
-/* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭──────────┬─────────────┬─────────┬──────────────┬────────┬──────────╮ */
-    &emoji     &mm_uml_circ  &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp LG(UP) &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp LG(DOWN) &mm_bspc
-/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
-    &kp LCTRL  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP  &kp LEFT      &kp DOWN  &kp RIGHT      &none    &kp RALT
-/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┼────────┼──────────┤ */
-    &kp LSHFT  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN  &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none    &kp RSHFT
-/* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├──────────┼─────────────┼─────────┼──────────────┴────────┴──────────╯ */
-                                        &kp LCMD   &trans     &mo SUN           &mo MOON   &trans        &kp LALT
-/*                                     ╰──────────┴──────────┴─────────────╯   ╰──────────┴─────────────┴─────────╯                                    */
+/* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭───────────┬─────────────┬─────────┬──────────────┬─────────────┬──────────╮ */
+    &emoji     &mm_uml_circ  &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp LG(UP)  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp LG(DOWN)  &mm_bspc
+/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼──────────┤ */
+    &kp LCTRL  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP   &kp LEFT      &kp DOWN  &kp RIGHT      &none         &kp RALT
+/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼──────────┤ */
+    &kp LSHFT  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN   &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none         &kp RSHFT
+/* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┴─────────────┴──────────╯ */
+                                        &kp LCMD   &trans     &mo SUN           &mo MOON    &trans        &kp LALT
+/*                                     ╰──────────┴──────────┴─────────────╯   ╰───────────┴─────────────┴─────────╯                                         */
             >;
         };
 
         layer_eclipse {
             bindings = <
 /* ╭───────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭──────────────┬─────────────┬─────────────────┬───────────────┬─────────────────┬─────────────────────────╮ */
-    &mm_out     &kp C_BRI_DN   &kp C_BRI_UP       &kp HY(DE_E)  &kp C_PREV    &kp C_NEXT        &kp DE_BULLET  &kp HY(DE_U)  &kp HY(DE_I)      &kp HY(DE_O)    &kp LC(LG(DE_Q))  &kp C_AL_KEYBOARD_LAYOUT
+    &mm_out     &kp C_BRI_DN  &kp C_BRI_UP  &kp HY(DE_E)  &kp C_PREV    &kp C_NEXT        &kp DE_BULLET  &kp HY(DE_U)  &kp HY(DE_I)      &kp HY(DE_O)    &kp LC(LG(DE_Q))  &kp C_AL_KEYBOARD_LAYOUT
 /* ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┼─────────────────┼─────────────────────────┤ */
     &mm_btsel1  &kp HY(DE_A)  &kp HY(DE_S)  &kp HY(DE_D)  &kp C_VOL_DN  &kp C_VOL_UP      &kp DE_PM      &kp HY(DE_J)  &kp HY(DE_K)      &kp HY(DE_L)    &kp HY(DE_O_UML)  &kp HY(DE_A_UML)
 /* ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┼─────────────────┼─────────────────────────┤ */
     &mm_btsel0  &kp HY(DE_Y)  &kp HY(DE_X)  &kp HY(DE_C)  &kp HY(DE_V)  &kp HY(DE_B)      &kp DE_DEGREE  &kp HY(DE_M)  &kp HY(DE_COMMA)  &kp HY(DE_DOT)  &kp HY(DE_MINUS)  &kp RSHIFT
 /* ╰───────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├──────────────┼─────────────┼─────────────────┼───────────────┴─────────────────┴─────────────────────────╯ */
-                                            &trans        &trans        &mo SUN           &mo MOON        &trans        &trans
+                                            &trans        &trans        &mo SUN           &mo MOON       &trans        &trans
 /*                                         ╰─────────────┴─────────────┴─────────────╯   ╰──────────────┴─────────────┴─────────────────╯                                                             */
             >;
         };
@@ -144,7 +139,7 @@
         ctrlA { key-positions = <posY posX>; bindings = <&kp LC(DE_A)>; layers = <BASE>; require-prior-idle-ms = <300>; };
         ctrlC { key-positions = <posC posV>; bindings = <&kp LC(DE_C)>; layers = <BASE>; require-prior-idle-ms = <300>; };
 
-        eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE>; require-prior-idle-ms = <200>; };
+        // eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE SUN MOON ECLIPSE>; require-prior-idle-ms = <200>; }; // :(
     };
 
     conditional_layers {
@@ -201,7 +196,7 @@
         magicshift_inner: magicshift_inner {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <250>; // default: 200ms
             bindings = <&sk RSHIFT>, <&caps_word>;
         };
         magicshift: behavior_magicshift {

@@ -146,3 +146,7 @@ debug-svg:
 
 preview-readme:
     grip README.md
+
+# visually align keycodes in corne.keymap
+align:
+    python align.py
