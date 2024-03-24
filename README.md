@@ -6,7 +6,7 @@
 ## Features
 
 - **QWERTZ** This layout is intended to be used with macOS' German keyboard layout (`Deutsch > Deutsch` or `Deutsch > ABC — QWERTZ`)
-- **screen brightness** The F16 and F17 keys on the _eclipse_ layer are intended to be mapped to external screen brightness control, e.g. with [Lunar](https://lunar.fyi/) or [florianbeck/BrightnessMenulet](https://github.com/florianbeck/BrightnessMenulet).
+- **screen brightness** The two (native) brightness control keys on the _eclipse_ layer can also control external screen brightness, e.g. using [Lunar](https://lunar.fyi/).
 - **hyper** Many keys on the `eclipse` layer are mapped to the <kbd>HYPER</kbd> modifier (<kbd>⇧⌃⌥⌘</kbd>), symbolized by the orbit symbol. Those keys can be mapped to global shortcuts.
    - the keyboard shortcuts on the right side, for iTerm, Alfred and 1Password are directly mapped in those apps as hotkeys.
    - the keyboard shortcuts on the left side, for VS Code, VNC Viewer, and the Browser are mapped with Alfred to open/activate the respective app.
