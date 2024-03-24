@@ -40,7 +40,7 @@ build side="left": generate-mapping
     else
         west build -d build/{{side}} -b nice_nano_v2 -- -DSHIELD=corne_{{side}} -DZMK_CONFIG=$PWD/../../config
     fi
-    cp build/{{side}}/zephyr/zmk.uf2  ../../firmware/{{side}}.uf2
+    # cp build/{{side}}/zephyr/zmk.uf2  ../../firmware/{{side}}.uf2
 
 
 # flash ZMK firmware to nice!nano
