@@ -35,6 +35,7 @@ draw_config:
   glyph_shifted_size: 10
   glyphs:
     lucide-sun: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    r-sun: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg>
     lucide-moon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     lucide-eclipse: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eclipse"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 10 10"/></svg>
     lucide-orbit: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg>
@@ -177,13 +178,13 @@ parse_config:
 
     # this disables the 'held' status for the keys, which will be implemented in css
     "&mo SUN":
-      tap: "$$lucide-sun$$"
+      tap: "$$r-sun$$"
     "&mo MOON":
       tap: "$$lucide-moon$$"
     "&mo ECLIPSE":
       # momentary layer switch on combo key
       tap: "$$lucide-eclipse$$"
-      # tap: "$$combo:lucide-sun/lucide-moon$$"
+      # tap: "$$combo:r-sun/lucide-moon$$"
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
   sticky_label: sticky
