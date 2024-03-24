@@ -1,3 +1,5 @@
 zephyr-sdk/
 .venv/
 zmk/
+
+_krams/
