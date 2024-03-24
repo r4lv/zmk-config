@@ -224,6 +224,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 }
 
 #lucide-sun svg,
+#r-sun svg,
 #lucide-moon svg {
   stroke-width: inherit;
 }

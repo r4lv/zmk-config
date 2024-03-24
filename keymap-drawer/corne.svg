@@ -102,14 +102,8 @@
 <svg id="combo:web/text:E">
 <svg viewBox="0 0 48 24"><defs><svg id='rglyph:web' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-E"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">E</text></svg></defs><use href="#rglyph:web" x="-12" y="0"/><use href="#rglyph:text-E" x="12" y="0" /></svg>
 </svg>
-<svg id="lucide-eclipse">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eclipse"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 10 10"/></svg>
-</svg>
 <svg id="lucide-moon">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-</svg>
-<svg id="lucide-sun">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
 </svg>
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -152,6 +146,9 @@
 </svg>
 <svg id="mdi:triangle-down-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-triangle-down-outline" viewBox="0 0 24 24"><path d="M12 22L1 3H23M12 18L19.53 5H4.47" /></svg>
+</svg>
+<svg id="r-sun">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg>
 </svg>
 <svg id="smallcombo:shift/cmd/text:7">
 <svg viewBox="0 -6 72 36"><defs><svg id='rglyph:apple-keyboard-shift' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-7"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">7</text></svg></defs><use href="#rglyph:apple-keyboard-shift" x="0" y="0" width='24' height='24'/><use href="#rglyph:apple-keyboard-command" x="24" y="0" width='24' height='24'/><use href="#rglyph:text-7" x="48" y="0" width='24' height='24' /></svg>
@@ -498,6 +495,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 }
 
 #lucide-sun svg,
+#r-sun svg,
 #lucide-moon svg {
   stroke-width: inherit;
 }
@@ -519,28 +517,22 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
   color: white;
 }
 
-</style><g transform="translate(10, 305) translate(0, 24) scale(0.8)">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+</style><!-- sun -->
+<g transform="translate(10, 305) translate(0, 24) scale(0.8)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg>
 </g>
 
+<!-- moon -->
 <g transform="translate(10, 609) translate(0, 24) scale(0.8)">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
 </g>
 
 
+<!-- eclipse -->
 <g transform="translate(10, 914) translate(0, 24) scale(0.8)">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eclipse"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 10 10"/></svg>
-    <!--
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>
-    -->
 </g>
-
-
-<!-- 
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>
-
-
---><!-- translate(304px, 13px) scale(1.2) -->
+<!-- translate(304px, 13px) scale(1.2) -->
 <g transform="translate(310, 15) scale(1.1)" style="fill:black;">
     <path d="M65.55823,63.97208l-0.05872-0.05878c-0.02936-0.02936-0.08807-0.08807-0.11749-0.14679
         c-0.08807-0.11749-0.20551-0.29364-0.29364-0.46985c-0.02936-0.08807-0.08807-0.17615-0.11743-0.26428
@@ -699,15 +691,14 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">L</text>
 </g>
-<g transform="translate(756, 105)" class="key keypos-22">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">+</text>
-<text x="0" y="-22" class="key shifted">*</text>
+<g transform="translate(756, 105)" class="key rmod keypos-22">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+<text x="0" y="22" class="key rmod hold">sticky</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">#</text>
-<text x="0" y="-22" class="key shifted">&#x27;</text>
+<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -771,7 +762,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
-<use href="#lucide-sun" xlink:href="#lucide-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph lucide-sun"/>
+<use href="#r-sun" xlink:href="#r-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-sun"/>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -872,10 +863,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g class="combo combopos-21">
 <rect rx="4" ry="4" x="210" y="130" width="28" height="26" class="combo"/>
 <use href="#combo:ctrl/text:C" xlink:href="#combo:ctrl/text:C" x="210" y="136" height="14" width="28.0" class="combo tap glyph combo:ctrl/text:C"/>
-</g>
-<g class="combo combopos-22">
-<rect rx="4" ry="4" x="508" y="206" width="28" height="26" class="combo"/>
-<use href="#lucide-eclipse" xlink:href="#lucide-eclipse" x="515" y="212" height="14" width="14.0" class="combo tap glyph lucide-eclipse"/>
 </g>
 </g>
 </g>
@@ -1040,7 +1027,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
-<use href="#lucide-sun" xlink:href="#lucide-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph lucide-sun"/>
+<use href="#r-sun" xlink:href="#r-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-sun"/>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -1254,7 +1241,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
-<use href="#lucide-sun" xlink:href="#lucide-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph lucide-sun"/>
+<use href="#r-sun" xlink:href="#r-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-sun"/>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -1290,13 +1277,11 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F16</text>
-<use href="#tabler__sun-low" xlink:href="#tabler__sun-low" x="-6" y="10" height="12" width="12.0" class="key hold glyph tabler__sun-low"/>
+<use href="#tabler__sun-low" xlink:href="#tabler__sun-low" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler__sun-low"/>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F17</text>
-<use href="#tabler__sun-high" xlink:href="#tabler__sun-high" x="-6" y="10" height="12" width="12.0" class="key hold glyph tabler__sun-high"/>
+<use href="#tabler__sun-high" xlink:href="#tabler__sun-high" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler__sun-high"/>
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1452,7 +1437,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>
-<use href="#lucide-sun" xlink:href="#lucide-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph lucide-sun"/>
+<use href="#r-sun" xlink:href="#r-sun" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-sun"/>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="4" ry="4" x="-26" y="-40" width="52" height="80" class="key"/>

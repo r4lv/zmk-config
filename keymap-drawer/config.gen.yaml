@@ -255,6 +255,7 @@ draw_config:
     }
 
     #lucide-sun svg,
+    #r-sun svg,
     #lucide-moon svg {
       stroke-width: inherit;
     }
@@ -289,6 +290,14 @@ draw_config:
       d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66
       17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41
       1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    r-sun: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0
+      0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path
+      d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path
+      d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path
+      d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path
+      d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path
+      d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg>
     lucide-moon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0
       0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0
@@ -342,8 +351,8 @@ draw_config:
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-control' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-V"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">V</text></svg></defs><use href="#rglyph:apple-keyboard-control" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-V" x="12" y="0" width="24" height="24" /></svg>
     combo:web/text:E: |-
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:web' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-E"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">E</text></svg></defs><use href="#rglyph:web" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-E" x="12" y="0" width="24" height="24" /></svg>
-    combo:lucide-sun/lucide-moon: |-
-      <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-sun' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg><svg id='rglyph:lucide-moon' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></defs><use href="#rglyph:lucide-sun" x="-12" y="0" width="24" height="24"/><use href="#rglyph:lucide-moon" x="12" y="0" width="24" height="24" /></svg>
+    combo:r-sun/lucide-moon: |-
+      <svg viewBox="0 0 48 24"><defs><svg id='rglyph:r-sun' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg><svg id='rglyph:lucide-moon' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></defs><use href="#rglyph:r-sun" x="-12" y="0" width="24" height="24"/><use href="#rglyph:lucide-moon" x="12" y="0" width="24" height="24" /></svg>
     combo:lucide-orbit/text:A: |-
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-orbit' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-A"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">A</text></svg></defs><use href="#rglyph:lucide-orbit" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-A" x="12" y="0" width="24" height="24" /></svg>
     combo:lucide-orbit/text:D: |-
@@ -473,6 +482,10 @@ parse_config:
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: sticky
+    '&sticky_caps':
+      tap: $$mdi:apple-keyboard-shift$$
+      type: rmod
+      hold: sticky
     '&magicshift RSHIFT 0':
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
@@ -538,13 +551,13 @@ parse_config:
 
     # this disables the 'held' status for the keys, which will be implemented in css
     '&mo SUN':
-      tap: $$lucide-sun$$
+      tap: $$r-sun$$
     '&mo MOON':
       tap: $$lucide-moon$$
     '&mo ECLIPSE':
       # momentary layer switch on combo key
       tap: $$lucide-eclipse$$
-      # tap: "$$combo:lucide-sun/lucide-moon$$"
+      # tap: "$$combo:r-sun/lucide-moon$$"
 
     # (german keys from raw_binding_map.gen.yaml automatically added)
     '&kp HY(DE_A)': $$combo:lucide-orbit/text:A$$

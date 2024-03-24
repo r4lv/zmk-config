@@ -23,8 +23,8 @@ layers:
   - J
   - K
   - L
-  - {t: +, s: '*'}
-  - {t: '#', s: ''''}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: rmod}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - Y
   - X
@@ -39,7 +39,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: magic, type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - $$mdi:keyboard-return$$
-  - $$lucide-sun$$
+  - $$r-sun$$
   - $$lucide-moon$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
@@ -82,7 +82,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - $$lucide-sun$$
+  - $$r-sun$$
   - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
@@ -125,14 +125,14 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - $$lucide-sun$$
+  - $$r-sun$$
   - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   eclipse:
   - {t: OUT BLE, s: OUT USB}
-  - {t: F16, h: '$$tabler:sun-low$$'}
-  - {t: F17, h: '$$tabler:sun-high$$'}
+  - $$tabler:sun-low$$
+  - $$tabler:sun-high$$
   - $$combo:lucide-orbit/text:E$$
   - $$tabler:player-track-prev$$
   - $$tabler:player-track-next$$
@@ -168,7 +168,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - $$lucide-sun$$
+  - $$r-sun$$
   - $$lucide-moon$$
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -253,7 +253,4 @@ combos:
   l: [base]
 - p: [27, 28]
   k: $$combo:ctrl/text:C$$
-  l: [base]
-- p: [39, 40]
-  k: $$lucide-eclipse$$
   l: [base]
