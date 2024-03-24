@@ -141,11 +141,14 @@ setup-zephyr-sdk:
     rm -rf aarch* arc* microblazeel* mips* nios2* risc* sparc* x86* xtensa*
     ./setup.sh -c
 
+# open svg in Browser to use web inspector
 debug-svg:
     open -a "Arc" "file://$PWD/keymap-drawer/corne.svg"
 
+# preview README.md like on GitHub
 preview-readme:
     grip README.md
+    # https://github.com/joeyespo/grip
 
 # visually align keycodes in corne.keymap
 align:

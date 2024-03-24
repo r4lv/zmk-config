@@ -14,7 +14,7 @@
    - a regular RSHIFT when held,
    - a sticky RSHIFT when tapped (to capitalize the next letter), and
    - like `&caps_word` when double-tapped (to capitalize the next word).
-- **mouse replacement** [Scoot](https://github.com/mjrusso/scoot) can be used to replace the mouse (using <kbd>hyper I</kbd> and <kbd>hyper U</kbd> on the _eclipse_ layer)
+- **mouse replacement** [Scoot](https://github.com/mjrusso/scoot) can be used for mouse movement with the keyboard (using <kbd>hyper I</kbd> and <kbd>hyper U</kbd> on the _eclipse_ layer)
 - **numblock** The moon layer features a numblock for the left hand, with `.` and `,` nearby. The shifted numbers 3, 4 and 7 press the <kbd>cmd</kbd> modifier as well, so in order to e.g. send <kbd>cmd shift 7</kbd> (line comment in VS Code), you can press <kbd>moon shift 7</kbd>.
 - **mirrored symbols** Many symbols in the _sun_ layer, many symbols are mirrored between the left and the right hand, like the braces `[]<>(){}`, the slashes `\/`, and `_-` `;,` `!?`.
 - **non-dead backtick** The backtick on the German macOS keyboard layout is a dead key, which messes up some text input fields. The upper left key on the _sun_ layer actually sens <kbd>shift alt numblock-7</kbd>, which does nothing on its own, but that is a free slot on the German keyboard layout which can be remapped using the Ukelele.app, when creating a custom keyboard layout. Note that a non-dead backtick can also be accessed with <kbd>ctrl shift grave</kbd> on the standard macOS layout, but that is interpreted as keyboard shortcut by many apps using non-standard input fields and thus does NOT send the backtick character.
