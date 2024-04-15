@@ -53,14 +53,15 @@ flash side="left":
         echo "ERROR: firmware/{{side}}.uf2 does not exist"
         exit 1
     fi
-    for i in {1..30}; do
+    for i in {1..45}; do
         if [ -d /Volumes/NICENANO ]; then
+            echo "found nice!nano..."
             sleep 1
             west flash -d build/{{side}}
             exit 0
         fi
         echo -n "."
-        sleep 1
+        sleep 0.5
     done
     echo "ERROR - count not find nice!nano"
 
@@ -78,13 +79,13 @@ flash-manual side:
 			cp firmware/{{side}}.uf2 /Volumes/NICENANO
 			echo 'flashed {{side}} side!'
 			echo -n "Waiting for nice!nano to reboot"
-			for i in {1..15}; do
+			for i in {1..30}; do
 				if [ ! -d /Volumes/NICENANO ]; then
 					echo 'okay!'
 					exit 0
 				fi
 				echo -n "."
-				sleep 1
+				sleep 0.5
 			done
 			echo 'error: something went wrong...'
 			exit 1
