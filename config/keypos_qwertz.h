@@ -5,7 +5,7 @@ die Finger ungefähr liegen würden.
   ╭─────────────────────────╮ ╭─────────────────────────╮
   │ TAB  Q   W   E   R   T  │ │  Z   U   I   O   P   UE │
   │ CPS  A   S   D   F   G  │ │  H   J   K   L   OE  AE │
-  │  LT  Y   X   C   V   B  │ │  N   M   ,  PNK MNS RSH │
+  │  LT  Y   X   C   V   B  │ │  N   M  KOM PNK MNS RSH │
   ╰───────────╮ DL2 DL1 DL0 │ │ DR0 DR1 DR2 ╭───────────╯
               ╰─────────────╯ ╰─────────────╯
   ╭─────────────────────────╮ ╭────────────────────────╮
