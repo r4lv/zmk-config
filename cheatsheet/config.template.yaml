@@ -39,6 +39,8 @@ draw_config:
     lucide-moon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     lucide-eclipse: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eclipse"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 1 0 10 10"/></svg>
     lucide-orbit: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg>
+    r-lucide-page-up: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-r-page-up"><path d="M8,7l4-4l4,4"/><path d="M12,3v18"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+    r-lucide-page-down: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-r-page-down"><path d="M16,17l-4,4l-4-4"/><path d="M12,21V3"/><line x1="16" y1="7" x2="8" y2="7"/><line x1="16" y1="10" x2="8" y2="10"/></svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
@@ -285,8 +287,9 @@ parse_config:
     BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
 
-    # PG_UP: ⇞  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
-    # PG_DN: ⇟  # resvg: Fallback from Liberation Mono to Arial Unicode MS.
+    PG_UP: $$r-lucide-page-up$$
+    PG_DN: $$r-lucide-page-down$$
+
     # HOME: ↖ # $$mdi:arrow-top-left$$
     # HOME: $$mdi:arrow-top-left$$
     # HOME: $$tabler:arrow-up-left$$

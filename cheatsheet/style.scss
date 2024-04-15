@@ -272,8 +272,14 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
     }
 }
 .layer-moon g.key.keypos- {
-    &1, &13, &17, &29 {
+    &13, &17, &29 { // acute, period, comma
         @include keymod-large;
+    }
+    &18, &30 { // r-lucide-page-up, r-lucide-page-down
+        use {
+            transform: scale(1.5);
+            stroke-width: 1.2; // visually match other icons
+        }
     }
 }
 
@@ -321,7 +327,9 @@ g.key.keypos-{
 }
 #lucide-sun,
 #r-sun,
-#lucide-moon {
+#lucide-moon,
+#r-lucide-page-down,
+#r-lucide-page-up {
     svg {
         // allow overwriting stroke-width with .glyph selector
         stroke-width: inherit;
