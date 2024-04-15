@@ -259,7 +259,10 @@ draw_config:
 
     .layer-base .combo.combopos-17,
     .layer-sun .combo.combopos-5,
-    .layer-moon .combo.combopos-0 {
+    .layer-moon .combo.combopos-0,
+    .layer-base .combo.combopos-23,
+    .layer-sun .combo.combopos-8,
+    .layer-moon .combo.combopos-2 {
       fill: #be123c;
     }
 
@@ -439,6 +442,8 @@ draw_config:
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg id='rglyph:chevron-up' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg></defs><use href="#rglyph:apple-keyboard-command" x="-12" y="0" width="24" height="24"/><use href="#rglyph:chevron-up" x="12" y="0" width="24" height="24" /></svg>
     combo:cmd/chevron-down: |-
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg id='rglyph:chevron-down' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg></defs><use href="#rglyph:apple-keyboard-command" x="-12" y="0" width="24" height="24"/><use href="#rglyph:chevron-down" x="12" y="0" width="24" height="24" /></svg>
+    combo:shift/alt: |-
+      <svg viewBox="0 0 48 24"><defs><svg id='rglyph:apple-keyboard-shift' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg><svg id='rglyph:apple-keyboard-option' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg></defs><use href="#rglyph:apple-keyboard-shift" x="-12" y="0" width="24" height="24"/><use href="#rglyph:apple-keyboard-option" x="12" y="0" width="24" height="24" /></svg>
   glyph_urls:
     tabler: https://cdn.jsdelivr.net/npm/@tabler/icons@2.46.0/icons/{}.svg
     mdi: 
@@ -992,6 +997,8 @@ parse_config:
     LG(RIGHT): $$combo:cmd/chevron-right$$
     LG(UP): $$combo:cmd/chevron-up$$
     LG(DOWN): $$combo:cmd/chevron-down$$
+
+    LS(LALT): $$combo:shift/alt$$
 
     LS(LA(KP_N7)):
       tap: '`'

@@ -139,11 +139,13 @@
         lalt { key-positions = <posLT posY>; bindings = <&kp RALT>; layers = <BASE SUN MOON>; require-prior-idle-ms = <200>; };
         del { key-positions = <posP posUE>; bindings = <&kp DELETE>; layers = <BASE SUN MOON>; require-prior-idle-ms = <100>; };
         lbsp { key-positions = <posTAB posCPS>; bindings = <&kp BSPC>; layers = <BASE>; require-prior-idle-ms = <100>; };
-        ctrlA { key-positions = <posY posX>; bindings = <&kp LC(DE_A)>; layers = <BASE>; require-prior-idle-ms = <300>; };
+        ctrlA { key-positions = <posX posC>; bindings = <&kp LC(DE_A)>; layers = <BASE>; require-prior-idle-ms = <300>; };
         ctrlC { key-positions = <posC posV>; bindings = <&kp LC(DE_C)>; layers = <BASE>; require-prior-idle-ms = <300>; };
         palette { key-positions = <posK posL>; bindings = <&kp LS(LG(DE_P))>; layers = <SUN>; require-prior-idle-ms = <300>; };
 
         uml { key-positions = <posKOM posPNK>; bindings = <&kp RA(U)>; layers = <BASE>; require-prior-idle-ms = <200>; };
+
+        shiftAlt { key-positions = <posY posX>; bindings = <&kp LS(LALT)>; layers = <BASE SUN MOON>; require-prior-idle-ms = <200>; };
 
         // eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE SUN MOON ECLIPSE>; require-prior-idle-ms = <200>; }; // :(
     };

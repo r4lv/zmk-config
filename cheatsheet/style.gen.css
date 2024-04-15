@@ -228,7 +228,10 @@ text.key.shifted {
 
 .layer-base .combo.combopos-17,
 .layer-sun .combo.combopos-5,
-.layer-moon .combo.combopos-0 {
+.layer-moon .combo.combopos-0,
+.layer-base .combo.combopos-23,
+.layer-sun .combo.combopos-8,
+.layer-moon .combo.combopos-2 {
   fill: #be123c;
 }
 

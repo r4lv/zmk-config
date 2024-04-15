@@ -320,12 +320,12 @@ $tabler_xxl: "&sun-high, &sun-low";
 // modifier combos
 .layer-base .combo.combopos-17,
 .layer-sun .combo.combopos-5,
-.layer-moon .combo.combopos-0 {
+.layer-moon .combo.combopos-0,
+.layer-base .combo.combopos-23,
+.layer-sun .combo.combopos-8,
+.layer-moon .combo.combopos-2
+ {
     fill: $tw-rose-700;
-    // rect {
-    //     stroke: $tw-rose-700;
-    //     stroke-width: 1;
-    // }
 }
 
 

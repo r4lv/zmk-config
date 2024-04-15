@@ -254,7 +254,7 @@ combos:
 - p: [0, 12]
   k: $$mdi:backspace-outline$$
   l: [base]
-- p: [25, 26]
+- p: [26, 27]
   k: $$combo:ctrl/text:A$$
   l: [base]
 - p: [27, 28]
@@ -266,3 +266,6 @@ combos:
 - p: [32, 33]
   k: ¨
   l: [base]
+- p: [25, 26]
+  k: $$combo:shift/alt$$
+  l: [base, sun, moon]
