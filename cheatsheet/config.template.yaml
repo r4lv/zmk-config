@@ -151,6 +151,9 @@ parse_config:
       tap: "$$combo:ctrl/text:C$$"
     "&kp LC(DE_V)":
       tap: "$$combo:ctrl/text:V$$"
+
+    "&kp LS(LG(DE_P))":
+      tap: "$$smallcombo:shift/cmd/text:P$$"
     
     "&mm_3":
       tap: "3"
@@ -171,6 +174,10 @@ parse_config:
 
     "&tp_lt_minus": "<-"
     "&tp_minus_gt": "->"
+    "&tp_lt_equal": "<="
+    "&tp_equal_gt": "=>"
+
+
 
     # this disables the 'held' status for the keys, which will be implemented in css
     "&mo SUN":

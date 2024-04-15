@@ -127,6 +127,9 @@
 
         codeArrowLeft  { key-positions = <posA posS>;  bindings = <&tp_lt_minus>; layers = <SUN>; require-prior-idle-ms = <100>; };
         codeArrowRight { key-positions = <posL posOE>; bindings = <&tp_minus_gt>; layers = <SUN>; require-prior-idle-ms = <100>; };
+        codeHeavyArrowLeft  { key-positions = <posQ posW>;  bindings = <&tp_lt_equal>; layers = <SUN>; require-prior-idle-ms = <100>; };
+        codeHeavyArrowRight { key-positions = <posO posP>; bindings = <&tp_equal_gt>; layers = <SUN>; require-prior-idle-ms = <100>; };
+
 
         mute { key-positions = <posF posG>; bindings = <&kp C_MUTE>; layers = <ECLIPSE>; require-prior-idle-ms = <200>; };
         playpause { key-positions = <posR posT>; bindings = <&kp C_PP>; layers = <ECLIPSE>; require-prior-idle-ms = <200>; };
@@ -138,6 +141,9 @@
         lbsp { key-positions = <posTAB posCPS>; bindings = <&kp BSPC>; layers = <BASE>; require-prior-idle-ms = <100>; };
         ctrlA { key-positions = <posY posX>; bindings = <&kp LC(DE_A)>; layers = <BASE>; require-prior-idle-ms = <300>; };
         ctrlC { key-positions = <posC posV>; bindings = <&kp LC(DE_C)>; layers = <BASE>; require-prior-idle-ms = <300>; };
+        palette { key-positions = <posK posL>; bindings = <&kp LS(LG(DE_P))>; layers = <SUN>; require-prior-idle-ms = <300>; };
+
+        uml { key-positions = <posKOM posPNK>; bindings = <&kp RA(U)>; layers = <BASE>; require-prior-idle-ms = <200>; };
 
         // eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE SUN MOON ECLIPSE>; require-prior-idle-ms = <200>; }; // :(
     };
@@ -158,6 +164,8 @@
         // "type" macros
         ZMK_MACRO(tp_lt_minus, bindings = <&macro_tap &kp DE_LT &kp DE_MINUS>; wait-ms = <10>;)
         ZMK_MACRO(tp_minus_gt, bindings = <&macro_tap &kp DE_MINUS &kp DE_GT>; wait-ms = <10>;)
+        ZMK_MACRO(tp_lt_equal, bindings = <&macro_tap &kp DE_LT &kp DE_EQUAL>; wait-ms = <10>;)
+        ZMK_MACRO(tp_equal_gt, bindings = <&macro_tap &kp DE_EQUAL &kp DE_GT>; wait-ms = <10>;)
 
         R_UNICODE(uni_times,  N0, N0, D,  N7) // ×  U+00D7  MULTIPLICATION SIGN
         R_UNICODE(uni_fwast,  F,  F,  N0, A)  // ＊  U+FF0A  FULLWIDTH ASTERISK
