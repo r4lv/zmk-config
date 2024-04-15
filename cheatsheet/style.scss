@@ -237,22 +237,37 @@ text.key.shifted {
 // }
 
 // make media tabler icons slightly larger
-$larger_tabler_icons: "&volume, &volume-2, &volume-3, \
+$tabler_large: "&volume, &volume-2, &volume-3, \
 &player-track-next, &player-track-prev, &player-play, \
-&sun-high, &sun-low, &player-eject, &lock";
+&sun-highx, &sun-lowx, &player-eject";
+$tabler_xxl_shiftup: "&mood-smile-beam, &lock";
+$tabler_xxl: "&sun-high, &sun-low";
 
 .key.tap.glyph.tabler__ {
-    #{$larger_tabler_icons} {
+    #{$tabler_large} {
         transform: scale(1.2);
+    }
+    #{$tabler_xxl} {
+        transform: scale(1.4);
+    }
+    #{$tabler_xxl_shiftup} {
+        transform: scale(1.4) translate(0, -2px); // Chrome
+        transform: scale(1.4) translate(0, -2); // resvg
     }
 }
 .icon-tabler- {
-    #{$larger_tabler_icons} {
+    #{$tabler_large} {
         > path {
             stroke-width: 1.5;
         }
     }
+    #{$tabler_xxl}, #{$tabler_xxl_shiftup} {
+        > path {
+            stroke-width: 1.4;
+        }
+    }
 }
+
 
 @mixin keymod-large {
     text.key.tap {
@@ -262,17 +277,17 @@ $larger_tabler_icons: "&volume, &volume-2, &volume-3, \
 }
 
 .layer-base g.key.keypos- {
-    &32, &33 {
+    &32, &33 { // comma, period
         @include keymod-large;
     }
 }
 .layer-sun g.key.keypos- {
-    &0, &28, &30 {
+    &0, &3, &27,   &16, &19, &28, &30,   &32, &33 { //   `:;  '"*~  ,.
         @include keymod-large;
     }
 }
 .layer-moon g.key.keypos- {
-    &13, &17, &29 { // acute, period, comma
+    &13, &17, &29 { // ´.,
         @include keymod-large;
     }
     &18, &30 { // r-lucide-page-up, r-lucide-page-down

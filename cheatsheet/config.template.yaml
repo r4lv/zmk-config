@@ -214,8 +214,8 @@ parse_config:
       tap: "0"
 
     "&emoji":
-      tap: "$$combo:web/text:E$$"
-      hold: "emoji"
+      tap: "$$tabler:mood-smile-beam$$"
+      hold: "$$combo:web/text:E$$"
 
     "&tp_lt_minus": "<-"
     "&tp_minus_gt": "->"
