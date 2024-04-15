@@ -210,12 +210,22 @@ draw_config:
       transform: translate(0, 2);
     }
 
-    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject, .key.tap.glyph.tabler__lock {
+    .key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-highx, .key.tap.glyph.tabler__sun-lowx, .key.tap.glyph.tabler__player-eject {
       transform: scale(1.2);
     }
+    .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low {
+      transform: scale(1.4);
+    }
+    .key.tap.glyph.tabler__mood-smile-beam, .key.tap.glyph.tabler__lock {
+      transform: scale(1.4) translate(0, -2px);
+      transform: scale(1.4) translate(0, -2);
+    }
 
-    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path, .icon-tabler-lock > path {
+    .icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-highx > path, .icon-tabler-sun-lowx > path, .icon-tabler-player-eject > path {
       stroke-width: 1.5;
+    }
+    .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-mood-smile-beam > path, .icon-tabler-lock > path {
+      stroke-width: 1.4;
     }
 
     .layer-base g.key.keypos-32 text.key.tap, .layer-base g.key.keypos-33 text.key.tap {
@@ -223,7 +233,7 @@ draw_config:
       font-weight: 400;
     }
 
-    .layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap, .layer-sun g.key.keypos-30 text.key.tap {
+    .layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-3 text.key.tap, .layer-sun g.key.keypos-27 text.key.tap, .layer-sun g.key.keypos-16 text.key.tap, .layer-sun g.key.keypos-19 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap, .layer-sun g.key.keypos-30 text.key.tap, .layer-sun g.key.keypos-32 text.key.tap, .layer-sun g.key.keypos-33 text.key.tap {
       font-size: 26px;
       font-weight: 400;
     }
@@ -351,6 +361,8 @@ draw_config:
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-orbit' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-U"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">U</text></svg></defs><use href="#rglyph:lucide-orbit" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-U" x="12" y="0" width="24" height="24" /></svg>
     combo:lucide-orbit/text:J: |-
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-orbit' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-J"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">J</text></svg></defs><use href="#rglyph:lucide-orbit" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-J" x="12" y="0" width="24" height="24" /></svg>
+    combo:lucide-orbit/text:K: |-
+      <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-orbit' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-K"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">K</text></svg></defs><use href="#rglyph:lucide-orbit" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-K" x="12" y="0" width="24" height="24" /></svg>
     combo:lucide-orbit/text:L: |-
       <svg viewBox="0 0 48 24"><defs><svg id='rglyph:lucide-orbit' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox='0 0 24 24' fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-orbit"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M10.4 21.9a10 10 0 0 0 9.941-15.416"/><path d="M13.5 2.1a10 10 0 0 0-9.841 15.416"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-L"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">L</text></svg></defs><use href="#rglyph:lucide-orbit" x="-12" y="0" width="24" height="24"/><use href="#rglyph:text-L" x="12" y="0" width="24" height="24" /></svg>
     combo:lucide-orbit/text:C: |-
@@ -530,7 +542,7 @@ parse_config:
       tap: $$combo:lucide-orbit/text:J$$
       hold: iTerm
     '&kp HY(DE_K)':
-      tap: $$combo:lucide-orbit/text:J$$
+      tap: $$combo:lucide-orbit/text:K$$
       hold: Alfred
     '&kp HY(DE_L)':
       tap: $$combo:lucide-orbit/text:L$$
@@ -600,8 +612,8 @@ parse_config:
       tap: '0'
 
     '&emoji':
-      tap: $$combo:web/text:E$$
-      hold: emoji
+      tap: $$tabler:mood-smile-beam$$
+      hold: $$combo:web/text:E$$
 
     '&tp_lt_minus': <-
     '&tp_minus_gt': ->

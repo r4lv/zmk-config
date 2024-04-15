@@ -179,12 +179,22 @@ text.key.shifted {
   transform: translate(0, 2);
 }
 
-.key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low, .key.tap.glyph.tabler__player-eject, .key.tap.glyph.tabler__lock {
+.key.tap.glyph.tabler__volume, .key.tap.glyph.tabler__volume-2, .key.tap.glyph.tabler__volume-3, .key.tap.glyph.tabler__player-track-next, .key.tap.glyph.tabler__player-track-prev, .key.tap.glyph.tabler__player-play, .key.tap.glyph.tabler__sun-highx, .key.tap.glyph.tabler__sun-lowx, .key.tap.glyph.tabler__player-eject {
   transform: scale(1.2);
 }
+.key.tap.glyph.tabler__sun-high, .key.tap.glyph.tabler__sun-low {
+  transform: scale(1.4);
+}
+.key.tap.glyph.tabler__mood-smile-beam, .key.tap.glyph.tabler__lock {
+  transform: scale(1.4) translate(0, -2px);
+  transform: scale(1.4) translate(0, -2);
+}
 
-.icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-player-eject > path, .icon-tabler-lock > path {
+.icon-tabler-volume > path, .icon-tabler-volume-2 > path, .icon-tabler-volume-3 > path, .icon-tabler-player-track-next > path, .icon-tabler-player-track-prev > path, .icon-tabler-player-play > path, .icon-tabler-sun-highx > path, .icon-tabler-sun-lowx > path, .icon-tabler-player-eject > path {
   stroke-width: 1.5;
+}
+.icon-tabler-sun-high > path, .icon-tabler-sun-low > path, .icon-tabler-mood-smile-beam > path, .icon-tabler-lock > path {
+  stroke-width: 1.4;
 }
 
 .layer-base g.key.keypos-32 text.key.tap, .layer-base g.key.keypos-33 text.key.tap {
@@ -192,7 +202,7 @@ text.key.shifted {
   font-weight: 400;
 }
 
-.layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap, .layer-sun g.key.keypos-30 text.key.tap {
+.layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-3 text.key.tap, .layer-sun g.key.keypos-27 text.key.tap, .layer-sun g.key.keypos-16 text.key.tap, .layer-sun g.key.keypos-19 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap, .layer-sun g.key.keypos-30 text.key.tap, .layer-sun g.key.keypos-32 text.key.tap, .layer-sun g.key.keypos-33 text.key.tap {
   font-size: 26px;
   font-weight: 400;
 }

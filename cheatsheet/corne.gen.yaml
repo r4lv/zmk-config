@@ -76,18 +76,18 @@ layers:
   - '#'
   - '~'
   - '|'
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '-', s: _}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:keyboard-return$$
   - $$r-sun$$
   - $$lucide-moon$$
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   moon:
-  - {t: '$$combo:web/text:E$$', h: emoji}
+  - {t: '$$tabler:mood-smile-beam$$', h: '$$combo:web/text:E$$'}
   - ''
   - {t: '7', h: comment, s: '$$combo:shift/cmd/text:7$$'}
   - '8'
@@ -124,10 +124,10 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:keyboard-return$$
   - $$r-sun$$
   - $$lucide-moon$$
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   eclipse:
   - {t: OUT BLE, s: OUT USB}
@@ -150,7 +150,7 @@ layers:
   - $$tabler:volume$$
   - ±
   - {t: '$$combo:lucide-orbit/text:J$$', h: iTerm}
-  - {t: '$$combo:lucide-orbit/text:J$$', h: Alfred}
+  - {t: '$$combo:lucide-orbit/text:K$$', h: Alfred}
   - {t: '$$combo:lucide-orbit/text:L$$', h: symbols}
   - {t: '$$combo:lucide-orbit/text:Ö$$', h: 1Password}
   - $$combo:lucide-orbit/text:Ä$$
@@ -166,12 +166,12 @@ layers:
   - $$combo:lucide-orbit/text:.$$
   - $$combo:lucide-orbit/text:–$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
+  - $$mdi:keyboard-return$$
   - $$r-sun$$
   - $$lucide-moon$$
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
-  - {t: '$$mdi:triangle-down-outline$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
 combos:
 - p: [0, 1]
   k: ESC
