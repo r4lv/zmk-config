@@ -107,16 +107,8 @@ parse_config:
       tap: $$combo:alt/text:+$$
     "&kp LC(DE_GRAVE)":
       tap: "`"
-    
-    "&sthld RSHFT RSHFT":
-      tap: $$mdi:apple-keyboard-shift$$
-      type: rmod
-      hold: sticky
-    "&sticky_caps":
-      tap: $$mdi:apple-keyboard-shift$$
-      type: rmod
-      hold: sticky
-    "&magicshift RSHIFT 0":
+  
+    "&magic_shift":
       tap: $$mdi:apple-keyboard-shift$$
       type: rmod
       hold: magic

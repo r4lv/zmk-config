@@ -41,24 +41,24 @@
 
         layer_base {
             bindings = <
-/* ╭──────────┬─────────┬─────────┬─────────┬───────────┬─────────╮   ╭─────────┬──────────┬─────────────┬───────────┬─────────────┬─────────────────────╮ */
-    &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R    &kp DE_T      &kp DE_Z  &kp DE_U   &kp DE_I      &kp DE_O    &kp DE_P      &kp BSPC
-/* ├──────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼─────────────────────┤ */
-    &kp LCTRL  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G      &kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &sticky_caps  &kp BSPC
-/* ├──────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼─────────────────────┤ */
-    &kp LSHFT  &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &magicshift RSHIFT 0
-/* ╰──────────┴─────────┴─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┴─────────────┴─────────────────────╯ */
-                                   &kp LCMD  &kp RETURN  &mo SUN       &mo MOON  &kp SPACE  &kp LALT
-/*                                ╰─────────┴───────────┴─────────╯   ╰─────────┴──────────┴─────────────╯                                                 */
+/* ╭─────────────┬─────────┬─────────┬─────────┬───────────┬─────────╮   ╭─────────┬──────────┬─────────────┬───────────┬─────────────┬─────────────╮ */
+    &kp TAB       &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R    &kp DE_T      &kp DE_Z  &kp DE_U   &kp DE_I      &kp DE_O    &kp DE_P      &none
+/* ├─────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼─────────────┤ */
+    &kp LCTRL     &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F    &kp DE_G      &kp DE_H  &kp DE_J   &kp DE_K      &kp DE_L    &magic_shift  &kp BSPC
+/* ├─────────────┼─────────┼─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┼─────────────┼─────────────┤ */
+    &kp LSHIFT    &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V    &kp DE_B      &kp DE_N  &kp DE_M   &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &mm_uml_circ
+/* ╰─────────────┴─────────┴─────────┼─────────┼───────────┼─────────┤   ├─────────┼──────────┼─────────────┼───────────┴─────────────┴─────────────╯ */
+                                      &kp LCMD  &kp RETURN  &mo SUN       &mo MOON  &kp SPACE  &kp LALT
+/*                                   ╰─────────┴───────────┴─────────╯   ╰─────────┴──────────┴─────────────╯                                         */
             >;
         };
 
         layer_sun {
             bindings = <
 /* ╭──────────────────┬─────────────┬────────────┬─────────────┬──────────────┬────────────╮   ╭─────────────┬────────────┬─────────────┬────────────┬─────────────┬──────────╮ */
-    &kp LS(LA(KP_N7))  &kp DE_EXCL   &kp DE_BSLH  &kp DE_COLON  &kp DE_DOLLAR  &none            &kp DE_PRCNT  &kp DE_AMPS  &kp DE_EQUAL  &kp DE_FSLH  &kp DE_QMARK  &mm_bspc
+    &kp LS(LA(KP_N7))  &kp DE_EXCL   &kp DE_BSLH  &kp DE_COLON  &kp DE_DOLLAR  &none            &kp DE_PRCNT  &kp DE_AMPS  &kp DE_EQUAL  &kp DE_FSLH  &kp DE_QMARK  &none
 /* ├──────────────────┼─────────────┼────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┼─────────────┼──────────┤ */
-    &kp LCTRL          &kp DE_LBKT   &kp DE_LT    &kp DE_LPAR   &kp DE_SQT     &kp DE_LBRC      &kp DE_RBRC   &kp DE_DQT   &kp DE_RPAR   &kp DE_GT    &kp DE_RBKT   &kp RALT
+    &kp LCTRL          &kp DE_LBKT   &kp DE_LT    &kp DE_LPAR   &kp DE_SQT     &kp DE_LBRC      &kp DE_RBRC   &kp DE_DQT   &kp DE_RPAR   &kp DE_GT    &kp DE_RBKT   &mm_bspc
 /* ├──────────────────┼─────────────┼────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┼─────────────┼──────────┤ */
     &kp LSHFT          &kp DE_UNDER  &kp DE_PLUS  &kp DE_SEMI   &kp DE_ASTRK   &kp DE_HASH      &kp DE_TILDE  &kp DE_PIPE  &trans        &trans       &trans        &kp RSHFT
 /* ╰──────────────────┴─────────────┴────────────┼─────────────┼──────────────┼────────────┤   ├─────────────┼────────────┼─────────────┼────────────┴─────────────┴──────────╯ */
@@ -69,15 +69,15 @@
 
         layer_moon {
             bindings = <
-/* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭───────────┬─────────────┬─────────┬──────────────┬─────────────┬──────────╮ */
-    &emoji     &mm_uml_circ  &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp LG(UP)  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp LG(DOWN)  &mm_bspc
-/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼──────────┤ */
-    &kp LCTRL  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP   &kp LEFT      &kp DOWN  &kp RIGHT      &none         &kp RALT
-/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼──────────┤ */
-    &kp LSHFT  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN   &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none         &kp RSHFT
-/* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┴─────────────┴──────────╯ */
+/* ╭──────────┬─────────────┬──────────┬──────────┬──────────┬─────────────╮   ╭───────────┬─────────────┬─────────┬──────────────┬─────────────┬─────────╮ */
+    &emoji     &none         &mm_7      &kp DE_N8  &kp DE_N9  &kp DE_SZ         &kp LG(UP)  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp LG(DOWN)  &none
+/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼─────────┤ */
+    &kp LCTRL  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6  &kp DE_DOT        &kp PG_UP   &kp LEFT      &kp DOWN  &kp RIGHT      &kp RSHIFT    &mm_bspc
+/* ├──────────┼─────────────┼──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼─────────┤ */
+    &kp LSHFT  &kp DE_N0     &kp DE_N1  &kp DE_N2  &mm_3      &kp DE_COMMA      &kp PG_DN   &kp LA(LEFT)  &none     &kp LA(RIGHT)  &none         &none
+/* ╰──────────┴─────────────┴──────────┼──────────┼──────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┴─────────────┴─────────╯ */
                                         &kp LCMD   &trans     &mo SUN           &mo MOON    &trans        &kp LALT
-/*                                     ╰──────────┴──────────┴─────────────╯   ╰───────────┴─────────────┴─────────╯                                         */
+/*                                     ╰──────────┴──────────┴─────────────╯   ╰───────────┴─────────────┴─────────╯                                        */
             >;
         };
 
@@ -184,28 +184,6 @@
         R_SHIFT_CMD_NUM(mm_4, N4)
         R_SHIFT_CMD_NUM(mm_7, N7)
 
-        sthld: behavior_sthld {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&sk>;
-            // TODO: use quick-release for sticky key?
-        }; // usage: &sthld RSHIFT RSHIFT
-
-        magicshift_inner: magicshift_inner {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>; // default: 200ms
-            bindings = <&sk RSHIFT>, <&caps_word>;
-        };
-        magicshift: behavior_magicshift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&magicshift_inner>;
-        }; // usage: &magicshift RSHIFT 0
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
@@ -214,11 +192,16 @@
             ignore-modifiers;
             quick-release; // modified from default sticky-Key
         };
-        sticky_caps: behaviour_sticky_caps {
+        caps_word_nobs: behaviour_cps_nobs {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE>; // no backspace
+        };
+        magic_shift: behaviour_magic_shift {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&skq RSHIFT>, <&caps_word>;
+            tapping-term-ms = <300>;
+            bindings = <&skq RSHIFT>, <&caps_word_nobs>;
         };
     };
 };
