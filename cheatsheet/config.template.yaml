@@ -144,7 +144,7 @@ parse_config:
       tap: "$$combo:lucide-orbit/text:J$$"
       hold: iTerm
     "&kp HY(DE_K)":
-      tap: "$$combo:lucide-orbit/text:J$$"
+      tap: "$$combo:lucide-orbit/text:K$$"
       hold: Alfred
     "&kp HY(DE_L)":
       tap: "$$combo:lucide-orbit/text:L$$"
