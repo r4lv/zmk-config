@@ -10,7 +10,7 @@
 - **hyper** Many keys on the `eclipse` layer are mapped to the <kbd>HYPER</kbd> modifier (<kbd>⇧⌃⌥⌘</kbd>), symbolized by the orbit symbol. Those keys can be mapped to global shortcuts.
    - the keyboard shortcuts on the right side, for iTerm, Alfred and 1Password are directly mapped in those apps as hotkeys.
    - the keyboard shortcuts on the left side, for VS Code, VNC Viewer, and the Browser are mapped with Alfred to open/activate the respective app.
-- **magic shift** The right _magic_ shift key on the base layer behaves like
+- **magic shift** The _magic_ shift key on the base layer behaves like
    - a regular RSHIFT when held,
    - a sticky RSHIFT when tapped (to capitalize the next letter), and
    - like `&caps_word` when double-tapped (to capitalize the next word).
