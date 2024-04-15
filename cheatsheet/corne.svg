@@ -147,11 +147,20 @@
 <svg id="mdi:triangle-down-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-triangle-down-outline" viewBox="0 0 24 24"><path d="M12 22L1 3H23M12 18L19.53 5H4.47" /></svg>
 </svg>
+<svg id="r-lucide-page-down">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-r-page-down"><path d="M16,17l-4,4l-4-4"/><path d="M12,21V3"/><line x1="16" y1="7" x2="8" y2="7"/><line x1="16" y1="10" x2="8" y2="10"/></svg>
+</svg>
+<svg id="r-lucide-page-up">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-r-page-up"><path d="M8,7l4-4l4,4"/><path d="M12,3v18"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="8" y1="14" x2="16" y2="14"/></svg>
+</svg>
 <svg id="r-sun">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ricon r-sun"><circle cx="12" cy="12" r="5.05648"/><path d="M12,2v4.94352"/><path d="M12,17.05648V22"/><path d="M3.33975,7l4.28122,2.47176"/><path d="M16.37904,14.52824L20.66025,17"/><path d="M7,3.33975l2.47176,4.28122"/><path d="M14.52824,16.37904L17,20.66025"/><path d="M2,12h4.94352"/><path d="M17.05648,12H22"/><path d="M3.33975,17l4.28122-2.47176"/><path d="M16.37904,9.47176L20.66025,7"/><path d="M7,20.66025l2.47176-4.28121"/><path d="M14.52824,7.62096L17,3.33975"/></svg>
 </svg>
 <svg id="smallcombo:shift/cmd/text:7">
 <svg viewBox="0 -6 72 36"><defs><svg id='rglyph:apple-keyboard-shift' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-7"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">7</text></svg></defs><use href="#rglyph:apple-keyboard-shift" x="0" y="0" width='24' height='24'/><use href="#rglyph:apple-keyboard-command" x="24" y="0" width='24' height='24'/><use href="#rglyph:text-7" x="48" y="0" width='24' height='24' /></svg>
+</svg>
+<svg id="smallcombo:shift/cmd/text:P">
+<svg viewBox="0 -6 72 36"><defs><svg id='rglyph:apple-keyboard-shift' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg><svg id='rglyph:apple-keyboard-command' xmlns="http://www.w3.org/2000/svg"  viewBox='0 0 24 24'><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' id="rglyph:text-P"><text x="10" y="14" text-anchor="middle" style="font-size: 24px;">P</text></svg></defs><use href="#rglyph:apple-keyboard-shift" x="0" y="0" width='24' height='24'/><use href="#rglyph:apple-keyboard-command" x="24" y="0" width='24' height='24'/><use href="#rglyph:text-P" x="48" y="0" width='24' height='24' /></svg>
 </svg>
 <svg id="tabler__lock">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -468,9 +477,13 @@ text.key.shifted {
   font-weight: 400;
 }
 
-.layer-moon g.key.keypos-1 text.key.tap, .layer-moon g.key.keypos-13 text.key.tap, .layer-moon g.key.keypos-17 text.key.tap, .layer-moon g.key.keypos-29 text.key.tap {
+.layer-moon g.key.keypos-13 text.key.tap, .layer-moon g.key.keypos-17 text.key.tap, .layer-moon g.key.keypos-29 text.key.tap {
   font-size: 26px;
   font-weight: 400;
+}
+.layer-moon g.key.keypos-18 use, .layer-moon g.key.keypos-30 use {
+  transform: scale(1.5);
+  stroke-width: 1.2;
 }
 
 .layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap {
@@ -484,7 +497,7 @@ text.key.shifted {
 }
 
 .layer-base .combo.combopos-17,
-.layer-sun .combo.combopos-3,
+.layer-sun .combo.combopos-5,
 .layer-moon .combo.combopos-0 {
   fill: #be123c;
 }
@@ -496,7 +509,9 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 
 #lucide-sun svg,
 #r-sun svg,
-#lucide-moon svg {
+#lucide-moon svg,
+#r-lucide-page-down svg,
+#r-lucide-page-up svg {
   stroke-width: inherit;
 }
 
@@ -649,7 +664,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -694,7 +708,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(756, 105)" class="key rmod keypos-22">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
-<text x="0" y="22" class="key rmod hold">sticky</text>
+<text x="0" y="22" class="key rmod hold">magic</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -747,10 +761,10 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <text x="0" y="0" class="key tap">-</text>
 <text x="0" y="-22" class="key shifted">_</text>
 </g>
-<g transform="translate(812, 161)" class="key rmod keypos-35">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
-<text x="0" y="22" class="key rmod hold">magic</text>
+<g transform="translate(812, 161)" class="key keypos-35">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">¨</text>
+<text x="0" y="-22" class="key shifted">^</text>
 </g>
 <g transform="translate(224, 205)" class="key rmod keypos-36">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -864,6 +878,10 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <rect rx="4" ry="4" x="210" y="130" width="28" height="26" class="combo"/>
 <use href="#combo:ctrl/text:C" xlink:href="#combo:ctrl/text:C" x="210" y="136" height="14" width="28.0" class="combo tap glyph combo:ctrl/text:C"/>
 </g>
+<g class="combo combopos-22">
+<rect rx="4" ry="4" x="658" y="130" width="28" height="26" class="combo"/>
+<text x="672" y="144" class="combo tap">¨</text>
+</g>
 </g>
 </g>
 <g transform="translate(10, 305)" class="layer-sun">
@@ -915,8 +933,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-5" y="-22" height="10" width="10.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -929,7 +945,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(140, 91)" class="key keypos-14">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&lt;</text>
-<text x="0" y="-22" class="key shifted">&gt;</text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -963,9 +978,10 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">]</text>
 </g>
-<g transform="translate(812, 105)" class="key rmod keypos-23">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-option"/>
+<g transform="translate(812, 105)" class="key keypos-23">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-5" y="-22" height="10" width="10.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -978,7 +994,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">+</text>
-<text x="0" y="-22" class="key shifted">*</text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-27">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -991,7 +1006,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(308, 154)" class="key keypos-29">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">#</text>
-<text x="0" y="-22" class="key shifted">&#x27;</text>
 </g>
 <g transform="translate(532, 154)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1050,16 +1064,28 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <text x="728" y="98" class="combo tap">-&gt;</text>
 </g>
 <g class="combo combopos-2">
+<rect rx="4" ry="4" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">&lt;=</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="4" ry="4" x="714" y="29" width="28" height="26" class="combo"/>
+<text x="728" y="42" class="combo tap">=&gt;</text>
+</g>
+<g class="combo combopos-4">
 <rect rx="4" ry="4" x="658" y="18" width="28" height="26" class="combo"/>
 <use href="#smallcombo:shift/cmd/text:7" xlink:href="#smallcombo:shift/cmd/text:7" x="658" y="24" height="14" width="28.0" class="combo tap glyph smallcombo:shift/cmd/text:7"/>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-5">
 <rect rx="4" ry="4" x="42" y="148" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="49" y="154" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-6">
 <rect rx="4" ry="4" x="770" y="36" width="28" height="26" class="combo"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="777" y="42" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="4" ry="4" x="658" y="74" width="28" height="26" class="combo"/>
+<use href="#smallcombo:shift/cmd/text:P" xlink:href="#smallcombo:shift/cmd/text:P" x="658" y="80" height="14" width="28.0" class="combo tap glyph smallcombo:shift/cmd/text:P"/>
 </g>
 </g>
 </g>
@@ -1073,8 +1099,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">¨</text>
-<text x="0" y="-22" class="key shifted">^</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1085,12 +1109,10 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">8</text>
-<text x="0" y="-22" class="key shifted">(</text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">9</text>
-<text x="0" y="-22" class="key shifted">)</text>
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1119,8 +1141,6 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-5" y="-22" height="10" width="10.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(28, 105)" class="key rmod keypos-12">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -1140,12 +1160,10 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">5</text>
-<text x="0" y="-22" class="key shifted">%</text>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">6</text>
-<text x="0" y="-22" class="key shifted">&amp;</text>
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1154,9 +1172,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(532, 98)" class="key keypos-18">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">PG</tspan><tspan x="0" dy="1.0em">UP</tspan>
-</text>
+<use href="#r-lucide-page-up" xlink:href="#r-lucide-page-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-lucide-page-up"/>
 </g>
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1170,12 +1186,14 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:chevron-right" xlink:href="#mdi:chevron-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:chevron-right"/>
 </g>
-<g transform="translate(756, 105)" class="key keypos-22">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(812, 105)" class="key rmod keypos-23">
+<g transform="translate(756, 105)" class="key rmod keypos-22">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-option"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g transform="translate(812, 105)" class="key keypos-23">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-5" y="-22" height="10" width="10.0" class="key shifted glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(28, 161)" class="key rmod keypos-24">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
@@ -1184,17 +1202,14 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">0</text>
-<text x="0" y="-22" class="key shifted">=</text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">1</text>
-<text x="0" y="-22" class="key shifted">!</text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-27">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">2</text>
-<text x="0" y="-22" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(252, 147)" class="key keypos-28">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1209,9 +1224,7 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 </g>
 <g transform="translate(532, 154)" class="key keypos-30">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">PG</tspan><tspan x="0" dy="1.0em">DN</tspan>
-</text>
+<use href="#r-lucide-page-down" xlink:href="#r-lucide-page-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph r-lucide-page-down"/>
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1227,9 +1240,8 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g transform="translate(756, 161)" class="key keypos-34">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(812, 161)" class="key rmod keypos-35">
-<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key rmod tap glyph mdi:apple-keyboard-shift"/>
+<g transform="translate(812, 161)" class="key keypos-35">
+<rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(224, 205)" class="key rmod keypos-36">
 <rect rx="4" ry="4" x="-26" y="-26" width="52" height="52" class="key rmod"/>

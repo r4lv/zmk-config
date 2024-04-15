@@ -197,9 +197,13 @@ text.key.shifted {
   font-weight: 400;
 }
 
-.layer-moon g.key.keypos-1 text.key.tap, .layer-moon g.key.keypos-13 text.key.tap, .layer-moon g.key.keypos-17 text.key.tap, .layer-moon g.key.keypos-29 text.key.tap {
+.layer-moon g.key.keypos-13 text.key.tap, .layer-moon g.key.keypos-17 text.key.tap, .layer-moon g.key.keypos-29 text.key.tap {
   font-size: 26px;
   font-weight: 400;
+}
+.layer-moon g.key.keypos-18 use, .layer-moon g.key.keypos-30 use {
+  transform: scale(1.5);
+  stroke-width: 1.2;
 }
 
 .layer-sun g.key.keypos-0 text.key.tap, .layer-sun g.key.keypos-28 text.key.tap {
@@ -213,7 +217,7 @@ text.key.shifted {
 }
 
 .layer-base .combo.combopos-17,
-.layer-sun .combo.combopos-3,
+.layer-sun .combo.combopos-5,
 .layer-moon .combo.combopos-0 {
   fill: #be123c;
 }
@@ -225,7 +229,9 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 
 #lucide-sun svg,
 #r-sun svg,
-#lucide-moon svg {
+#lucide-moon svg,
+#r-lucide-page-down svg,
+#r-lucide-page-up svg {
   stroke-width: inherit;
 }
 

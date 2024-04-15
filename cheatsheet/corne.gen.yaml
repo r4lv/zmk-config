@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-outline$$
+  - ''
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - A
   - S
@@ -23,7 +23,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, type: rmod}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: magic, type: rmod}
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - Y
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '-', s: _}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: magic, type: rmod}
+  - {t: ¨, s: ^}
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - $$mdi:keyboard-return$$
   - $$r-sun$$
@@ -55,10 +55,10 @@ layers:
   - '='
   - /
   - '?'
-  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - ''
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - '['
-  - {t: <, s: '>'}
+  - <
   - (
   - ''''
   - '{'
@@ -67,13 +67,13 @@ layers:
   - )
   - '>'
   - ']'
-  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
+  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
   - _
-  - {t: +, s: '*'}
+  - +
   - ;
   - '*'
-  - {t: '#', s: ''''}
+  - '#'
   - '~'
   - '|'
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
@@ -88,41 +88,41 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   moon:
   - {t: '$$combo:web/text:E$$', h: emoji}
-  - {t: ¨, s: ^}
+  - ''
   - {t: '7', h: comment, s: '$$combo:shift/cmd/text:7$$'}
-  - {t: '8', s: (}
-  - {t: '9', s: )}
+  - '8'
+  - '9'
   - {t: ß, s: '?'}
   - $$combo:cmd/chevron-up$$
   - $$combo:cmd/chevron-left$$
   - $$mdi:chevron-up$$
   - $$combo:cmd/chevron-right$$
   - $$combo:cmd/chevron-down$$
-  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - ''
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - {t: ´, s: '`'}
   - {t: '4', h: screenshot, s: '$$combo:shift/cmd/text:4$$'}
-  - {t: '5', s: '%'}
-  - {t: '6', s: '&'}
+  - '5'
+  - '6'
   - {t: ., s: ':'}
-  - PG UP
+  - $$r-lucide-page-up$$
   - $$mdi:chevron-left$$
   - $$mdi:chevron-down$$
   - $$mdi:chevron-right$$
-  - ''
-  - {t: '$$mdi:apple-keyboard-option$$', type: rmod}
   - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
-  - {t: '0', s: '='}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '"'}
+  - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - '0'
+  - '1'
+  - '2'
   - {t: '3', h: screenshot, s: '$$combo:shift/cmd/text:3$$'}
   - {t: ',', s: ;}
-  - PG DN
+  - $$r-lucide-page-down$$
   - $$combo:alt/chevron-left$$
   - ''
   - $$combo:alt/chevron-right$$
   - ''
-  - {t: '$$mdi:apple-keyboard-shift$$', type: rmod}
+  - ''
   - {t: '$$mdi:apple-keyboard-command$$', type: rmod}
   - {t: '$$mdi:triangle-down-outline$$', type: trans}
   - $$r-sun$$
@@ -230,6 +230,12 @@ combos:
 - p: [21, 22]
   k: ->
   l: [sun]
+- p: [1, 2]
+  k: <=
+  l: [sun]
+- p: [9, 10]
+  k: =>
+  l: [sun]
 - p: [16, 17]
   k: $$tabler:volume-3$$
   l: [eclipse]
@@ -253,4 +259,10 @@ combos:
   l: [base]
 - p: [27, 28]
   k: $$combo:ctrl/text:C$$
+  l: [base]
+- p: [20, 21]
+  k: $$smallcombo:shift/cmd/text:P$$
+  l: [sun]
+- p: [32, 33]
+  k: ¨
   l: [base]
