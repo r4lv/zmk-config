@@ -113,6 +113,20 @@ parse_config:
       type: rmod
       hold: magic
     
+
+    # hide shifted keys for german layout:
+    "&kp DE_PLUS":
+      tap: "+"
+    "&kp DE_LESS_THAN":
+      tap: "<"
+    "&kp DE_LT":
+      tap: "<"
+    "&kp DE_HASH":
+      tap: "#"
+    "&kp DE_POUND":
+      tap: "#"
+
+    
     # definition for hyper+alpha are added by generate_drawer_config.py
     # overwrite some of them here, to add a label
     "&kp HY(DE_O_UML)":
@@ -155,6 +169,15 @@ parse_config:
     "&kp LS(LG(DE_P))":
       tap: "$$smallcombo:shift/cmd/text:P$$"
     
+
+    "&kp DE_NUMBER_1":
+      tap: "1"
+    "&kp DE_N1":
+      tap: "1"
+    "&kp DE_NUMBER_2":
+      tap: "2"
+    "&kp DE_N2":
+      tap: "2"
     "&mm_3":
       tap: "3"
       shifted: "$$combo:shift/cmd/text:3$$"
@@ -163,10 +186,30 @@ parse_config:
       tap: "4"
       shifted: "$$combo:shift/cmd/text:4$$"
       hold: "screenshot"
+    "&kp DE_NUMBER_5":
+      tap: "5"
+    "&kp DE_N5":
+      tap: "5"
+    "&kp DE_NUMBER_6":
+      tap: "6"
+    "&kp DE_N6":
+      tap: "6"
     "&mm_7":
       tap: "7"
       shifted: "$$combo:shift/cmd/text:7$$"
       hold: "comment"
+    "&kp DE_NUMBER_8":
+      tap: "8"
+    "&kp DE_N8":
+      tap: "8"
+    "&kp DE_NUMBER_9":
+      tap: "9"
+    "&kp DE_N9":
+      tap: "9"
+    "&kp DE_NUMBER_0":
+      tap: "0"
+    "&kp DE_N0":
+      tap: "0"
 
     "&emoji":
       tap: "$$combo:web/text:E$$"
