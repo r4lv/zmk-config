@@ -319,10 +319,12 @@ parse_config:
 
     "LA(LEFT)": $$combo:alt/chevron-left$$
     "LA(RIGHT)": $$combo:alt/chevron-right$$
+    "LA(UP)": $$smallcombo:alt/chevron-up$$
+    "LA(DOWN)": $$smallcombo:alt/chevron-down$$
     "LG(LEFT)": "$$combo:cmd/chevron-left$$"
     "LG(RIGHT)": "$$combo:cmd/chevron-right$$"
-    "LG(UP)": "$$combo:cmd/chevron-up$$"
-    "LG(DOWN)": "$$combo:cmd/chevron-down$$"
+    "LG(UP)": "$$smallcombo:cmd/chevron-up$$"
+    "LG(DOWN)": "$$smallcombo:cmd/chevron-down$$"
 
     "LS(LALT)": "$$combo:shift/alt$$"
 

@@ -93,11 +93,11 @@ layers:
   - '8'
   - '9'
   - {t: ß, s: '?'}
-  - $$combo:cmd/chevron-up$$
+  - ''
   - $$combo:cmd/chevron-left$$
   - $$mdi:chevron-up$$
   - $$combo:cmd/chevron-right$$
-  - $$combo:cmd/chevron-down$$
+  - ''
   - ''
   - {t: '$$mdi:apple-keyboard-control$$', type: rmod}
   - {t: ´, s: '`'}
@@ -269,3 +269,15 @@ combos:
 - p: [25, 26]
   k: $$combo:shift/alt$$
   l: [base, sun, moon]
+- p: [8, 9]
+  k: $$smallcombo:alt/chevron-up$$
+  l: [moon]
+- p: [20, 21]
+  k: $$smallcombo:alt/chevron-down$$
+  l: [moon]
+- p: [7, 8]
+  k: $$smallcombo:cmd/chevron-up$$
+  l: [moon]
+- p: [19, 20]
+  k: $$smallcombo:cmd/chevron-down$$
+  l: [moon]

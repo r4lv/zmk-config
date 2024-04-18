@@ -92,29 +92,18 @@ def yaml_dumps(data) -> str:
     return buf.getvalue()
 
 
-for small, l, m, r in re.findall(r"\$\$(small)?combo:(.*?)/(.*?)/(.*?)\$\$", yaml_dumps(cfg)):
-    lgrp, lkey, ldef = get_glyph(l)
-    mgrp, mkey, mdef = get_glyph(m)
-    rgrp, rkey, rdef = get_glyph(r)
-    viewbox = "0 -6 72 36" if small else "0 0 72 24"
+for glyphname, small, parts_s in re.findall(r"\$\$((small)?combo:(.*?))\$\$", yaml_dumps(cfg)):
+    defs, uses = "", ""
+    parts = parts_s.split("/")
+    for ipart, part in enumerate(parts):
+        _, key, glyphdef = get_glyph(part)
+        defs += glyphdef
+        # use single quotes to block _scrub_dims_re in keymap-drawer/glyph.py:
+        uses += f"""<use href="#rglyph:{key}" x="{ipart*24}" y="0" width='24' height='24'/>"""
 
-    svg = f"""<svg viewBox="{viewbox}"><defs>{ldef}{mdef}{rdef}</defs>"""
-    # use single quotes to block _scrub_dims_re in keymap-drawer/glyph.py
-    svg += f"""<use href="#rglyph:{lkey}" x="0" y="0" width='24' height='24'/>"""
-    svg += f"""<use href="#rglyph:{mkey}" x="24" y="0" width='24' height='24'/>"""
-    svg += f"""<use href="#rglyph:{rkey}" x="48" y="0" width='24' height='24' />"""
-    svg += """</svg>"""
-    cfg["draw_config"]["glyphs"][f"{small}combo:{l}/{m}/{r}"] = STR(svg)
-
-for l, r in re.findall(r"\$\$combo:([^/]*?)/([^/]*?)\$\$", yaml_dumps(cfg)):
-    lgrp, lkey, ldef = get_glyph(l)
-    rgrp, rkey, rdef = get_glyph(r)
-    svg = f"""<svg viewBox="0 0 48 24"><defs>{ldef}{rdef}</defs>"""
-    # here, width and height are scrubbed by keymap-drawer
-    svg += f"""<use href="#rglyph:{lkey}" x="-12" y="0" width="24" height="24"/>"""
-    svg += f"""<use href="#rglyph:{rkey}" x="12" y="0" width="24" height="24" />"""
-    svg += """</svg>"""
-    cfg["draw_config"]["glyphs"][f"combo:{l}/{r}"] = STR(svg)
+    viewbox = f"0 -6 {24*len(parts)} 36" if small else f"0 0 {24*len(parts)} 24"
+    svg = f'<svg viewBox="{viewbox}"><defs>{defs}</defs>{uses}</svg>'
+    cfg["draw_config"]["glyphs"][glyphname] = STR(svg)
 
 
 with open(HERE / "config.gen.yaml", "w") as f:

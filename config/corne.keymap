@@ -70,7 +70,7 @@
         layer_moon {
             bindings = <
 /* ╭──────────┬─────────────┬──────────┬──────────┬───────────┬─────────────╮   ╭───────────┬─────────────┬─────────┬──────────────┬─────────────┬─────────╮ */
-    &emoji     &none         &mm_7      &kp DE_N8  &kp DE_N9   &kp DE_SZ         &kp LG(UP)  &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &kp LG(DOWN)  &none
+    &emoji     &none         &mm_7      &kp DE_N8  &kp DE_N9   &kp DE_SZ         &none       &kp LG(LEFT)  &kp UP    &kp LG(RIGHT)  &none         &none
 /* ├──────────┼─────────────┼──────────┼──────────┼───────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼─────────┤ */
     &kp LCTRL  &kp DE_ACUTE  &mm_4      &kp DE_N5  &kp DE_N6   &kp DE_DOT        &kp PG_UP   &kp LEFT      &kp DOWN  &kp RIGHT      &kp RSHIFT    &mm_bspc
 /* ├──────────┼─────────────┼──────────┼──────────┼───────────┼─────────────┤   ├───────────┼─────────────┼─────────┼──────────────┼─────────────┼─────────┤ */
@@ -146,6 +146,11 @@
         uml { key-positions = <posKOM posPNK>; bindings = <&kp RA(U)>; layers = <BASE>; require-prior-idle-ms = <200>; };
 
         shiftAlt { key-positions = <posY posX>; bindings = <&kp LS(LALT)>; layers = <BASE SUN MOON>; require-prior-idle-ms = <200>; };
+
+        altUp { key-positions = <posI posO>; bindings = <&kp LA(UP)>; layers = <MOON>; require-prior-idle-ms = <100>; };
+        altDown { key-positions = <posK posL>; bindings = <&kp LA(DOWN)>; layers = <MOON>; require-prior-idle-ms = <100>; };
+        cmdUp { key-positions = <posU posI>; bindings = <&kp LG(UP)>; layers = <MOON>; require-prior-idle-ms = <100>; };
+        cmdDown { key-positions = <posJ posK>; bindings = <&kp LG(DOWN)>; layers = <MOON>; require-prior-idle-ms = <100>; };
 
         // eclipse { key-positions = <posDR0 posDR1>; bindings = <&mo ECLIPSE>; layers = <BASE SUN MOON ECLIPSE>; require-prior-idle-ms = <200>; }; // :(
     };
