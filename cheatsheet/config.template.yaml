@@ -341,4 +341,6 @@ parse_config:
 
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
-  zmk_combos: {}
+  zmk_combos:
+    softoff:
+      type: display-none

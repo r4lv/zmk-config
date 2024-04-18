@@ -235,6 +235,10 @@ text.key.shifted {
   fill: #be123c;
 }
 
+.display-none {
+  display: none;
+}
+
 g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
   transform: scale(2.3);
   stroke-width: 1;

@@ -329,6 +329,11 @@ $tabler_xxl: "&sun-high, &sun-low";
 }
 
 
+// helpers for hiding combos (e.g. &soft_off)
+.display-none{
+    display: none;
+}
+
 
 // make thumb icons larger:
 // these are lucide icons, so they have a stroke (currentColor) instead of a fill

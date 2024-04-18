@@ -266,6 +266,10 @@ draw_config:
       fill: #be123c;
     }
 
+    .display-none {
+      display: none;
+    }
+
     g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
       transform: scale(2.3);
       stroke-width: 1;
@@ -1019,4 +1023,6 @@ parse_config:
 
 
     C_AL_KEYBOARD_LAYOUT: $$tabler:player-eject$$
-  zmk_combos: {}
+  zmk_combos:
+    softoff:
+      type: display-none

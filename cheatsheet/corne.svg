@@ -536,6 +536,10 @@ text.key.shifted {
   fill: #be123c;
 }
 
+.display-none {
+  display: none;
+}
+
 g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
   transform: scale(2.3);
   stroke-width: 1;
@@ -919,6 +923,14 @@ g.key.keypos-38 .glyph, g.key.keypos-39 .glyph {
 <g class="combo combopos-23">
 <rect rx="4" ry="4" x="98" y="141" width="28" height="26" class="combo"/>
 <use href="#combo:shift/alt" xlink:href="#combo:shift/alt" x="98" y="147" height="14" width="28.0" class="combo tap glyph combo:shift/alt"/>
+</g>
+<g class="combo display-none combopos-24">
+<path d="M420,38 l-149,-3" class="combo"/>
+<path d="M420,38 l-93,3" class="combo"/>
+<path d="M420,38 l93,3" class="combo"/>
+<path d="M420,38 l149,-3" class="combo"/>
+<rect rx="4" ry="4" x="406" y="26" width="28" height="26" class="combo display-none"/>
+<text x="420" y="38" class="combo display-none tap"><tspan style="font-size: 78%">&amp;soft_off</tspan></text>
 </g>
 </g>
 </g>

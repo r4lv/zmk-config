@@ -281,3 +281,7 @@ combos:
 - p: [19, 20]
   k: $$smallcombo:cmd/chevron-down$$
   l: [moon]
+- p: [4, 5, 6, 7]
+  k: '&soft_off'
+  l: [base]
+  type: display-none
