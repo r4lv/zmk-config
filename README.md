@@ -19,6 +19,7 @@
 - **mouse replacement.** [Scoot](https://github.com/mjrusso/scoot) can be used for mouse movement with the keyboard (using <kbd>hyper I</kbd> and <kbd>hyper U</kbd> on the _eclipse_ layer)
 - **non-dead backtick.** The backtick on the German macOS keyboard layout is a dead key, which messes up some text input fields. The upper left key on the _sun_ layer actually sends <kbd>shift alt numblock-7</kbd>, which does nothing on its own, but that is a free slot on the German keyboard layout which can be remapped using [Ukelele](https://software.sil.org/ukelele/), when creating a custom keyboard layout. Note that a non-dead backtick can also be accessed with <kbd>ctrl shift grave</kbd> on the standard macOS layout, but that is interpreted as keyboard shortcut by many apps using non-standard input fields and thus does NOT send the backtick character as expected.
 - **emoji.** The upper left key on the _moon_ layer sends the <kbd>globe E</kbd> keyboard shortcut, which opens the emoji picker on newer versions of macOS. Older versions required <kbd>ctrl cmd space</kbd>.
+- **soft off.** By holding the keys `R T Z U` for three seconds, the keyboard will go into _soft off_ mode, which consumes very little power. Press both reset buttons to wake it up again. 
 - **owl.** The owl on both the keymap preview above, and the keyboard itself is custom drawn and one of the most useful features of the keyboard.
 
 
